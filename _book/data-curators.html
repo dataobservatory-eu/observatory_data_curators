@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Data Curators | Automated Observatory Data Curator’s Handbook</title>
+  <meta name="description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Data Curators | Automated Observatory Data Curator’s Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Data Curators | Automated Observatory Data Curator’s Handbook" />
+  
+  <meta name="twitter:description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  
+
+<meta name="author" content="Daniel Antal, CFA" />
+
+
+<meta name="date" content="2021-05-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="challenges.html"/>
+<link rel="next" href="green-deal.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Automated Observatory Data Curator's Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#mission-statement"><i class="fa fa-check"></i>Mission statement</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#problem-statement"><i class="fa fa-check"></i>Problem Statement</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#our-solution"><i class="fa fa-check"></i>Our solution</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Application for the Datathlon Prizes: Automated Data Observatories</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#solution-as-service-offered-in-the-challenges"><i class="fa fa-check"></i><b>1.1</b> Solution as Service offered in the Challenges</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#service-flow"><i class="fa fa-check"></i><b>1.2</b> Service Flow</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#new-high-quality-data"><i class="fa fa-check"></i><b>1.2.1</b> New, high quality data</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#authoritative-data"><i class="fa fa-check"></i><b>1.2.2</b> Authoritative data</a></li>
+<li class="chapter" data-level="1.2.3" data-path="intro.html"><a href="intro.html#data-api"><i class="fa fa-check"></i><b>1.2.3</b> Data API</a></li>
+<li class="chapter" data-level="1.2.4" data-path="intro.html"><a href="intro.html#long-form-documentation"><i class="fa fa-check"></i><b>1.2.4</b> Long form documentation</a></li>
+<li class="chapter" data-level="1.2.5" data-path="intro.html"><a href="intro.html#front-end-website"><i class="fa fa-check"></i><b>1.2.5</b> Front-end Website</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#technology"><i class="fa fa-check"></i><b>1.3</b> Technology</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="challenges.html"><a href="challenges.html"><i class="fa fa-check"></i><b>2</b> Challenges</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="challenges.html"><a href="challenges.html#challenge-green-deal"><i class="fa fa-check"></i><b>2.1</b> Challenge 1: European Green Deal</a></li>
+<li class="chapter" data-level="2.2" data-path="challenges.html"><a href="challenges.html#challenge-economy"><i class="fa fa-check"></i><b>2.2</b> Challenge 2: An economy that works for people</a></li>
+<li class="chapter" data-level="2.3" data-path="challenges.html"><a href="challenges.html#challenge-digital-age"><i class="fa fa-check"></i><b>2.3</b> Challenge 3: A Europe fit for the digital age - Empowering people with a new generation of technologies</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-curators.html"><a href="data-curators.html"><i class="fa fa-check"></i><b>3</b> Data Curators</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-curators.html"><a href="data-curators.html#open-data"><i class="fa fa-check"></i><b>3.1</b> Open Data</a></li>
+<li class="chapter" data-level="3.2" data-path="data-curators.html"><a href="data-curators.html#reproducible-research"><i class="fa fa-check"></i><b>3.2</b> Reproducible Research</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-curators.html"><a href="data-curators.html#opa"><i class="fa fa-check"></i><b>3.2.1</b> Evidence-based, Open Policy Analysis</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-curators.html"><a href="data-curators.html#business-professional-standards"><i class="fa fa-check"></i><b>3.2.2</b> Professional Standards in Business</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="data-curators.html"><a href="data-curators.html#indicator-design"><i class="fa fa-check"></i><b>3.3</b> Indicator Design</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="data-curators.html"><a href="data-curators.html#authoring-indicator"><i class="fa fa-check"></i><b>3.3.1</b> Creation and Quality Control of Indicators</a></li>
+<li class="chapter" data-level="3.3.2" data-path="data-curators.html"><a href="data-curators.html#deposit-indicator"><i class="fa fa-check"></i><b>3.3.2</b> Authentic Depositions of Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="data-curators.html"><a href="data-curators.html#your-first-data-contribution"><i class="fa fa-check"></i><b>3.4</b> Your First Data Contribution</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="green-deal.html"><a href="green-deal.html"><i class="fa fa-check"></i><b>4</b> Green Deal Indicators</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="green-deal.html"><a href="green-deal.html#social-attituted-to-climate-change"><i class="fa fa-check"></i><b>4.1</b> Social Attituted to Climate Change</a></li>
+<li class="chapter" data-level="4.2" data-path="green-deal.html"><a href="green-deal.html#environmental-impact-indicator-for-economic-activities"><i class="fa fa-check"></i><b>4.2</b> Environmental Impact Indicator for Economic Activities</a></li>
+<li class="chapter" data-level="4.3" data-path="green-deal.html"><a href="green-deal.html#sensory-data-measuring-climate-change-physical-affects"><i class="fa fa-check"></i><b>4.3</b> Sensory Data Measuring Climate Change Physical Affects</a></li>
+<li class="chapter" data-level="4.4" data-path="green-deal.html"><a href="green-deal.html#ecological-data"><i class="fa fa-check"></i><b>4.4</b> Ecological Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="music-data.html"><a href="music-data.html"><i class="fa fa-check"></i><b>5</b> Music Data Indicators</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="music-data.html"><a href="music-data.html#music-economy"><i class="fa fa-check"></i><b>5.1</b> Music Economy</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="music-data.html"><a href="music-data.html#demand-drivers"><i class="fa fa-check"></i><b>5.1.1</b> Demand Drivers</a></li>
+<li class="chapter" data-level="5.1.2" data-path="music-data.html"><a href="music-data.html#supply-indicators"><i class="fa fa-check"></i><b>5.1.2</b> Supply Indicators</a></li>
+<li class="chapter" data-level="5.1.3" data-path="music-data.html"><a href="music-data.html#price-indicators"><i class="fa fa-check"></i><b>5.1.3</b> Price Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="music-data.html"><a href="music-data.html#music-diversity"><i class="fa fa-check"></i><b>5.2</b> Music Diversity</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="music-data.html"><a href="music-data.html#gender-language-ethnic-and-other-inclusion-attributes"><i class="fa fa-check"></i><b>5.2.1</b> Gender, Language, Ethnic and Other Inclusion Attributes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="music-data.html"><a href="music-data.html#music-circulation"><i class="fa fa-check"></i><b>5.3</b> Music Circulation</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="music-data.html"><a href="music-data.html#market-shares"><i class="fa fa-check"></i><b>5.3.1</b> Market shares</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="music-data.html"><a href="music-data.html#music-society"><i class="fa fa-check"></i><b>5.4</b> Music &amp; Society</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="music-data.html"><a href="music-data.html#social-attitutes-to-music"><i class="fa fa-check"></i><b>5.4.1</b> Social Attitutes to Music</a></li>
+<li class="chapter" data-level="5.4.2" data-path="music-data.html"><a href="music-data.html#participation-in-music"><i class="fa fa-check"></i><b>5.4.2</b> Participation in Music</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="partnerships.html"><a href="partnerships.html"><i class="fa fa-check"></i><b>6</b> Partnerships</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="partnerships.html"><a href="partnerships.html#policy-partners"><i class="fa fa-check"></i><b>6.1</b> Policy Partners</a></li>
+<li class="chapter" data-level="6.2" data-path="partnerships.html"><a href="partnerships.html#academic-partners"><i class="fa fa-check"></i><b>6.2</b> Academic Partners</a></li>
+<li class="chapter" data-level="6.3" data-path="partnerships.html"><a href="partnerships.html#business-partners"><i class="fa fa-check"></i><b>6.3</b> Business Partners</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="http://datathon.dataobservatory.eu/" target="blank">EU Datathon 2021</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automated Observatory Data Curator’s Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-curators" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Data Curators</h1>
+<p>We are looking for data curators who</p>
+<ol style="list-style-type: decimal">
+<li>Work with governmental or scientific or otherwise <a href="data-curators.html#open-data">open data</a>.</li>
+<li>Committed to high policy or business professional standards, and by making their work <a href="data-curators.html#reproducible-research">reproducible</a>, they adhere to reviewability, reproducability, confirmability and auditability, regardless if they work, or study for various professsional roles in business, academia, public or non-governmental policy, and data journalism.</li>
+<li>They are interested in helping us with <a href="data-curators.html#indicator-design">indicator design</a>.</li>
+<li>Make the authoritative copy of their indicator available on the Zenodo data repository, and keep it up-to-date with our automated observatory’s help.</li>
+</ol>
+<div id="open-data" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Open Data</h2>
+<p>In the EU, open data is governed by the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&amp;uri=CELEX:32019L1024">Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024</a>. It entered into force on 16 July 2019. It replaces the <a href="https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098">Public Sector Information Directive</a>, also known as the <em>PSI Directive</em> which dated from 2003 and was subsequently amended in 2013.</p>
+</div>
+<div id="reproducible-research" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Reproducible Research</h2>
+<p><strong>Reproducible research</strong> is a scientific concept that can be applied to a wide range of professional designations. We are applying this concept to <a href="data-curators.html#opa">Evidence-based, Open Policy Analysis</a> and <a href="data-curators.html#business-professional-standards">Professional Standards in Business</a>.</p>
+<p>for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on the computational reproducibility we believe that the following principles should be followed.</p>
+<ul>
+<li><p><strong>Reviewability</strong> means that our application’s results are can be assessed and judged by our user’s experts, or experts they trust. We help reviewability with full transparency: we publish the software code that created the indicators, our methodology, and an automatically refreshing statistical description of the indicator each day when it receives new data or corrections from the original source.</p></li>
+<li><p><strong>Reproducibility</strong> means that we are providing data products and tools that allow the exact duplication of our results during assessments. This ensures that all logical steps can be verified. Reproducibility ensures that there is no lock-in to our applications. You can always chose a different data and software vendor, or compare our results with them.</p></li>
+<li><p><strong>Confirmability</strong> means that using our applications findings leads to the same professional results as other available software and information. Our data products use the open-source statistical programming language R. We provide details about our algorithms and methodology to confirm our results in SPSS or Stata or sometimes even in Excel.</p></li>
+<li><p><strong>Auditability</strong> means that our data and software is archived in a way that external auditors can later review, reproduce and confirm our findings. This is a <em>stricter form of data retention</em> that most organizations apply, because we do not only archive results step-by-step but all computational steps – as if your colleagues would not only save every step in Excel but also their keystrokes. While auditability is a requirement in accounting, we are extending this approach to all the quantitative work of a professional organization in an advisory or consulting capacity.</p></li>
+<li><p><strong>Reviewable findings</strong>: The descriptions of the methods can be independently assessed, and the results judged credible. In our view, this is a fundamental requirement for all professional applications. CEEMID’s music data is used to settle royalty disputes in judicial procedures, or in grant and policy design. We believe that the future European Music Observatory should aim at the same bar, making its data &amp; research products open for challenges in the publicity of science, courts, and professional peers.</p></li>
+<li><p><strong>Replicable findings</strong>: We are presenting our findings and provide tools so that our users or auditors or external authorities can duplicate our results.</p></li>
+<li><p><strong>Confirmable findings</strong>: The main conclusions of the research can be obtained independently without our software, because we describe in detail the algorithms and methodology in supplementary materials. We believe that other organizations, analysts, statisticians must come to the same findings with their own methods and software. This avoids lock-in and allows independent cross-examination.</p></li>
+<li><p><strong>Auditable findings</strong>: Sufficient records (including data and software) have been archived so that the research can be defended later if necessary or differences between independent confirmations resolved. The archive might be private, as with traditional laboratory notebooks. See <a href="#opencollaboration">Open collaboration</a> with academia, auditors, and industry.</p></li>
+</ul>
+<p>These computational requirements require a data workflow that relies on further principles.</p>
+<ul>
+<li><p><strong>Record retention</strong>: all aspects of reproducibility require a high level of standardized documentation. The standardization of documentation requires the use of standardized metadata, metadata structures, taxonomies, vocabularies.</p></li>
+<li><p><strong>Best available information / data universe</strong>: the quality of the findings, their confirmation and auditing success will improve with better data and facts used.</p></li>
+<li><p><strong>Data validations</strong>: The quality of the findings will greatly depend on the factual inputs. While the reproducible findings may have many problems, inputting erroneous data or faulty information will likely lead to wrong conclusions, and in all cases will make confirmation and auditing impossible. Especially when organizations use large and heterogeneous data sources, even small errors, such as erroneous currency translations or accidental misuse of decimals, units can cause results that will not pass confirmation or auditing.</p></li>
+</ul>
+<div id="opa" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Evidence-based, Open Policy Analysis</h3>
+<p>In the last two decades, governments and researchers have placed a growing emphasis on the value of evidence-based policy. However, while the evidence generated through research to inform policy has become more rigorous and transparent, policy analysis–the process of contextualizing evidence to inform specific policy decisions–remains opaque.</p>
+<p>We believe that a modern data observatory must improve how evidence is created and used in policy reports, and pass on the efficiency gains from increasing reproducibility and automation. Therefore, we pledge that the <a href="https://music.dataobservatory.eu">music.dataobservatory.eu</a> will comply with the <a href="https://www.bitss.org/opa/">Open Policy Analysis</a> standards developed by the <a href="https://www.bitss.org/">Berkeley Initiative for Transparency in the Social Sciences</a> &amp; <a href="https://cega.berkeley.edu/">Center for Effective Global Action</a>. These standards are applied by the World Bank.</p>
+</div>
+<div id="business-professional-standards" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Professional Standards in Business</h3>
+<p>Some of the requirements of reproducible research are usually required by professional standards. For example, various accounting, finance, legal or consulting professional standards call for appropriate documentation and record retention.</p>
+</div>
+</div>
+<div id="indicator-design" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Indicator Design</h2>
+<p>We are committing ourselves in the final deliverable to follow the indicator design principles set out by Eurostat:
+<span class="citation">(<a href="#ref-eurostat_harmonised_indicators_2014" role="doc-biblioref">Eurostat 2014</a>, <a href="#ref-eurostat_harmonised_indicators_2014" role="doc-biblioref">2014</a>; <a href="#ref-kotzeva_harmonised_indicators_2017" role="doc-biblioref">Kotzeva et al. 2017</a>)</span> to create high-quality, validated indicators that receive appropriate feedback from users, i.e. music businesses, their trade associations and policy-makers.</p>
+<p>Examples for indicators in our <a href="https://music.dataobservatory.eu/">Digital Music Observatory</a>:</p>
+<ul>
+<li><p>Indicators that were used with all known royalty valuation methods <span class="citation">(<a href="#ref-pwc_valuing_2008" role="doc-biblioref">PwC 2008</a>)</span>, for both author’s and neighbouring rights, and fullfil the <a href="https://www.ifrs.org/issued-standards/list-of-standards/ifrs-13-fair-value-measurement/">IFRS fair value</a> standards, incorporated in <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32012R1255&amp;from=EN%7D">EU law</a> and the recent EU jurisprudence <span class="citation">(<a href="#ref-cjeu_osa_2014" role="doc-biblioref">InfoCuria 2014</a>, <a href="#ref-cjeu_akka_2017" role="doc-biblioref">2017</a>)</span>.</p></li>
+<li><p>Indicators that can be used for calculating damages, or calculating the value of the value gap <span class="citation">(<a href="#ref-antal_pcr_croatia_2019" role="doc-biblioref">Daniel Antal 2019a</a>, <a href="#ref-antal_szabad_2019_en" role="doc-biblioref">2019c</a>)</span>.</p></li>
+<li><p>Indicators that quantify the development needs of musicians, and can set objective granting aims and grant evaluations <span class="citation">(<a href="#ref-antal_javaslatok_2015" role="doc-biblioref">Dániel Antal 2015</a>)</span>.</p></li>
+<li><p>Understanding how music is taxed, how music contributes to the local and national GDP, and how music creates jobs directly, indirectly and with induced effects <span class="citation">(<a href="#ref-antal_slovenskom_hudobnom_2019" role="doc-biblioref">Daniel Antal 2019b</a>)</span>.</p></li>
+<li><p>Providing detailed comparison of the differences of music audience among countries.</p></li>
+<li><p>Measuring exporting success on streaming platforms, and preparing better targeting tools.</p></li>
+</ul>
+<div id="authoring-indicator" class="section level3" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Creation and Quality Control of Indicators</h3>
+<p>An indicator values are created if we the data curator has some, preferably at least 20 observation values available in data table that confirms the tidy data principles, i.e. each variable is in exactly one column of the table, and each observation is in one row of the table.</p>
+<p>Each indicators should be described in a clear, English language text, describing the meaning of the variables, the source of the observations, and other important information about the processing, refreshing, extending of the dataset.</p>
+<p>We are safeguarding the quality of the indicators with various reproducible research methods. Depending on the data scientific level of the curator, we either take over the quality control mechanism, or cooperate with the curator. But the main inputs for quality control should be described by the data curator.</p>
+<ul>
+<li><p><strong>Unit testing</strong>: Unit tests are simple, numerical test that avoid logical errors in an indicator. Shall we exclude zero values? Negative values? Do percentages must add up to 100? Some of our indicators go through more than 60 unit tests. We ask your help to get us going, and we will take care of the usual suspects: wrong currency translations, wrong decimal places (thousand, million units), etc.</p></li>
+<li><p><strong>Missing data treatment</strong>: No real life dataset is complete, but many statistical and AI methods cannot handle missing values. Therefore, we make an effort to <em>impute</em> with an estimated value the missing values. Imputation is sometimes self-understanding, but sometimes it is a very tricky business, particularly when the data has several dimensions (particularly time or geographical dimension.) We want to agree with the curator why some data may be missing, and how best to handle it. For simple, two dimensional datasets, by default, we use linear approximation, forecasting and backcasting of the values, and in small datasets the last observation carry forward or the next observation carry backwards methods. May compromise the data? Let us know.</p></li>
+<li><p><strong>Testing against peer-reviewed results</strong>: Often we know that after making various computations with a data, we must achieve an already known value. For example, the various components of the GDP in economics must add up with a pre-defined precision. Certain inputs must match a scientifically valid result. If you know of such tests, let us know, and let’s include them in the unit-testing processes.</p></li>
+<li><p><strong>Peer-reviewed data manipulation code</strong>: Whenever we re-organize, impute, or otherwise change the original data, we do it only with algorithms that went through scientific peer-review as algorithms. If there is a bug or something to improve in the way we handle the data, our code transparency makes it likely to come out.</p></li>
+<li><p><strong>Peer-reviewed data application</strong>: We encourage our curators, particularly academics, to send the indicators created with the help of oour research automation to various forms of scientific peer review, to make sure that the data is valid, useful… and to bring credits to the curators.</p></li>
+<li><p><strong>Authentic copies</strong>: We are placing each new version of the indicators values into <a href="">Zenodo</a>, a data repository that keeps authentic copies, versions, and assignes them digital object identifiers (DOIs). This makes sure that whenever our curators data is re-used, and incorrectly manipulated by a business, scientific or policy user, we can detect such manipulation.</p></li>
+</ul>
+</div>
+<div id="deposit-indicator" class="section level3" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Authentic Depositions of Indicators</h3>
+<p>We designed a workflow that helps our curators to put their indicator tables to <a href="">Zenodo</a>. In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory’s API.</p>
+<p>With low-frequency data, such as annual data tables, we place all copies to Zenodo first, and then to the data API. In these cases, each new version of the indicator values (containing a new year, a new estimation, or a new country, a new observation unit) will have a new DOI version.</p>
+<p>With high-frequency data, such as data tables that are refreshing daily or several times a day, we do not think that authentic versioning is useful. In such cases, we create an authentic version at a pre-agreed time frequency, for example, monthly.</p>
+</div>
+</div>
+<div id="your-first-data-contribution" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Your First Data Contribution</h2>
+<p>Your first contribution can be made without writing a single program code – but if you are experienced in reproducible science, than you can also submit a code that creates your data.</p>
+<ol style="list-style-type: decimal">
+<li><p>Make sure that you read the <a href="https://www.contributor-covenant.org/">Contributors Covenant</a>. You must make this <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">pledge</a> to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation. Participating in our data observatories requires everybody to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. It’s better this way for you and for us!</p></li>
+<li><p>Send us a plain language document about the indicator. What should the indicator be used for, how it should be measured, with what frequency, and what could be the open data source to acquire the observations. Experienced data scientists can send us a Jupiter Notebook or an Rmarkdown file with code, but this submission can be a simple plain language document without numbers.</p></li>
+<li><p>Make sure that you have and <a href="https://orcid.org/">ORCiD ID</a>. This is a standard identification for scientific publications. We need your numeric ORCiD ID.</p></li>
+<li><p>Make sure that you have a <a href="https://zenodo.org/">Zenodo account</a> which is connected to your <a href="https://orcid.org/">ORCiD ID</a>. This enables you to publish data under your name. If you curate data for our observatories, you will be the indicator’s first author, and depending on what processes help you, the author of the (scientific) code that helps you calculate the values will be your co-author.</p></li>
+<li><p>Without programming experience your first indicator should be uploaded manually to Zenodo, and we will help automating the new versions. This will mean, for example, the upload of a simple, csv version of an Excel table, and filling in some important information about the contents of the table.</p></li>
+<li><p>With some level of R or Python programming experience, we ask you to create a Github repo where you store your indicator. We will help you with tutorials, program codes, or applications to automate your data publication on Zenodo. In this case, make sure that you also have a <a href="https://sandbox.zenodo.org/">Sandbox Zenodo</a> account. There is no undo button on Zenodo. If you are tinkering with automatically publishing data, practice first in the sandbox, which is a practicing clone of Zenodo with undo button. (To avoid accidents, you need to have a completely different account with different credential on the real and the sandbox practice repository.)</p></li>
+<li><p>Experienced programmers are welcome to participate in our developer team, and become contributors, or eventually co-authors of the (scientific) software codes that we make to continuously improve our data observatories. All our data code is open source. At this level, you are expected to be able to raise and/or pick up and solve an issue in our observatory’s Github repository, or its connecting statistical repositories.</p></li>
+</ol>
+<p><em>Our data is mainly processed in R language software, and sometimes in Python language software. If you are experienced with R bookdown, R Shiny or working in the hugo language, then you are welcome to join our developer team in non-curatorial roles.</em></p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-antal_pcr_croatia_2019" class="csl-entry">
+Antal, Daniel. 2019a. <span>“Private <span>Copying</span> <span class="nocase">in</span> <span>Croatia</span>.”</span> <a href="https://www.zamp.hr/uploads/documents/Studija_privatno_kopiranje_u_Hrvatskoj_DA_CEEMID.pdf">https://www.zamp.hr/uploads/documents/Studija_privatno_kopiranje_u_Hrvatskoj_DA_CEEMID.pdf</a>.
+</div>
+<div id="ref-antal_slovenskom_hudobnom_2019" class="csl-entry">
+———. 2019b. <span>“<span>Správa</span> <span class="nocase">o slovenskom hudobnom priemysle</span>.”</span> <a href="https://doi.org/10.17605/OSF.IO/V3BE9">https://doi.org/10.17605/OSF.IO/V3BE9</a>.
+</div>
+<div id="ref-antal_szabad_2019_en" class="csl-entry">
+———. 2019c. <span>“The Competition of Unlicensed, Licensed and Illegal Uses on the Markets of Music and Audiovisual Works [<span class="nocase">A szabad felhasználások, a jogosított tartalmak és az illegális felhasználások versenye a zenék és audiovizuális alkotások hazai piacán</span>].”</span> <span>Artisjus - not public</span>.
+</div>
+<div id="ref-antal_javaslatok_2015" class="csl-entry">
+Antal, Dániel. 2015. <span>“Javaslatok a <span>Cseh</span> <span>Tamás</span> <span>Program</span> <span class="nocase">pályázatainak fejlesztésére.</span> <span>A</span> <span class="nocase">magyar könnyűzene tartós jogdíjnövelésének lehetőségei</span>. [<span>Proposals</span> for the Development of the <span>Cseh</span> <span>Tamas</span> <span>Program</span> Grants. <span>The</span> Possibilities of Long-Term Royalty Growth in <span>Hungarian</span> Popular Music].”</span> manuscript.
+</div>
+<div id="ref-eurostat_harmonised_indicators_2014" class="csl-entry">
+Eurostat. 2014. <em>Towards a Harmonised Methodology for Statistical Indicators — Part 1: Indicator Typologies and Terminologies</em>. 2014th ed. Vol. 1. Towards a Harmonised Methodology for Statistical Indicators 1. Luxembourg: Publications Office of the European Union. <a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-14-011">https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-14-011</a>.
+</div>
+<div id="ref-cjeu_osa_2014" class="csl-entry">
+InfoCuria. 2014. <span>“<span>OSA</span> – <span class="nocase">Ochranný svaz autorský pro práva k dílům hudebním o.s.</span> <span class="nocase">v</span> <span>Léčebné</span> <span class="nocase">lázně</span> <span>Mariánské</span> <span>Lázně</span> <span class="nocase">a.s.</span> <span>Case</span> <span>C</span>‑351/12.”</span> <a href="http://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=150055&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=1996526">http://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=150055&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=1996526</a>.
+</div>
+<div id="ref-cjeu_akka_2017" class="csl-entry">
+———. 2017. <span>“<span>Autortiesību</span> <span class="nocase">un komunicēšanās konsultāciju aģentūra</span> <span>/</span><span>Latvijas</span> <span>Autoru</span> <span class="nocase">apvienība v</span> <span class="nocase">Konkurences padome</span>.”</span> <a href="http://curia.europa.eu/juris/liste.jsf?language=en&amp;num=C-177/16">http://curia.europa.eu/juris/liste.jsf?language=en&amp;num=C-177/16</a>.
+</div>
+<div id="ref-kotzeva_harmonised_indicators_2017" class="csl-entry">
+Kotzeva, Mariana, Anton Steurer, Nicola Massarelli, and Mariana Popova, eds. 2017. <em>Towards a Harmonised Methodology for Statistical Indicators — Part 2: Communicating Through Indicators</em>. 2017th ed. Vol. 2. Towards a Harmonised Methodology for Statistical Indicators 1. Luxembourg: Publications Office of the European Union. <a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-17-001">https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-17-001</a>.
+</div>
+<div id="ref-pwc_valuing_2008" class="csl-entry">
+PwC. 2008. <span>“Valuing the Use of Recorded Music.”</span> IFPI PricewaterhouseCoopers. <a href="http://www.ifpi.org/content/library/valuing_the_use_of_recorded_music.pdf">http://www.ifpi.org/content/library/valuing_the_use_of_recorded_music.pdf</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="challenges.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="green-deal.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["observatory_data_curators_handbook.pdf", "PDF"], ["observatory_data_curators_handbook.epub", "EPUB"], ["observatory_data_curators_handbook.docx", "Word Doc"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

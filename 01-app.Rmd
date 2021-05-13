@@ -1,0 +1,83 @@
+# Application for the Datathlon Prizes: Automated Data Observatories {#intro}
+
+This year's Datathlon has three challenges that we can contest with an application.  We want to answer at least 2 of the challenges with the same technology, knowledge management, but partly different data used.
+
+## Solution as Service offered in the Challenges
+
+- We create automated data observatories that re-process governmental and scientific open data into high-quality data that can replace better processed, but lower content value proprietary data. 
+
+- We put the open data into a tidy format that allows it to be joined, and not only be used in isolation.
+
+- We fix common, simple problems, such as currency translations, unit conversions, interpolations of missing data, bad geographical coding that, without software support, makes open data not competitive.
+
+- We automate part of the documentation process, because of one of the competitive disadvantages of open data that often it is lacking any documentation.
+
+- Our automated data observatories offer re-processed, tidy and documented open data for the 2 or 3 key challenges of the EU.
+
+## Service Flow
+
+```{r open-source-slide, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "open_source_slide.png"
+))
+```
+
+### New, high quality data
+
+We can rely on existing packages of our team, and probably the entire rOpenGov collective, where Daniel had been active for many years.  Via Kasia, we could bring in the environmental open data community. 
+
+```{r new-high-quality-data, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "gold_panning_slide.png"
+))
+```
+
+### Authoritative data
+
+So, we must somehow connect to a DOI registrar, and Harvard’s Dataverse or Zenodo are the candidates. 
+
+The Dataverse is much better served, the API is better documented, and technically we could even set up our own instance (new dataverses can be installed.)  The problem is that I have not found an EU-endorsed instance, although Open Data Belgium has an instance.  The best instance is of course the original Harvard Dataverse, but taking out European open data to an American private university would not be a winning idea. Currently Dataverse has no support on CRAN - the R package was just kicked out of CRAN, and it is buggy, but it can be fixed. 
+
+Zenodo is a semi-endorsed EU solution, originating from CERN, and in the last EU budget period all EU-funded research was supposed to deposit data there. The API is far less documented. Manual deposition is working fine, and we can very easily retrieve our own data in various versions.  It is also free data storage.  But communicating with the API is a challenge. In R, Zen4R is supposed to be on CRAN, but extremely ill-documented, and uses a special R6 class which is beyond the level and practicality of 99% R users. It seems that it is very well supported in Python, though.
+
+### Data API
+
+We have settled for Datasette, which is powering the John Hopkins Covid database, for example. It is a lightweight, Python-based application that turns a Sqlite database into a powerful API.  Botond has set up our first instances and we are very happy with the results.
+
+
+```{r data-api-slide, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "data-api-artist-gender-table.png"
+))
+```
+
+### Long form documentation
+
+Our long-form documentation is based in R rmarkdown, knitr, and bookdown.  It is a very mature workflow, it produces a long-form website, and PDF, ePUB or Word versions. 
+
+We take the data from our Data API / Zenodo, describe it and visualize it as it changes. 
+
+### Front-end Website
+
+We create a front-end website to present our curators, recruit new ones, blog about great new use cases, in a hugo website. 
+
+Our website needs a chief editor, and hugo website operations manager. 
+
+The current websites are powered by a hugo template, formerly known as academic, currently as wowchemy academic.The idea was that an offspring of bookdown, i.e. blogdown can integrate this hugo technology into an R workflow.  This is a semi-success, and while academic is a super-popular template, it is getting further and further away from blogdown.  The original advantage that it can be managed in the same workflow as the indicator generation, package documentation, the long-form documentation is a bit gone. 
+
+```{r hugo, fig.out="50%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "green_deal_hugo.png"
+))
+```
+
+## Technology
+
+Peer-reviewed R packages on CRAN, and potentially peer-reviewed Python libraries which attest that our new datasets are sound from a (1) processing point of view.
+Help with R/ Python code, tutorials our curators to create well-documented, authored open datasets, and deposit them on Zenodo (preferred) or Harvard Dataverse.  
+Each observatory will maintain a “Zenodo community” where we also take in any other related data via our curators, and we give authenticated copies of our data with DOIs.
+We make our data available in a neat Datasette API.  The Datasette API should harvest the data from several points (with low-frequency data, from Zenodo, as it will be in synch with the DOI versions; with high frequency data, the other way around: every month we should make a DOI versioned authentic copy of the high-frequency data from a Datasette dump)
+We create via Rmarkdown / bookdown an automated, long-form documentation to all our datasets, including, when applicable, maps or visualizations.
+This workflow can incorporate seaborne visualizations from the Datasette, too, but the visualization effort should be comfortable for both R and Python-based curators.
+We create a hugo website as a frontend to each observatory to present our curators, recruit new ones, blog about great new use cases, in a hugo website. These are our current ones, but it would be nice to have a hugo manager who takes it over from Daniel https://greendeal.netlify.app/, https://music.dataobservatory.eu/  [we’ll completely overhaul this]
+

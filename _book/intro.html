@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Application for the Datathlon Prizes: Automated Data Observatories | Automated Observatory Data Curator’s Handbook</title>
+  <meta name="description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Application for the Datathlon Prizes: Automated Data Observatories | Automated Observatory Data Curator’s Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Application for the Datathlon Prizes: Automated Data Observatories | Automated Observatory Data Curator’s Handbook" />
+  
+  <meta name="twitter:description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  
+
+<meta name="author" content="Daniel Antal, CFA" />
+
+
+<meta name="date" content="2021-05-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="challenges.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Automated Observatory Data Curator's Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#mission-statement"><i class="fa fa-check"></i>Mission statement</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#problem-statement"><i class="fa fa-check"></i>Problem Statement</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#our-solution"><i class="fa fa-check"></i>Our solution</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Application for the Datathlon Prizes: Automated Data Observatories</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#solution-as-service-offered-in-the-challenges"><i class="fa fa-check"></i><b>1.1</b> Solution as Service offered in the Challenges</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#service-flow"><i class="fa fa-check"></i><b>1.2</b> Service Flow</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#new-high-quality-data"><i class="fa fa-check"></i><b>1.2.1</b> New, high quality data</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#authoritative-data"><i class="fa fa-check"></i><b>1.2.2</b> Authoritative data</a></li>
+<li class="chapter" data-level="1.2.3" data-path="intro.html"><a href="intro.html#data-api"><i class="fa fa-check"></i><b>1.2.3</b> Data API</a></li>
+<li class="chapter" data-level="1.2.4" data-path="intro.html"><a href="intro.html#long-form-documentation"><i class="fa fa-check"></i><b>1.2.4</b> Long form documentation</a></li>
+<li class="chapter" data-level="1.2.5" data-path="intro.html"><a href="intro.html#front-end-website"><i class="fa fa-check"></i><b>1.2.5</b> Front-end Website</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#technology"><i class="fa fa-check"></i><b>1.3</b> Technology</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="challenges.html"><a href="challenges.html"><i class="fa fa-check"></i><b>2</b> Challenges</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="challenges.html"><a href="challenges.html#challenge-green-deal"><i class="fa fa-check"></i><b>2.1</b> Challenge 1: European Green Deal</a></li>
+<li class="chapter" data-level="2.2" data-path="challenges.html"><a href="challenges.html#challenge-economy"><i class="fa fa-check"></i><b>2.2</b> Challenge 2: An economy that works for people</a></li>
+<li class="chapter" data-level="2.3" data-path="challenges.html"><a href="challenges.html#challenge-digital-age"><i class="fa fa-check"></i><b>2.3</b> Challenge 3: A Europe fit for the digital age - Empowering people with a new generation of technologies</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-curators.html"><a href="data-curators.html"><i class="fa fa-check"></i><b>3</b> Data Curators</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-curators.html"><a href="data-curators.html#open-data"><i class="fa fa-check"></i><b>3.1</b> Open Data</a></li>
+<li class="chapter" data-level="3.2" data-path="data-curators.html"><a href="data-curators.html#reproducible-research"><i class="fa fa-check"></i><b>3.2</b> Reproducible Research</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-curators.html"><a href="data-curators.html#opa"><i class="fa fa-check"></i><b>3.2.1</b> Evidence-based, Open Policy Analysis</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-curators.html"><a href="data-curators.html#business-professional-standards"><i class="fa fa-check"></i><b>3.2.2</b> Professional Standards in Business</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="data-curators.html"><a href="data-curators.html#indicator-design"><i class="fa fa-check"></i><b>3.3</b> Indicator Design</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="data-curators.html"><a href="data-curators.html#authoring-indicator"><i class="fa fa-check"></i><b>3.3.1</b> Creation and Quality Control of Indicators</a></li>
+<li class="chapter" data-level="3.3.2" data-path="data-curators.html"><a href="data-curators.html#deposit-indicator"><i class="fa fa-check"></i><b>3.3.2</b> Authentic Depositions of Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="data-curators.html"><a href="data-curators.html#your-first-data-contribution"><i class="fa fa-check"></i><b>3.4</b> Your First Data Contribution</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="green-deal.html"><a href="green-deal.html"><i class="fa fa-check"></i><b>4</b> Green Deal Indicators</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="green-deal.html"><a href="green-deal.html#social-attituted-to-climate-change"><i class="fa fa-check"></i><b>4.1</b> Social Attituted to Climate Change</a></li>
+<li class="chapter" data-level="4.2" data-path="green-deal.html"><a href="green-deal.html#environmental-impact-indicator-for-economic-activities"><i class="fa fa-check"></i><b>4.2</b> Environmental Impact Indicator for Economic Activities</a></li>
+<li class="chapter" data-level="4.3" data-path="green-deal.html"><a href="green-deal.html#sensory-data-measuring-climate-change-physical-affects"><i class="fa fa-check"></i><b>4.3</b> Sensory Data Measuring Climate Change Physical Affects</a></li>
+<li class="chapter" data-level="4.4" data-path="green-deal.html"><a href="green-deal.html#ecological-data"><i class="fa fa-check"></i><b>4.4</b> Ecological Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="music-data.html"><a href="music-data.html"><i class="fa fa-check"></i><b>5</b> Music Data Indicators</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="music-data.html"><a href="music-data.html#music-economy"><i class="fa fa-check"></i><b>5.1</b> Music Economy</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="music-data.html"><a href="music-data.html#demand-drivers"><i class="fa fa-check"></i><b>5.1.1</b> Demand Drivers</a></li>
+<li class="chapter" data-level="5.1.2" data-path="music-data.html"><a href="music-data.html#supply-indicators"><i class="fa fa-check"></i><b>5.1.2</b> Supply Indicators</a></li>
+<li class="chapter" data-level="5.1.3" data-path="music-data.html"><a href="music-data.html#price-indicators"><i class="fa fa-check"></i><b>5.1.3</b> Price Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="music-data.html"><a href="music-data.html#music-diversity"><i class="fa fa-check"></i><b>5.2</b> Music Diversity</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="music-data.html"><a href="music-data.html#gender-language-ethnic-and-other-inclusion-attributes"><i class="fa fa-check"></i><b>5.2.1</b> Gender, Language, Ethnic and Other Inclusion Attributes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="music-data.html"><a href="music-data.html#music-circulation"><i class="fa fa-check"></i><b>5.3</b> Music Circulation</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="music-data.html"><a href="music-data.html#market-shares"><i class="fa fa-check"></i><b>5.3.1</b> Market shares</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="music-data.html"><a href="music-data.html#music-society"><i class="fa fa-check"></i><b>5.4</b> Music &amp; Society</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="music-data.html"><a href="music-data.html#social-attitutes-to-music"><i class="fa fa-check"></i><b>5.4.1</b> Social Attitutes to Music</a></li>
+<li class="chapter" data-level="5.4.2" data-path="music-data.html"><a href="music-data.html#participation-in-music"><i class="fa fa-check"></i><b>5.4.2</b> Participation in Music</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="partnerships.html"><a href="partnerships.html"><i class="fa fa-check"></i><b>6</b> Partnerships</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="partnerships.html"><a href="partnerships.html#policy-partners"><i class="fa fa-check"></i><b>6.1</b> Policy Partners</a></li>
+<li class="chapter" data-level="6.2" data-path="partnerships.html"><a href="partnerships.html#academic-partners"><i class="fa fa-check"></i><b>6.2</b> Academic Partners</a></li>
+<li class="chapter" data-level="6.3" data-path="partnerships.html"><a href="partnerships.html#business-partners"><i class="fa fa-check"></i><b>6.3</b> Business Partners</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="http://datathon.dataobservatory.eu/" target="blank">EU Datathon 2021</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automated Observatory Data Curator’s Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Application for the Datathlon Prizes: Automated Data Observatories</h1>
+<p>This year’s Datathlon has three challenges that we can contest with an application. We want to answer at least 2 of the challenges with the same technology, knowledge management, but partly different data used.</p>
+<div id="solution-as-service-offered-in-the-challenges" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Solution as Service offered in the Challenges</h2>
+<ul>
+<li><p>We create automated data observatories that re-process governmental and scientific open data into high-quality data that can replace better processed, but lower content value proprietary data.</p></li>
+<li><p>We put the open data into a tidy format that allows it to be joined, and not only be used in isolation.</p></li>
+<li><p>We fix common, simple problems, such as currency translations, unit conversions, interpolations of missing data, bad geographical coding that, without software support, makes open data not competitive.</p></li>
+<li><p>We automate part of the documentation process, because of one of the competitive disadvantages of open data that often it is lacking any documentation.</p></li>
+<li><p>Our automated data observatories offer re-processed, tidy and documented open data for the 2 or 3 key challenges of the EU.</p></li>
+</ul>
+</div>
+<div id="service-flow" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Service Flow</h2>
+<p><img src="plots/open_source_slide.PNG" width="80%" style="display: block; margin: auto;" /></p>
+<div id="new-high-quality-data" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> New, high quality data</h3>
+<p>We can rely on existing packages of our team, and probably the entire rOpenGov collective, where Daniel had been active for many years. Via Kasia, we could bring in the environmental open data community.</p>
+<p><img src="plots/gold_panning_slide.PNG" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="authoritative-data" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Authoritative data</h3>
+<p>So, we must somehow connect to a DOI registrar, and Harvard’s Dataverse or Zenodo are the candidates.</p>
+<p>The Dataverse is much better served, the API is better documented, and technically we could even set up our own instance (new dataverses can be installed.) The problem is that I have not found an EU-endorsed instance, although Open Data Belgium has an instance. The best instance is of course the original Harvard Dataverse, but taking out European open data to an American private university would not be a winning idea. Currently Dataverse has no support on CRAN - the R package was just kicked out of CRAN, and it is buggy, but it can be fixed.</p>
+<p>Zenodo is a semi-endorsed EU solution, originating from CERN, and in the last EU budget period all EU-funded research was supposed to deposit data there. The API is far less documented. Manual deposition is working fine, and we can very easily retrieve our own data in various versions. It is also free data storage. But communicating with the API is a challenge. In R, Zen4R is supposed to be on CRAN, but extremely ill-documented, and uses a special R6 class which is beyond the level and practicality of 99% R users. It seems that it is very well supported in Python, though.</p>
+</div>
+<div id="data-api" class="section level3" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Data API</h3>
+<p>We have settled for Datasette, which is powering the John Hopkins Covid database, for example. It is a lightweight, Python-based application that turns a Sqlite database into a powerful API. Botond has set up our first instances and we are very happy with the results.</p>
+<p><img src="plots/data-api-artist-gender-table.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="long-form-documentation" class="section level3" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> Long form documentation</h3>
+<p>Our long-form documentation is based in R rmarkdown, knitr, and bookdown. It is a very mature workflow, it produces a long-form website, and PDF, ePUB or Word versions.</p>
+<p>We take the data from our Data API / Zenodo, describe it and visualize it as it changes.</p>
+</div>
+<div id="front-end-website" class="section level3" number="1.2.5">
+<h3><span class="header-section-number">1.2.5</span> Front-end Website</h3>
+<p>We create a front-end website to present our curators, recruit new ones, blog about great new use cases, in a hugo website.</p>
+<p>Our website needs a chief editor, and hugo website operations manager.</p>
+<p>The current websites are powered by a hugo template, formerly known as academic, currently as wowchemy academic.The idea was that an offspring of bookdown, i.e. blogdown can integrate this hugo technology into an R workflow. This is a semi-success, and while academic is a super-popular template, it is getting further and further away from blogdown. The original advantage that it can be managed in the same workflow as the indicator generation, package documentation, the long-form documentation is a bit gone.</p>
+<p><img src="plots/green_deal_hugo.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="technology" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Technology</h2>
+<p>Peer-reviewed R packages on CRAN, and potentially peer-reviewed Python libraries which attest that our new datasets are sound from a (1) processing point of view.
+Help with R/ Python code, tutorials our curators to create well-documented, authored open datasets, and deposit them on Zenodo (preferred) or Harvard Dataverse.<br />
+Each observatory will maintain a “Zenodo community” where we also take in any other related data via our curators, and we give authenticated copies of our data with DOIs.
+We make our data available in a neat Datasette API. The Datasette API should harvest the data from several points (with low-frequency data, from Zenodo, as it will be in synch with the DOI versions; with high frequency data, the other way around: every month we should make a DOI versioned authentic copy of the high-frequency data from a Datasette dump)
+We create via Rmarkdown / bookdown an automated, long-form documentation to all our datasets, including, when applicable, maps or visualizations.
+This workflow can incorporate seaborne visualizations from the Datasette, too, but the visualization effort should be comfortable for both R and Python-based curators.
+We create a hugo website as a frontend to each observatory to present our curators, recruit new ones, blog about great new use cases, in a hugo website. These are our current ones, but it would be nice to have a hugo manager who takes it over from Daniel <a href="https://greendeal.netlify.app/" class="uri">https://greendeal.netlify.app/</a>, <a href="https://music.dataobservatory.eu/" class="uri">https://music.dataobservatory.eu/</a> [we’ll completely overhaul this]</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="challenges.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["observatory_data_curators_handbook.pdf", "PDF"], ["observatory_data_curators_handbook.epub", "EPUB"], ["observatory_data_curators_handbook.docx", "Word Doc"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

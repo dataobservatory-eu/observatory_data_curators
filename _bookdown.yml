@@ -1,0 +1,5 @@
+book_filename: "observatory_data_curators_handbook"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: ""

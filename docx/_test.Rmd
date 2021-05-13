@@ -1,0 +1,64 @@
+---
+title: "test"
+author: "Daniel Antal, CFA"
+date: "5/3/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+revenue~1~ = x~1~ \* ( a~GB~x p~GB,1~ + a~DE~ x p~DE,1~)
+
+revenue~2~ = x~2~ \* ( a~GB~x p~GB,2~ + a~DE~ x p~DE,2~)
+
+Because for simplicity we use constant market shares, i.e. when the British market share is 50% in the first period, it remains 50% in the second and all the way to the last period, we can simply write the following matrix equation:
+
+revenue = X \* A *x* p
+Where \* denotes the element-wise multiplication and *x* the matrix multiplication
+
+In this case, we first calculate the modification factors from exchange rate change.  Because the streaming index is denominated in GBP at actual exchange rates, in any further scenarios where the GBP appreciates against the euro by 1.1, we can simply modify the euro denominated prices of the Netherlands and Germany by multiplying with 1.1.
+
+p^mod^~DE,1~ =  p~DE,1~ \*e~EUR,1~
+revenuep^mod^ = X \* A x p^mod^
+
+In this case, we create a modification factor from the distribtution model.  
+
+x^mod^~1~ = x~1~\*d~1~
+
+revenuep^dist^ = X *x* D x \* A *x* p
+
+{\displaystyle (\exp(\sigma ^{2})+2){\sqrt {\exp(\sigma ^{2})-1}}}
+
+```{r cars}
+summary(cars)
+```
+
+
+There are no clear-cut answers for these questions, because we would need to observe hundreds of million copyright-protected assets in about two hundred different jurisdictions, an in each case, track the affect of about 6 economic variables. Only statistical estimates can be used, but they are very challenging to make. In the last 7 years, CEEMID, partly teaming up with the British independent music distributor, Consolidated Independent (of the state51 music group) tried to answer these questions. Our answers are only partial, and often protected by non-disclosure arguments in other jurisdictions.  However, the results that we are reporting here from partly other countries, would be relatively easy to replicate in the United Kingdom.
+
+The equitable remuneration, while not a strict formula, is based on decades of practice and jurisprudence, and it can be breached in two ways: the remuneration is too low, or the remuneration is not paid to the correct rightsholders. My research investigated both possible problems in other countries, but for this research document I was not provided with British data.  However, the existing, publicly available data, partly from the CEEMID-CI dataset, and the foreign experience suggests that both the level and the distribution of earnings may be problematic, though probably not at the level as some people suggest in the current heated debate. Compared to historic mechanical licensing revenues, music streaming revenues appear to be very low. Compared to public performance revenues, media streaming revenues, particularly the ones paid by YouTube appear to be also low. The value transfer from music streaming services, mechanical and public performance license revenues to media platforms appears to be a real problem. 
+
+## Why it is so difficult to answer the research questions? {-}
+
+The British music industry is one of the most internationalized, globally competitive national music industries in the world; British artists receive remuneration from domestic markets, and common-law (copyright) markets; and foreign, civil law markets, where instead of copyrights, their revenues are connected to similar author's and neighboring rights. We analyze the earnings of authors (songwriters, composers, lyricists, publishers), producers and performers; keeping in mind that in many jurisdiction and uses often producers and performers are both represented by music labels, and producer and performer revenues are empirically not separable. Author's (copyright) and neighboring right (producer and performer) revenues can always be separated, and they significantly differ.  Understanding British rightsholder revenues is only possible in an international contest.
+
+Spotify, Deezer and Apple Music is licensed in 90-180 copyright jurisdictions, and YouTube is paying earnings in often disputed legal form from almost every copyright jurisdictions (territories) in the world. These earnings reflect the subscription fees in these territories, the number of subscribers in the territories, the number of streams in the territories, advertising revenues from the territories, and the exchange rate of functional currency used for royalty payments on the end of royalty periods, which can be monthly or longer periods. This means that the monthly earning of a successful British rightsholder (whose work or recording is played in many countries) is a function of several hundred economic variables. Music is a globalized business, and international copyright law harmonizes the regulation of these payments to a great extent, but there are quiet important differences present in various copyright jurisdictions. For example, the rights of a British performer and a British producer are slightly differently defined in Spain, Hungary, Germany than in the United Kingdom -- any artist whose music is streamed on these territories may be subject to slightly different rules.
+
+Probably the most important challenge of any empirical analysis of rightsholder earnings is the extremely large number of potentially valuable rights, and the very high percentage of practically invaluable long-tail which is never used, and therefore never earning money.  In contrast with the patent system, copyrights and neighboring rights do not have a centralized, global registry; in many jurisdictions, the registration of copyright-like author's right is not even mandatory. Furthermore, compared to patents, copyrights and neighboring rights have an extremely long protected period, in many cases and jurisdictions; this period is 70 years after the death of rightsholder; therefore, with current life expectancies, the effective protected period is between 100-200 years. Whatever use and time-frame we chose (annual broadcasting exploitation of monthly music streaming) for empirical analysis, the typical (median) use will be zero. Because the entire 'population' of music works and recordings is unknown, and the typical earnings value is zero, we cannot calculate average, median earnings or the standard deviation of earnings.  The empirical assessment of earnings requires advanced statistical apparatus and very large datasets.
+
+The global music industry has two well-known global reports: the Global Music Report of IFPI, which covers total revenues in almost all territories for producers and partly performers; and the Global report of CISAC, that contains total revenues from collectively managed author's revenues.  We do not have any comprehensive report on global publisher revenues that are not collectively managed, and global performer revenues. The problem with these report is that they total revenues of an unknown number of uses of unknown number of music works or recordings by an unknown number of users; often using not detailed or even inconsistent currency translations. As we will show, these total numbers are not even indicative about the increase or decrease of typical rightsholder revenues. The IFPI Global Music Report, for example, shows growth in dollar terms, which in some cases may be a decline in British pounds or euros.
+
+This problem is not specific for the music industry. Copyrights and neighboring rights are claims for future cash flows, just like stocks and bonds. Many of the aspects mentioned above are present in the empirical analysis of stock and bond securities markets, where the global universe of investible securities is vast and changing daily, particularly in the bond market.  Bonds often have only a 30 or 90 days life-span, they "expire" and new bonds are re-issued.  Most copyrights and neighboring rights only earn revenues in the first 1-2 years of there lifespan, but remain in the copyright-protected universe potentially for 100-200 years. In many aspects, describing the streaming market is similar to describing the fixed income market (of bonds.)  Each music work and recording has a varying number of streams at a monthly varying price -- this makes them similar to dividend-paying stocks. We can never be sure how much will be the next dividend of a common stock, but we know that in the short-term, past performance is predictive to the level of them, just like with streams.  A song that was not played anywhere in the world in January is unlikely to have significant uses in February.  A global hit in March will be listened to people all over the world in April, maybe even more, or maybe a bit less. 
+
+The reports of IPFI and CISAC, in a financial market analogy, are describing the annual growth of market capitalization, but not the individual or even typical performance of assets.  Market capitalization can grow us the number of investible stocks, bonds, or streamable songs grow even if the representative sales volumes and prices fall. In this research document we show our alternative approach that resembles more the approach of the Standard&Poor indexes, the Dow Jones Industrial Average,  or the Bloomberg Barclays Global Aggregate Bond Index, to name a few household names. Indexing is complicated -- the formula and know-how to create these well-known indexes is protected intellectual property, and we only used some of their methods to create our proprietary streaming indexes.
+
+## How we try to solve this problem? {-}
+
+To sum up the challenge: when we want to analyze the level, fairness, and distribution of earnings, an unknown number of copyright protected assets whose monthly earnings depend on hundreds of economic variables.  Because each recording carries composer (lyricist), producer and performer rights, in the large streaming providers we are talking about a daily changing number of assets on the magnitude of 200-400 million assets.
+
+With the independent music distributor company Consolidated Independent (part of the state51 group) we created experimental streaming indexes to describe the streaming markets of the United Kingdom and 19 other countries, using mixed techniques that are used to describe stock and bond markets. We analyzed several hundred million royalty statements from actual payouts on several hundred thousand tracks over a period of about 50 months from Spotify, Deezer, Apple Music, and to a lesser degree from YouTube. 
+
+We did not receive data for this assignment, and we will partly answer these questions from already public data, and partly from valuations that are protected by non-disclousre agreements.  Instead of trying to grant permission to disclose these sources, it would be desirable to replicate the results of these valuations with data from the British stakeholders.
