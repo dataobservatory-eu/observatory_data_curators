@@ -89,11 +89,23 @@ We are safeguarding the quality of the indicators with various reproducible rese
 
 - **Peer-reviewed data application**: We encourage our curators, particularly academics, to send the indicators created with the help of oour research automation to various forms of scientific peer review, to make sure that the data is valid, useful... and to bring credits to the curators. 
 
-- **Authentic copies**: We are placing each new version of the indicators values into [Zenodo](), a data repository that keeps authentic copies, versions, and assignes them digital object identifiers (DOIs).  This makes sure that whenever our curators data is re-used, and incorrectly manipulated by a business, scientific or policy user, we can detect such manipulation.
+- **Authentic copies**: We are placing each new version of the indicators values into [Zenodo](https://zenodo.org/), a data repository that keeps authentic copies, versions, and assignes them digital object identifiers (DOIs).  This makes sure that whenever our curators data is re-used, and incorrectly manipulated by a business, scientific or policy user, we can detect such manipulation.  
+
+```{r zenodo-example, fig.cap="Zenodo Deposition Example"}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "zenodo_deposition_example.png"
+))
+```
+
+
+
+You can see this dataset [here](https://zenodo.org/record/3759811#.YJ6R3qgzbIU), which was used in [this](https://dataandlyrics.com/publication/scholarly_pirate_libraries_2020/) high-profile scientific publication.
+
+
 
 ### Authentic Depositions of Indicators {#deposit-indicator}
 
-We designed a workflow that helps our curators to put their indicator tables to [Zenodo](). In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory's API.
+We designed a workflow that helps our curators to put their indicator tables to [Zenodo](https://zenodo.org/). In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory's API.
 
 With low-frequency data, such as annual data tables, we place all copies to Zenodo first, and then to the data API. In these cases, each new version of the indicator values (containing a new year, a new estimation, or a new country, a new observation unit) will have a new DOI version.
 

@@ -44,8 +44,6 @@ As a data curator:
 - Please assess the results with us, and let's publish them regularly. (Some EU member states update their SIOTs every year, others every 5 years, but pollutant data may be available annually.)
 
 
-
-
 ## Sensory Data Measuring Climate Change Physical Affects
 
 ## Ecological Data
