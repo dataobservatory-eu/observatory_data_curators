@@ -1,3 +1,5 @@
+fig:zenodo-example
+fig:regional-climate-attitutes-tutorial
 intro
 solution-as-service-offered-in-the-challenges
 service-flow

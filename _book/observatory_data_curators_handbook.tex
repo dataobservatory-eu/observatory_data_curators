@@ -99,7 +99,7 @@
 
 \title{Automated Observatory Data Curator's Handbook}
 \author{Daniel Antal, CFA}
-\date{2021-05-13}
+\date{2021-05-14}
 
 \begin{document}
 \maketitle
@@ -419,13 +419,24 @@ We are safeguarding the quality of the indicators with various reproducible rese
 \item
   \textbf{Peer-reviewed data application}: We encourage our curators, particularly academics, to send the indicators created with the help of oour research automation to various forms of scientific peer review, to make sure that the data is valid, useful\ldots{} and to bring credits to the curators.
 \item
-  \textbf{Authentic copies}: We are placing each new version of the indicators values into \href{}{Zenodo}, a data repository that keeps authentic copies, versions, and assignes them digital object identifiers (DOIs). This makes sure that whenever our curators data is re-used, and incorrectly manipulated by a business, scientific or policy user, we can detect such manipulation.
+  \textbf{Authentic copies}: We are placing each new version of the indicators values into \href{https://zenodo.org/}{Zenodo}, a data repository that keeps authentic copies, versions, and assignes them digital object identifiers (DOIs). This makes sure that whenever our curators data is re-used, and incorrectly manipulated by a business, scientific or policy user, we can detect such manipulation.
 \end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{plots/screenshots/zenodo_deposition_example} 
+
+}
+
+\caption{Zenodo Deposition Example}\label{fig:zenodo-example}
+\end{figure}
+
+You can see this dataset \href{https://zenodo.org/record/3759811\#.YJ6R3qgzbIU}{here}, which was used in \href{https://dataandlyrics.com/publication/scholarly_pirate_libraries_2020/}{this} high-profile scientific publication.
 
 \hypertarget{deposit-indicator}{%
 \subsection{Authentic Depositions of Indicators}\label{deposit-indicator}}
 
-We designed a workflow that helps our curators to put their indicator tables to \href{}{Zenodo}. In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory's API.
+We designed a workflow that helps our curators to put their indicator tables to \href{https://zenodo.org/}{Zenodo}. In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory's API.
 
 With low-frequency data, such as annual data tables, we place all copies to Zenodo first, and then to the data API. In these cases, each new version of the indicator values (containing a new year, a new estimation, or a new country, a new observation unit) will have a new DOI version.
 
@@ -464,8 +475,59 @@ With no particular order
 \hypertarget{social-attituted-to-climate-change}{%
 \section{Social Attituted to Climate Change}\label{social-attituted-to-climate-change}}
 
+what do people think about climate change in Europe and other parts of the world? Do they believe that the climate is changing? How? What they think about the causes? Do they report that they change their behavior? Teach their children to do so?
+
+Please take a look at our blogpost \href{http://greendeal.dataobservatory.eu/post/2021-04-23-belgium-flood-insurance/}{Is Drought Risk Uninsurable?} as an example.
+
+As a data curator:
+
+\begin{itemize}
+\tightlist
+\item
+  You identify openly accessible surveys that are harmonized (use standardized questions.) In our tutorial we projected the public opinion data from Eurobarometer 90.2 (fieldwork: October-November 2018.) on the municipal map of Belgium
+\item
+  Tell us which question items would be good candidates to report. We used the answers to the multiple choice question \texttt{QB1\ Do\ you\ think\ that\ the\ following\ extreme\ weather\ events\ are\ due\ to\ climate\ change?} We highlighted areas where people find it more likely to be exposed to \texttt{Droughts\ and\ wildfires}
+\item
+  How we should calculate the indicator? Take a certain answer and average it over a region? Weight the answers? How?
+\item
+  You write at least 1-2 unit tests: what must we check when the calculation is over. No negative numbers? Number of regions must up to 265?
+\end{itemize}
+
+If you write R code, you can get involved in our suvey harmonization and regional coding efforts.
+
+See our tutorial:
+
+\href{http://greendeal.dataobservatory.eu/post/2021-03-06-regions-climate/}{Regional Geocoding Harmonization Case Study - Regional Climate Change Awareness Datasets}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.67\linewidth]{plots/eurobarometer_climate_attitude_tutorial} 
+
+}
+
+\caption{Regional attituteds to climate change, from our survey regionalization tutorial}\label{fig:regional-climate-attitutes-tutorial}
+\end{figure}
+
 \hypertarget{environmental-impact-indicator-for-economic-activities}{%
 \section{Environmental Impact Indicator for Economic Activities}\label{environmental-impact-indicator-for-economic-activities}}
+
+Our \href{https://iotables.dataobservatory.eu/}{iotables} package practically implements The \href{https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/KS-RA-07-013}{Eurostat Manual of Supply, Use and Input-Output Tables} with real life data and in R, and it is checked against the published results from \href{http://ec.europa.eu/eurostat/documents/3859598/5902113/KS-RA-07-013-EN.PDF/b0b3d71e-3930-4442-94be-70b36cea9b39?version=1.0}{Jörg Beutel} (the author of this excellent manual), the Spicosa Project Report, and official UK statistical tables.
+
+We used it to calculate the effects of cultural activities on various economies, but this methodology is particularly well-suited to measure the effects, or predict the effects of policy changes on greenhouse gas or pollutant emissions.
+
+As a data curator:
+
+\begin{itemize}
+\tightlist
+\item
+  You identify openly accessible surveys data that can contains environmental effects for industries (Eurostat publishes them for many pollutants and greenhouse gases from the European Environmental Data.)
+\item
+  Tell us which particular data table would be good candidate to report. Give us ideas how to bridge various problems. (The SIOT matrix must be 60x60 or 64x64), sometimes industries must be added together.
+\item
+  If you write R code, we help you make the calculation yourself, if not, we'll take over.\\
+\item
+  Please assess the results with us, and let's publish them regularly. (Some EU member states update their SIOTs every year, others every 5 years, but pollutant data may be available annually.)
+\end{itemize}
 
 \hypertarget{sensory-data-measuring-climate-change-physical-affects}{%
 \section{Sensory Data Measuring Climate Change Physical Affects}\label{sensory-data-measuring-climate-change-physical-affects}}
@@ -484,8 +546,12 @@ With no particular order
 \hypertarget{demand-drivers}{%
 \subsection{Demand Drivers}\label{demand-drivers}}
 
+Our music economy \href{https://data.music.dataobservatory.eu/music-economy.html}{demand drivers} are data that are known to be leading indicators to an increase in mechanical copies, streaming subscriptions, public performance use, private copying or illegal use of music.
+
 \hypertarget{supply-indicators}{%
 \subsection{Supply Indicators}\label{supply-indicators}}
+
+Our Music Economy / \href{https://data.music.dataobservatory.eu/music-economy.html\#supply}{Supply} indicators are related to the supply of new music.
 
 \hypertarget{price-indicators}{%
 \subsection{Price Indicators}\label{price-indicators}}
@@ -501,6 +567,39 @@ With no particular order
 
 \hypertarget{market-shares}{%
 \subsection{Market shares}\label{market-shares}}
+
+We are developing \href{https://data.music.dataobservatory.eu/music-diversity.html\#cross-border-circulation-of-works}{market share} indicators for streaming and broadcast music.
+
+For national, gender or other market share, we need to label both music works and recorded fixations. We use various open source databases, and machine learning algorithms to do prepare the data, but eventually our data goes through human musicology or music journalist curators.
+
+For example, in our case study we were interested in the various definitions of \texttt{Slovak\ market\ share}, and representation of \texttt{female\ artists.} Both problems require rather challenging labeling.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  we tried to find a location to the artist / band {[} you can describe why this is not always straightforward, for example, in the case of dead artists, etc.{]}
+\item
+  our algorithm tried to guess the language of the 10 most popular song titles
+\item
+  we checked if the person is on the Wikipedia list of ``Slovak male singers'', ``Slovak female singers'', ``Slovak bands'', or their Czechoslovak versions {[} who did you decide when somebody was Czechoslovak if they were Slovak{]}
+\item
+  check if there was a Slovak placename mentioned on their bandcamp site
+\item
+  check if they are associated with Slovakia on the Musicbrainz open source database
+\item
+  if any of the artists released recodings was released in Slovakia
+\item
+  if the majority of the artist's released recordings was released in Slovakia
+\end{enumerate}
+
+\ldots.
+
+Until we got to the human curation.
+
+and eventually we either \texttt{considered\_slovak} or not somebody in our \texttt{write-in\ database}. We are also developing an \texttt{opt-in\ database}, where artists can give us their own ethnic, local and gender identity, if they wish to, and of course, they can opt-out from our labeling.
+
+We are using Monte Carlo simulation and non-parametric sampling of various broadcast and music streams to get a representation of the music listened to in various cities, regions, countries, and then we apply \texttt{national}, \texttt{language}, \texttt{gender}, \texttt{sex}, \texttt{locality} and \texttt{folksonomy} tags to measure female, Slovak, Estonian, Amsterdam or Welsh market share, recommendation probability, etc.
 
 \hypertarget{music-society}{%
 \section{Music \& Society}\label{music-society}}
