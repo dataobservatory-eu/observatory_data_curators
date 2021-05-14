@@ -24,7 +24,7 @@
 <meta name="author" content="Daniel Antal, CFA" />
 
 
-<meta name="date" content="2021-05-13" />
+<meta name="date" content="2021-05-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -258,12 +258,19 @@ div.csl-indent {
 <li><p><strong>Testing against peer-reviewed results</strong>: Often we know that after making various computations with a data, we must achieve an already known value. For example, the various components of the GDP in economics must add up with a pre-defined precision. Certain inputs must match a scientifically valid result. If you know of such tests, let us know, and let’s include them in the unit-testing processes.</p></li>
 <li><p><strong>Peer-reviewed data manipulation code</strong>: Whenever we re-organize, impute, or otherwise change the original data, we do it only with algorithms that went through scientific peer-review as algorithms. If there is a bug or something to improve in the way we handle the data, our code transparency makes it likely to come out.</p></li>
 <li><p><strong>Peer-reviewed data application</strong>: We encourage our curators, particularly academics, to send the indicators created with the help of oour research automation to various forms of scientific peer review, to make sure that the data is valid, useful… and to bring credits to the curators.</p></li>
-<li><p><strong>Authentic copies</strong>: We are placing each new version of the indicators values into <a href="">Zenodo</a>, a data repository that keeps authentic copies, versions, and assignes them digital object identifiers (DOIs). This makes sure that whenever our curators data is re-used, and incorrectly manipulated by a business, scientific or policy user, we can detect such manipulation.</p></li>
+<li><p><strong>Authentic copies</strong>: We are placing each new version of the indicators values into <a href="https://zenodo.org/">Zenodo</a>, a data repository that keeps authentic copies, versions, and assignes them digital object identifiers (DOIs). This makes sure that whenever our curators data is re-used, and incorrectly manipulated by a business, scientific or policy user, we can detect such manipulation.</p></li>
 </ul>
+<div class="figure" style="text-align: center"><span id="fig:zenodo-example"></span>
+<img src="plots/screenshots/zenodo_deposition_example.png" alt="Zenodo Deposition Example" width="80%" />
+<p class="caption">
+Figure 3.1: Zenodo Deposition Example
+</p>
+</div>
+<p>You can see this dataset <a href="https://zenodo.org/record/3759811#.YJ6R3qgzbIU">here</a>, which was used in <a href="https://dataandlyrics.com/publication/scholarly_pirate_libraries_2020/">this</a> high-profile scientific publication.</p>
 </div>
 <div id="deposit-indicator" class="section level3" number="3.3.2">
 <h3><span class="header-section-number">3.3.2</span> Authentic Depositions of Indicators</h3>
-<p>We designed a workflow that helps our curators to put their indicator tables to <a href="">Zenodo</a>. In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory’s API.</p>
+<p>We designed a workflow that helps our curators to put their indicator tables to <a href="https://zenodo.org/">Zenodo</a>. In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory’s API.</p>
 <p>With low-frequency data, such as annual data tables, we place all copies to Zenodo first, and then to the data API. In these cases, each new version of the indicator values (containing a new year, a new estimation, or a new country, a new observation unit) will have a new DOI version.</p>
 <p>With high-frequency data, such as data tables that are refreshing daily or several times a day, we do not think that authentic versioning is useful. In such cases, we create an authentic version at a pre-agreed time frequency, for example, monthly.</p>
 </div>

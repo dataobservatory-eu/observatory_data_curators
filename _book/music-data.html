@@ -24,7 +24,7 @@
 <meta name="author" content="Daniel Antal, CFA" />
 
 
-<meta name="date" content="2021-05-13" />
+<meta name="date" content="2021-05-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -198,9 +198,11 @@ div.csl-indent {
 <h2><span class="header-section-number">5.1</span> Music Economy</h2>
 <div id="demand-drivers" class="section level3" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> Demand Drivers</h3>
+<p>Our music economy <a href="https://data.music.dataobservatory.eu/music-economy.html">demand drivers</a> are data that are known to be leading indicators to an increase in mechanical copies, streaming subscriptions, public performance use, private copying or illegal use of music.</p>
 </div>
 <div id="supply-indicators" class="section level3" number="5.1.2">
 <h3><span class="header-section-number">5.1.2</span> Supply Indicators</h3>
+<p>Our Music Economy / <a href="https://data.music.dataobservatory.eu/music-economy.html#supply">Supply</a> indicators are related to the supply of new music.</p>
 </div>
 <div id="price-indicators" class="section level3" number="5.1.3">
 <h3><span class="header-section-number">5.1.3</span> Price Indicators</h3>
@@ -216,6 +218,22 @@ div.csl-indent {
 <h2><span class="header-section-number">5.3</span> Music Circulation</h2>
 <div id="market-shares" class="section level3" number="5.3.1">
 <h3><span class="header-section-number">5.3.1</span> Market shares</h3>
+<p>We are developing <a href="https://data.music.dataobservatory.eu/music-diversity.html#cross-border-circulation-of-works">market share</a> indicators for streaming and broadcast music.</p>
+<p>For national, gender or other market share, we need to label both music works and recorded fixations. We use various open source databases, and machine learning algorithms to do prepare the data, but eventually our data goes through human musicology or music journalist curators.</p>
+<p>For example, in our case study we were interested in the various definitions of <code>Slovak market share</code>, and representation of <code>female artists.</code> Both problems require rather challenging labeling.</p>
+<ol style="list-style-type: lower-alpha">
+<li>we tried to find a location to the artist / band [ you can describe why this is not always straightforward, for example, in the case of dead artists, etc.]</li>
+<li>our algorithm tried to guess the language of the 10 most popular song titles</li>
+<li>we checked if the person is on the Wikipedia list of “Slovak male singers,” “Slovak female singers,” “Slovak bands,” or their Czechoslovak versions [ who did you decide when somebody was Czechoslovak if they were Slovak]</li>
+<li>check if there was a Slovak placename mentioned on their bandcamp site</li>
+<li>check if they are associated with Slovakia on the Musicbrainz open source database</li>
+<li>if any of the artists released recodings was released in Slovakia</li>
+<li>if the majority of the artist’s released recordings was released in Slovakia</li>
+</ol>
+<p>….</p>
+<p>Until we got to the human curation.</p>
+<p>and eventually we either <code>considered_slovak</code> or not somebody in our <code>write-in database</code>. We are also developing an <code>opt-in database</code>, where artists can give us their own ethnic, local and gender identity, if they wish to, and of course, they can opt-out from our labeling.</p>
+<p>We are using Monte Carlo simulation and non-parametric sampling of various broadcast and music streams to get a representation of the music listened to in various cities, regions, countries, and then we apply <code>national</code>, <code>language</code>, <code>gender</code>, <code>sex</code>, <code>locality</code> and <code>folksonomy</code> tags to measure female, Slovak, Estonian, Amsterdam or Welsh market share, recommendation probability, etc.</p>
 </div>
 </div>
 <div id="music-society" class="section level2" number="5.4">
