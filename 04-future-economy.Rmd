@@ -41,11 +41,30 @@ knitr::include_graphics(file.path(
 ```
 
 
-## Competition
+## Competition {#compeition-indicators}
 
+We are seeking API level access to the European Commissions Mergers database, and monitor approved and declined merger requests programatically.  These mergers are important cases enough to have a potential impact on the structure of the European economy.
 
+```{r ec-compeptition-merger, fig.cap="", out.width='80%', echo=FALSE, warning=FALSE}
+knitr::include_graphics(
+  file.path("plots", "screenshots", "ec_competition_merger_screenshot.png")
+)
+```
 
-## SME Activity Indicators
+As a data curator, you help us designing datasets
+
+- created from Commission and member state merger decision text databases (we will use NLP extraction from the text of the decisions)
+- top-down indicators that show the structural (concentration) changes in the European economy
+
+### Knowledge Monopolizations, Killer Acquisitions {#knowledge-monopoly}
+
+In killer aquisitoins, a large company, for example, in pharmaceutical or technology fiedls, buys a small company, or even a start-up, to avoid disruptive innovation. We’re building several types of indicators in this field. 
+
+-	What type of patents companies hold in smaller entities of mergers and acquisitions? How can we characterize potentially disruptive technology?
+-	Which economic activities (industries as describe by NACE) are more and less effected?
+-	How is patent concentration changing?
+
+## SME Activity Indicators {#sme-indicators}
 
 
 ## Economic Impact Indicators
