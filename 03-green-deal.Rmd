@@ -6,12 +6,26 @@ Our data observatory is competing in the EU Datathon 2021. We believe that intro
 
 ```{r green-deal-observatory, fig.out="85%", fig.align="center", echo=FALSE}
 knitr::include_graphics(file.path(
-  "plots", "green_deal_observatory.png"
+  "plots", "screenshots", "green_deal_observatory.png"
 ))
 ```
 
 
-## Social Attituted to Climate Change
+## Aggregating Count Data 
+
+`We need to improve conservation by improving wildlife monitoring. Counting plants and animals is really tricky business.`
+
+> "The marbled murrelet is an enigma. It wasn’t until the 1970s that biologists discovered where the chunky brown-and-white bird made its home, and even then it was by accident: A tree-climber found a murrelet chick at the top of a redwood. Most other bird habitats had been mapped for centuries. But who would have thought to look for a sea bird’s nest miles away in the middle of an old-growth forest?
+And it’s elusive. California birders can go a lifetime without seeing one. Every day at the break of dawn, the murrelet zips down from the redwood forest hills, where it lives, to the ocean, where it feeds. It then returns under the cover of darkness. 
+Using remote acoustic sensors and machine learning to analyze the audio, biologists are now better able to track populations of species that were previously hard to monitor. With a [threatened species](https://www.fws.gov/arcata/es/birds/MM/m_murrelet.html) like the marbled murrelet, that can make a huge difference. The better the data on its population and nesting patterns, the better our understanding of how its habitat is threatened, and the more effective conservation efforts can be. [Big Data Is Saving This Little Bird](https://fivethirtyeight.com/features/big-data-is-saving-this-little-bird/); listen to the interview [here](https://podcasts.apple.com/us/podcast/17-little-bird-big-data/id1011406983?i=1000391467965)"
+
+![](https://fivethirtyeight.com/wp-content/uploads/2015/10/wedgetailedshearwater.jpg?quality=100&strip=all&w=610)
+
+To analyze governmental, social data with ecological data, we need to place them on the same map. Biostatisticians, ecologists often work with count data -- counting trees, birds, various species.  We need to aggregate count data over the same maps that statisticians use to count people, measure the GDP or make environmental and urban planning.
+
+This knowledge is also very important for small area statistics that we apply in [Social Attituted to Climate Change](#social-attitude-climate-change)
+
+## Social Attituted to Climate Change {#social-attitude-climate-change}
 
 what do people think about climate change in Europe and other parts of the world? Do they believe that the climate is changing? How? What they think about the causes? Do they report that they change their behavior?  Teach their children to do so? 
 

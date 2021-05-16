@@ -9,7 +9,58 @@ We are looking for data curators who
 
 >An important aspect of the EU Datathon Challenges is ".. to propose the development of an application that links and uses open datasets [...] to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data."
 
-## Open Data {#open-data}
+Where to find us:
+- [dataobservatory-eu](https://github.com/dataobservatory-eu) is our private repo collection and private github collaboration platform, but many of our repos are open. Like this one.
+
+- [Creative Data Observatories LinkedIn Page](https://www.linkedin.com/company/reprexbv/). Make sure you follow us, and spread our messages.
+
+- [@dataandlyrics](https://twitter.com/dataandlyrics) is our twitter handle for our music-oriented blog. If you are on twitter, please follow us, and retweet our blogposts.
+
+- [keybase.io/team/reprexcommunity](https://keybase.io/team/reprexcommunity) is our landing page to our otherwise private and invisible internal communication platform. (See more in subchapter\@ref(keybase) of [Tools](#keybase).)
+
+## Get Inspired {#get-inspired}
+
+
+### Create New Datasets {#create-new-datasets}
+
+Our mission is to create standardized data about a social, economic or environmental process that does not have standardized, well-processed open data.
+
+- [This Scientist Stung Himself With Dozens Of Insects Because No One Else Would](https://fivethirtyeight.com/features/this-scientist-stung-himself-with-dozens-of-insects-because-no-one-else-would/): The Schmidt Pain Index, as its informally known, runs from 1-4. The common honey bee serves as its anchor point, a solid 2. At the top end of the scale lie the bullet ant and the tarantula hawk (which is neither a tarantula nor a hawk; it’s [a wasp](https://www.wired.com/2015/07/absurd-creature-of-the-week-tarantula-hawk/)). Watch the video with [Dr. Schmidt](https://youtu.be/i0LjT-qkUes), and listen to the whole interview [here](https://podcasts.apple.com/us/podcast/48-the-schmidt-sting-pain-index/id1011406983?i=1000391467968).
+- [Big Data Is Saving This Little Bird](https://fivethirtyeight.com/features/big-data-is-saving-this-little-bird/) “We need to improve conservation by improving wildlife monitoring. Counting plants and animals is really tricky business.”
+
+
+### Remain Critical
+
+Cathy O’Neil: [Weapons of math destruction](https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction), which O’Neil are mathematical models or algorithms that claim to quantify important traits: teacher quality, recidivism risk, creditworthiness but have harmful outcomes and often reinforce inequality, keeping the poor poor and the rich rich. They have three things in common: opacity, scale, and damage. https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/](https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/)
+
+Catherine D'Ignazio and Lauren F. Klein: [Data Feminism](https://mitpress.mit.edu/books/data-feminism). This is a much celebrated book, and with a good reason. It views AI and data problems with a feminist point of view, but the examples and the toolbox can be easily imagined for small-country biases, racial, ethnic, or small enterprise problems.  A very good introduction to the injustice of big data and the fight for a more fair use of data, and how bad data collection practices through garbe in garbe out lead to misleading information, or even misinformation.
+
+- [Why The Bronx Burned](https://fivethirtyeight.com/features/why-the-bronx-really-burned/). Between 1970 and 1980, seven census tracts in the Bronx lost more than 97 percent of their buildings to fire and abandonment. In his book [The Fires](https://www.amazon.com/Fires-Computer-Intentions-City-Determined/dp/1594485062), Joe Flood lays the blame on misguided “best and brightest” effort by New York City to increase government efficiency. With the help of the Rand Corp., the city tried to measure fire response times, identify redundancies in service, and close or re-allocate fire stations accordingly. What resulted, though, was a perfect storm of bad data: The methodology was flawed, the analysis was rife with biases, and the results were interpreted in a way that stacked the deck against poorer neighborhoods. The slower response times allowed smaller fires to rage uncontrolled in the city’s most vulnerable communities. Listen to the podcast [here](https://podcasts.apple.com/us/podcast/19-why-the-bronx-burned/id1011406983?i=1000391467912)
+- [Bad Incentives Are Blocking Better Science](https://fivethirtyeight.com/features/podcast-bad-incentives-are-blocking-better-science/) “There’s a difference between an answer and a result. But all the incentives are pointing toward telling you that as soon as you get a result, you stop.” After the deluge of retractions, the stories of fraudsters, the false positives, and the high-profile failures to replicate landmark studies, some people have begun to ask: “[Is science broken?](https://fivethirtyeight.com/features/science-isnt-broken/)”. Listen to the pdocast *Science is Hard* [here](https://podcasts.apple.com/us/podcast/10-science-is-hard/id1011406983?i=1000391467935)
+- In [Algorithms of Oppression](https://nyupress.org/9781479837243/algorithms-of-oppression/), Safiya Umoja Noble challenges the idea that search engines like Google offer an equal playing field for all forms of ideas, identities, and activities. Data discrimination is a real social problem; Noble argues that the combination of private interests in promoting certain sites, along with the monopoly status of a relatively small number of Internet search engines, leads to a biased set of search algorithms that privilege whiteness and discriminate against people of color, specifically women of color.
+- Christopher Ingraham wrote [a quick blog post](https://www.washingtonpost.com/gdpr-consent/?next_url=https%3a%2f%2fwww.washingtonpost.com%2fnews%2fwonk%2fwp%2f2015%2f08%2f17%2fevery-county-in-america-ranked-by-natural-beauty%2f) for The Washington Post about an obscure USDA data set called the `natural amenities index`, which attempts to quantify the natural beauty of different parts of the country. He described the rankings, noted the counties at the top and bottom, hit publish and didn’t think much of it. Almost immediately he started to hear from the residents of northern Minnesota, who were not very happy that Chris had written, “the absolute worst place to live in America is (drumroll, please) … Red Lake County, Minn.” He could not have been more wrong … a year later [he moved](https://fivethirtyeight.com/features/he-called-it-americas-worst-place-to-live-now-hes-moving-there/) to Red Lake County with his family. 
+
+### Your First Data Contribution {#first-contribution}
+
+Your first contribution can be made without writing a single program code -- but if you are experienced in reproducible science, than you can also submit a code that creates your data.
+
+1. Make sure that you read the [Contributors Covenant](https://www.contributor-covenant.org/). You must make this [pledge](https://www.contributor-covenant.org/version/2/0/code_of_conduct/) to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation. Participating in our data observatories requires everybody to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. It's better this way for you and for us!
+
+2. Send us a plain language document, preferably in any flavor of markdown (See subchapter \@ref(markdown) in the [Tools](#markdown)), or even in a clear text email about the indicator. What should the indicator be used for, how it should be measured, with what frequency, and what could be the open data source to acquire the observations. Experienced data scientists can send us a Jupiter Notebook or an Rmarkdown file with code, but this submission can be a simple plain language document without numbers. 
+
+3. Make sure that you have and [ORCiD ID](https://orcid.org/).  This is a standard identification for scientific publications. We need your numeric ORCiD ID.
+
+4. Make sure that you have a [Zenodo account](https://zenodo.org/) which is connected to your [ORCiD ID](https://orcid.org/).  This enables you to publish data under your name. If you curate data for our observatories, you will be the indicator's first author, and depending on what processes help you, the author of the (scientific) code that helps you calculate the values will be your co-author.
+
+5. Without programming experience your first indicator should be uploaded manually to Zenodo, and we will help automating the new versions. This will mean, for example, the upload of a simple, csv version of an Excel table, and filling in some important information about the contents of the table.
+
+6. With some level of R or Python programming experience, we ask you to create a Github repo where you store your indicator. We will help you with tutorials, program codes, or applications to automate your data publication on Zenodo. In this case, make sure that you also have a [Sandbox Zenodo](https://sandbox.zenodo.org/) account. There is no undo button on Zenodo. If you are tinkering with automatically publishing data, practice first in the sandbox, which is a practicing clone of Zenodo with undo button. (To avoid accidents, you need to have a completely different account with different credential on the real and the sandbox practice repository.)
+
+7. Experienced programmers are welcome to participate in our developer team, and become contributors, or eventually co-authors of the (scientific) software codes that we make to continuously improve our data observatories. All our data code is open source. At this level, you are expected to be able to raise and/or pick up and solve an issue in our observatory's Github repository, or its connecting statistical repositories. 
+
+_Our data is mainly processed in R language software, and sometimes in Python language software. If you are experienced with R bookdown, R Shiny or working in the hugo language, then you are welcome to join our developer team in non-curatorial roles._ 
+
+## What is Open Data {#open-data}
 
 In the EU, open data is governed by the [Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&uri=CELEX:32019L1024). It entered into force on 16 July 2019. It replaces the [Public Sector Information Directive](https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098), also known as the *PSI Directive* which dated from 2003 and was subsequently amended in 2013.
 
@@ -99,11 +150,7 @@ knitr::include_graphics(file.path(
 ))
 ```
 
-
-
 You can see this dataset [here](https://zenodo.org/record/3759811#.YJ6R3qgzbIU), which was used in [this](https://dataandlyrics.com/publication/scholarly_pirate_libraries_2020/) high-profile scientific publication.
-
-
 
 ### Authentic Depositions of Indicators {#deposit-indicator}
 
@@ -113,22 +160,3 @@ With low-frequency data, such as annual data tables, we place all copies to Zeno
 
 With high-frequency data, such as data tables that are refreshing daily or several times a day, we do not think that authentic versioning is useful. In such cases, we create an authentic version at a pre-agreed time frequency, for example, monthly.
 
-## Your First Data Contribution
-
-Your first contribution can be made without writing a single program code -- but if you are experienced in reproducible science, than you can also submit a code that creates your data.
-
-1. Make sure that you read the [Contributors Covenant](https://www.contributor-covenant.org/). You must make this [pledge](https://www.contributor-covenant.org/version/2/0/code_of_conduct/) to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation. Participating in our data observatories requires everybody to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. It's better this way for you and for us!
-
-2. Send us a plain language document about the indicator. What should the indicator be used for, how it should be measured, with what frequency, and what could be the open data source to acquire the observations. Experienced data scientists can send us a Jupiter Notebook or an Rmarkdown file with code, but this submission can be a simple plain language document without numbers. 
-
-3. Make sure that you have and [ORCiD ID](https://orcid.org/).  This is a standard identification for scientific publications. We need your numeric ORCiD ID.
-
-4. Make sure that you have a [Zenodo account](https://zenodo.org/) which is connected to your [ORCiD ID](https://orcid.org/).  This enables you to publish data under your name. If you curate data for our observatories, you will be the indicator's first author, and depending on what processes help you, the author of the (scientific) code that helps you calculate the values will be your co-author.
-
-5. Without programming experience your first indicator should be uploaded manually to Zenodo, and we will help automating the new versions. This will mean, for example, the upload of a simple, csv version of an Excel table, and filling in some important information about the contents of the table.
-
-6. With some level of R or Python programming experience, we ask you to create a Github repo where you store your indicator. We will help you with tutorials, program codes, or applications to automate your data publication on Zenodo. In this case, make sure that you also have a [Sandbox Zenodo](https://sandbox.zenodo.org/) account. There is no undo button on Zenodo. If you are tinkering with automatically publishing data, practice first in the sandbox, which is a practicing clone of Zenodo with undo button. (To avoid accidents, you need to have a completely different account with different credential on the real and the sandbox practice repository.)
-
-7. Experienced programmers are welcome to participate in our developer team, and become contributors, or eventually co-authors of the (scientific) software codes that we make to continuously improve our data observatories. All our data code is open source. At this level, you are expected to be able to raise and/or pick up and solve an issue in our observatory's Github repository, or its connecting statistical repositories. 
-
-_Our data is mainly processed in R language software, and sometimes in Python language software. If you are experienced with R bookdown, R Shiny or working in the hugo language, then you are welcome to join our developer team in non-curatorial roles._ 

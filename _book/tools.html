@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 Tools | Automated Observatory Data Curator’s Handbook</title>
+  <meta name="description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 Tools | Automated Observatory Data Curator’s Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Tools | Automated Observatory Data Curator’s Handbook" />
+  
+  <meta name="twitter:description" content="We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users." />
+  
+
+<meta name="author" content="Daniel Antal, CFA" />
+
+
+<meta name="date" content="2021-05-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="partnerships.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Automated Observatory Data Curator's Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#mission-statement"><i class="fa fa-check"></i>Mission statement</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#problem-statement"><i class="fa fa-check"></i>Problem Statement</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#our-solution"><i class="fa fa-check"></i>Our solution</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Application for the Datathlon Prizes: Automated Data Observatories</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#solution-as-service-offered-in-the-challenges"><i class="fa fa-check"></i><b>1.1</b> Solution as Service offered in the Challenges</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#service-flow"><i class="fa fa-check"></i><b>1.2</b> Service Flow</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#new-high-quality-data"><i class="fa fa-check"></i><b>1.2.1</b> New, high quality data</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#authoritative-data"><i class="fa fa-check"></i><b>1.2.2</b> Authoritative data</a></li>
+<li class="chapter" data-level="1.2.3" data-path="intro.html"><a href="intro.html#data-api"><i class="fa fa-check"></i><b>1.2.3</b> Data API</a></li>
+<li class="chapter" data-level="1.2.4" data-path="intro.html"><a href="intro.html#long-form-documentation"><i class="fa fa-check"></i><b>1.2.4</b> Long form documentation</a></li>
+<li class="chapter" data-level="1.2.5" data-path="intro.html"><a href="intro.html#front-end-website"><i class="fa fa-check"></i><b>1.2.5</b> Front-end Website</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#technology"><i class="fa fa-check"></i><b>1.3</b> Technology</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-curators.html"><a href="data-curators.html"><i class="fa fa-check"></i><b>2</b> Data Curators</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-curators.html"><a href="data-curators.html#get-inspired"><i class="fa fa-check"></i><b>2.1</b> Get Inspired</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="data-curators.html"><a href="data-curators.html#create-new-datasets"><i class="fa fa-check"></i><b>2.1.1</b> Create New Datasets</a></li>
+<li class="chapter" data-level="2.1.2" data-path="data-curators.html"><a href="data-curators.html#remain-critical"><i class="fa fa-check"></i><b>2.1.2</b> Remain Critical</a></li>
+<li class="chapter" data-level="2.1.3" data-path="data-curators.html"><a href="data-curators.html#first-contribution"><i class="fa fa-check"></i><b>2.1.3</b> Your First Data Contribution</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="data-curators.html"><a href="data-curators.html#open-data"><i class="fa fa-check"></i><b>2.2</b> What is Open Data</a></li>
+<li class="chapter" data-level="2.3" data-path="data-curators.html"><a href="data-curators.html#reproducible-research"><i class="fa fa-check"></i><b>2.3</b> Reproducible Research</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="data-curators.html"><a href="data-curators.html#opa"><i class="fa fa-check"></i><b>2.3.1</b> Evidence-based, Open Policy Analysis</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-curators.html"><a href="data-curators.html#business-professional-standards"><i class="fa fa-check"></i><b>2.3.2</b> Professional Standards in Business</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="data-curators.html"><a href="data-curators.html#indicator-design"><i class="fa fa-check"></i><b>2.4</b> Indicator Design</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="data-curators.html"><a href="data-curators.html#authoring-indicator"><i class="fa fa-check"></i><b>2.4.1</b> Creation and Quality Control of Indicators</a></li>
+<li class="chapter" data-level="2.4.2" data-path="data-curators.html"><a href="data-curators.html#deposit-indicator"><i class="fa fa-check"></i><b>2.4.2</b> Authentic Depositions of Indicators</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="green-deal.html"><a href="green-deal.html"><i class="fa fa-check"></i><b>3</b> Green Deal Indicators</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="green-deal.html"><a href="green-deal.html#aggregating-count-data"><i class="fa fa-check"></i><b>3.1</b> Aggregating Count Data</a></li>
+<li class="chapter" data-level="3.2" data-path="green-deal.html"><a href="green-deal.html#social-attitude-climate-change"><i class="fa fa-check"></i><b>3.2</b> Social Attituted to Climate Change</a></li>
+<li class="chapter" data-level="3.3" data-path="green-deal.html"><a href="green-deal.html#environmental-impact-indicator-for-economic-activities"><i class="fa fa-check"></i><b>3.3</b> Environmental Impact Indicator for Economic Activities</a></li>
+<li class="chapter" data-level="3.4" data-path="green-deal.html"><a href="green-deal.html#sensory-data-measuring-climate-change-physical-affects"><i class="fa fa-check"></i><b>3.4</b> Sensory Data Measuring Climate Change Physical Affects</a></li>
+<li class="chapter" data-level="3.5" data-path="green-deal.html"><a href="green-deal.html#ecological-data"><i class="fa fa-check"></i><b>3.5</b> Ecological Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="future-economy.html"><a href="future-economy.html"><i class="fa fa-check"></i><b>4</b> Future Economy Observatory</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="future-economy.html"><a href="future-economy.html#social-attitutes-to-economic-change"><i class="fa fa-check"></i><b>4.1</b> Social Attitutes to Economic Change</a></li>
+<li class="chapter" data-level="4.2" data-path="future-economy.html"><a href="future-economy.html#compeition-indicators"><i class="fa fa-check"></i><b>4.2</b> Competition</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="future-economy.html"><a href="future-economy.html#knowledge-monopoly"><i class="fa fa-check"></i><b>4.2.1</b> Knowledge Monopolizations, Killer Acquisitions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="future-economy.html"><a href="future-economy.html#sme-indicators"><i class="fa fa-check"></i><b>4.3</b> SME Activity Indicators</a></li>
+<li class="chapter" data-level="4.4" data-path="future-economy.html"><a href="future-economy.html#economic-impact-indicators"><i class="fa fa-check"></i><b>4.4</b> Economic Impact Indicators</a></li>
+<li class="chapter" data-level="4.5" data-path="future-economy.html"><a href="future-economy.html#sensory-data-measuring-changes-in-economic-activy"><i class="fa fa-check"></i><b>4.5</b> Sensory Data Measuring Changes in Economic Activy</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="music-data.html"><a href="music-data.html"><i class="fa fa-check"></i><b>5</b> Music Data Indicators</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="music-data.html"><a href="music-data.html#music-economy"><i class="fa fa-check"></i><b>5.1</b> Music Economy</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="music-data.html"><a href="music-data.html#demand-drivers"><i class="fa fa-check"></i><b>5.1.1</b> Demand Drivers</a></li>
+<li class="chapter" data-level="5.1.2" data-path="music-data.html"><a href="music-data.html#supply-indicators"><i class="fa fa-check"></i><b>5.1.2</b> Supply Indicators</a></li>
+<li class="chapter" data-level="5.1.3" data-path="music-data.html"><a href="music-data.html#price-indicators"><i class="fa fa-check"></i><b>5.1.3</b> Price Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="music-data.html"><a href="music-data.html#music-diversity"><i class="fa fa-check"></i><b>5.2</b> Music Diversity</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="music-data.html"><a href="music-data.html#gender-language-ethnic-and-other-inclusion-attributes"><i class="fa fa-check"></i><b>5.2.1</b> Gender, Language, Ethnic and Other Inclusion Attributes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="music-data.html"><a href="music-data.html#music-circulation"><i class="fa fa-check"></i><b>5.3</b> Music Circulation</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="music-data.html"><a href="music-data.html#market-shares"><i class="fa fa-check"></i><b>5.3.1</b> Market shares</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="music-data.html"><a href="music-data.html#music-society"><i class="fa fa-check"></i><b>5.4</b> Music &amp; Society</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="music-data.html"><a href="music-data.html#social-attitutes-to-music"><i class="fa fa-check"></i><b>5.4.1</b> Social Attitutes to Music</a></li>
+<li class="chapter" data-level="5.4.2" data-path="music-data.html"><a href="music-data.html#participation-in-music"><i class="fa fa-check"></i><b>5.4.2</b> Participation in Music</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="partnerships.html"><a href="partnerships.html"><i class="fa fa-check"></i><b>6</b> Partnerships</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="partnerships.html"><a href="partnerships.html#policy-partners"><i class="fa fa-check"></i><b>6.1</b> Policy Partners</a></li>
+<li class="chapter" data-level="6.2" data-path="partnerships.html"><a href="partnerships.html#academic-partners"><i class="fa fa-check"></i><b>6.2</b> Academic Partners</a></li>
+<li class="chapter" data-level="6.3" data-path="partnerships.html"><a href="partnerships.html#business-partners"><i class="fa fa-check"></i><b>6.3</b> Business Partners</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>7</b> Tools</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="tools.html"><a href="tools.html#internal-communication-collaboration"><i class="fa fa-check"></i><b>7.1</b> Internal communication &amp; collaboration</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="tools.html"><a href="tools.html#keybase"><i class="fa fa-check"></i><b>7.1.1</b> Keybase</a></li>
+<li class="chapter" data-level="7.1.2" data-path="tools.html"><a href="tools.html#github"><i class="fa fa-check"></i><b>7.1.2</b> Git &amp; Github</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="tools.html"><a href="tools.html#filemanagement"><i class="fa fa-check"></i><b>7.2</b> Basic file management</a></li>
+<li class="chapter" data-level="7.3" data-path="tools.html"><a href="tools.html#writing-blogging"><i class="fa fa-check"></i><b>7.3</b> Writing, blogging</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="tools.html"><a href="tools.html#markdown"><i class="fa fa-check"></i><b>7.3.1</b> Markdown</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="http://datathon.dataobservatory.eu/" target="blank">EU Datathon 2021</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automated Observatory Data Curator’s Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tools" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Tools</h1>
+<p>We do reproducible products. If it works once, it must work all the time, on Windows, Mac, Linux, in Word, PDF, html, using a laptop, a cloud server, a smartphone or a table.</p>
+<ul>
+<li><p>We use <a href="tools.html#keybase">Keybase</a> for internal communication</p></li>
+<li><p>We are slowly bringing everybody on board with <a href="tools.html#github">Git</a> for online collaboration and file syncing. For a short time, we’ll still use Google Docs.</p></li>
+</ul>
+<p>If you work with us, you must adhere to the <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">Contributor Covenant</a></p>
+<p>The pledge starts with these paragraphs:</p>
+<p><em>We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.</em></p>
+<p><em>We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.</em> Please, take the time to read once the entire <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">pledge</a>.</p>
+<div id="internal-communication-collaboration" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Internal communication &amp; collaboration</h2>
+<div id="keybase" class="section level3" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> Keybase</h3>
+<p>No more long emails. Nobody’s left out. No more misunderstandings. No more waiting for feedback.</p>
+<p><strong>What do we need?</strong></p>
+<ul>
+<li><p>A simple-to-use communication tool where you can opt-in to be informed on a real time basis, or completely ignore us for days – similar to Whatsapp Group, Microsoft Teams, Google Hangout, Slack;</p></li>
+<li><p>A single, secure storage for shared documents – similar to Google Drive, Microsoft One Drive, Dropbox;</p></li>
+<li><p>An integration with Github – a critical feature to at least the part of our team that is working on software code or long-form technical documentations;</p></li>
+<li><p>Ability to oversee communications with more than 50 people with an option to streamline per topic, group, etc.;</p></li>
+<li><p>To avoid using emails boxes, Whatsapp, Viber, etc. – part-timers are not flooded with messages at all times, while full-timers can reach out to each other at any time;</p></li>
+<li><p>A space where we can communicate all the time without interrupting calls and meetings with clients on other platforms;
+An integration to a project management tool that we will use for larger projects;</p></li>
+<li><p>A tool as simple as possible, light touch;</p></li>
+<li><p>Since we work in the open source, open data, open collaboration community, we would like to use something that is open source – but we are willing to pay for solutions.</p></li>
+</ul>
+<p>And the winner is….KEYBASE.IO</p>
+<p>Keybase is a very neat, simple, lightweight team management / chat / social networking application that is extremely focused on privacy, security and encryption.</p>
+<p><strong>Keybase Key features</strong></p>
+<ul>
+<li><p>Secure instant messaging, even with a timed self-destruction feature (e.g. for sharing passwords);
+Starts a Google Meet or Zoom video call natively with a single command;</p></li>
+<li><p>Brings your Whatsapp chat to the more private and secure keybase chat on the fly;</p></li>
+<li><p>Team chat rooms in real time. You can filter where you want to be involved, and you can always opt-out;</p></li>
+</ul>
+<p>-K-Drive (similar to OneDrive, Google Drive, Dropbox) – only for our team, and fully encrypted;
+Works with Github, and it even offers a more private version of Private Github Repos, encrypted gits;
+An integration with other platforms;
+It is neat, open source, simple, clean, and usually appreciated more in the open source community than Slack, its big corporation rival.</p>
+<p>Practical steps you need to follow to use Keybase</p>
+<ol style="list-style-type: decimal">
+<li>Download &amp; install Keybase from <a href="https://keybase.io/">https://keybase.io/</a> on your computer.</li>
+</ol>
+<p>An easy procedure. Create yourself a professional login name – similarly to a professional github account, a professional email, etc. (you cannot change the name afterwards)</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Once you log in to the computer, go to <em>Devices</em>, and <em>Create a paper key</em>. Write this on paper, or print it, and store it somewhere very safe (not near your computer). This to recover the access in case you lose access to all your devices.</p></li>
+<li><p>You can use Keybase simultaneously on multiple devices – Install Keybase on your smartphone, tablet or any other device. You will be guided through installation &amp; paired with your computer.</p></li>
+<li><p>Shall you need them, you have <em>two recovery options</em>: the paper key and your smartphone.</p></li>
+<li><p>If your smartphone breaks down and needs a replacement, you can add from your computer your new phone and deactivate the old one.</p></li>
+<li><p>Once you are in, look up <code>antaldaniel</code>.</p></li>
+<li><p>After a handshake Daniel will assist your smooth transition, help you find ways to our shared files, your project’s files, and set up filters, so you are not flooded with information, while never left out, unless you choose to.</p></li>
+<li><p>Initially, we set up the following “Big teams,” as Keybase calls them, and we will send an invitation to join:</p></li>
+</ol>
+<ul>
+<li><code>reprexfriends</code> for prospective team members, friends, and hoped-for-cooperation partners – partly for people we are discreetly asking to join us, or who want to know more about some of our work and cooperate with us;</li>
+<li><a href="https://keybase.io/team/reprexcommunity">reprexcommunity</a> is an open landing page for anybody, it is a public interface. If you every land there <code>antaldaniel</code> will take you to the appropriate, otherwise invisible team room.</li>
+</ul>
+<p>Each big team has four special members for a smooth transition: Daniel and Zuzana to assist you with getting familiar with Keybase, zoombot (just type <code>!zoom</code> to create a Zoom call with the team members present) and meetbot (that does the same with Google Meet, <code>!meet</code>). Daniel will gradually withdraw from some of the teams, once their support is not needed, though each team will have at least one Reprex co-founder present. We invite everybody to at least one team, but you can sign up to as many as you like, shall you find that convenient.</p>
+<ol start="9" style="list-style-type: decimal">
+<li>Whenever you are in a situation you want to ignore us (e.g. because you sit in your dayjob), just do it. If you have a smartphone, we are there, separated from your Whatsapp friends, work emails, and you can always check on us. We can always send you a secure (and even encrypted) message to get in touch, if needed. However, we will never ever bother you with long emails, Whatsapp messages and other annoying things.</li>
+</ol>
+<p><em>Let’s keep things short, give access to the full picture when needed, and let you find out what mix of response time, details and filters works best for you.</em></p>
+</div>
+<div id="github" class="section level3" number="7.1.2">
+<h3><span class="header-section-number">7.1.2</span> Git &amp; Github</h3>
+<p>Git is a simultaneous collaboration for for any distributed team work - writing, programming, design work. Git is an open source software which makes sure that your teamwork files are always synchronized, clashes are avoided (you modify the same part of a file at the same time with Daniel.) The only hard part to move to Git is to make sure that Git properly works on your computer - it needs to be installed differently on all Linux distros, Mac OSX version all Windows versions. On Windows, you must make sure that Git is on the startup path. Once you are there, you’ll life will be much easier.</p>
+<ul>
+<li><p><a href="tools.html#keybase">Keybase</a> allows the group work on encrypted documents, like business proposals simultaneously using Git synch.</p></li>
+<li><p>RStudio allows us to work simultaneously on business proposals, blog posts, templates via Git.</p></li>
+<li><p>Github is allows us to use shared folders (<code>repositories</code> or simply <code>repos</code>) where we can track changes, modify the same thing at the same time, avoid or resolve conflicting edits, assign tasks, and much more.</p></li>
+</ul>
+<p>If you do not have a github account yet, please, sign up now on <a href="https://github.com/">github.com</a>. Create a very professional profile. It is likely that you will use this profile for future works for decades, as Git is really becoming the norm of digital nomads, freelancers, and tech teams to work together.</p>
+<p>Github is not the only service platform that allows distributed, collaborative teamwork. It has many alternatives, for example, GitLab – don’t confuse them. We use Github.</p>
+<ul>
+<li><a href="https://github.com/dataobservatory-eu">dataobservatory-eu</a> is our private repo collection and private github collaboration platform.</li>
+</ul>
+</div>
+</div>
+<div id="filemanagement" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Basic file management</h2>
+<p>If you work across different systems, like Windows 10, Mac, Linux, cloud, than you will easily get a problem with certain file names. Windows uses its own extensions, and does not like space in certain parts of the full filename.</p>
+<p>What is a filename:</p>
+<p>For example:</p>
+<p><code>C:\data\my-file.jpg</code></p>
+<ul>
+<li>has a path <code>C:\data\</code></li>
+<li>a filename <code>my-file</code></li>
+<li>and an extension: <code>.jpg</code>.</li>
+</ul>
+<p>Paths work differently on all systems, so we try to work with <code>relative path</code> instead of <code>full path</code>. For example, all pictures used to illustrate this book are stored in the <code>dataobservatory-eu/teambook</code> repo (folder) and the <code>images</code> subfolder.</p>
+<ol style="list-style-type: decimal">
+<li><p>Make sure that you use only <code>relative path</code> when you work collaboratively.</p></li>
+<li><p>The reason why we prefer <code>markdown</code> files is that they are platform independent, simple, clean text files, that can be translated to Windows, Mac, Linux specific files.</p></li>
+<li><p>Use filenames with <code>snake_case_formatting_without_space.txt</code> or <code>snake-case-formatting-with-dash.jpg</code>. Never use space in a filename, and if possible, avoid the use of uppercase.</p></li>
+<li><p>The extension is just information for the computer how to handle the file. An if you use an <code>.txt</code> extension for a markdown file, it will be still editable, but misleading. The <code>.md</code> extension just says that preferable open it with a Markdown Editor, like RStudio or stackedit.io.</p></li>
+</ol>
+<p>If you create new content, try to put it into one, single <code>markdown.md</code> or <code>markdown.Rmd</code> file.</p>
+<p>For complex documents, like this Teambook itself, we use separate files per chapter. To make sure that they can be ‘kintted’ together into a single document, they must follow specifications.</p>
+<ul>
+<li>They must have the right filename</li>
+<li>Must be placed to the right folder</li>
+<li>May have a <code>YAML</code> header with further options (like adding a table of contents)</li>
+</ul>
+<p>Let the repo editor put your single file to the right place.</p>
+<ol style="list-style-type: decimal">
+<li>Put your file to <code>drafts/draft.md</code></li>
+<li>Make sure that the image references are now <code>../images/draftimages/draft_01.jpg</code> format, where <code>../</code> tells the computer to go to the folder above drafts.</li>
+</ol>
+</div>
+<div id="writing-blogging" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Writing, blogging</h2>
+<div id="markdown" class="section level3" number="7.3.1">
+<h3><span class="header-section-number">7.3.1</span> Markdown</h3>
+<p>Markdown is a simple “language,” or rather a writing notation system that lets the word processor know that <code>*italics*</code> means <em>italics</em>, or <code>**bold**</code> means <strong>bold</strong> or <code>## Writing, blogging</code> becomes a level 2 heading, and <code>### Markdown {#markdown}</code> is a level 3 heading that can be referenced in the table of contents or internal hypertext links with <code>[Jump to markdown introduction](#markdown)</code>.</p>
+<p>Markdown makes it possible that we can work on documents that will render fine in <code>html</code>, <code>docs</code>, <code>pptx</code>, <code>pdf</code>, <code>google docs</code>, or <code>md</code> for markdown files.</p>
+<p>Markdown is a “markup language.” But that is a too big word. It is more of a notation system for writing clear text that later can be automatically formatted.</p>
+<p>For example <code>[Introduction to RMarkdown](https://rmarkdown.rstudio.com/lesson-1.html)</code> creates the hypertext link <a href="https://rmarkdown.rstudio.com/lesson-1.html">Introduction to RMarkdown</a> in <code>html</code>, <code>docs</code>, <code>pptx</code>, <code>pdf</code>, <code>iWork Keynote</code>, <code>xlsx</code> or any file format that we need to create.</p>
+<p>Markdown is very important for reproducible research and automation. It makes sure that the content and the form is fully separated.</p>
+<ul>
+<li><p>It is always the computer’s task to make the formatting work perfectly and beautifully.</p></li>
+<li><p>It is sometimes the computer’s task to fill out the document with text and numbers.</p></li>
+<li><p>It is a human task to desnbng beautiful documents, like blogposts, business proposals, research reports that are very easy to replicate automatically.</p></li>
+</ul>
+<p>Markdown is not strictly a language, and it has many ‘flavors’ or notation version. The differences are usually related to the programming interface that allows the file conversion. If you are new to markdown, you can start with any flavor, the main text functions are the same.</p>
+<ul>
+<li><p><a href="https://stackedit.io/">StackEdit</a> is a wonderful tool, and we would recommend it, if it would not have been suspended from the Google Drive integration. You can try it out online. It is probably the cleanest interface to get you started.</p></li>
+<li><p><a href="https://thumbsdb.herokuapp.com/markdown/">Heroku Markdown Editor</a> integrates reasonably easily to your Google Drive. This means that you can edit our blogposts in your Google Documents.</p></li>
+<li><p><a href="https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607">Docs to Markdown</a> translates your Google Docs to Markdown. However, you must link your own images via a valid path.</p></li>
+<li><p><a href="https://rstudio.com/">RStudio</a> is our preferred offline application. It integrates seamlessly with Github. It is an integrated programming environment with four panels. If you use it as a markdown text editor, you can just minimize or close the programming tools.</p></li>
+</ul>
+<p>RStudio uses the Rmarkdown, a special version of markdown, where you can insert little programs in <code>R</code>, <code>Python</code>, <code>C++</code>, <code>SQL</code>, <code>D3</code> or <code>Bash</code> scripts. For example, you can write a blogpost that retrieves data with a little program written by our musicology team from Spotify, or embeds a YouTube video, etc. The <code>code chunks</code> are visually separated from the proposal or blog post text, and you can ignore it if you do not <em>yet</em> write code.</p>
+<ul>
+<li><a href="https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf?_ga=2.126386957.1623649708.1603024238-59012930.1603024238">RMarkdown Cheat Sheet</a></li>
+<li><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf?_ga=2.68348561.1623649708.1603024238-59012930.1603024238">Rmarkdown Reference</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="partnerships.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["observatory_data_curators_handbook.pdf", "PDF"], ["observatory_data_curators_handbook.epub", "EPUB"], ["observatory_data_curators_handbook.docx", "Word Doc"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
