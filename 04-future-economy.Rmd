@@ -55,10 +55,13 @@ As a data curator, you help us designing datasets
 
 - created from Commission and member state merger decision text databases (we will use NLP extraction from the text of the decisions)
 - top-down indicators that show the structural (concentration) changes in the European economy
+- connect them to patent databases
+
+These indicators are particularly interestign, because we are trying to connect to databases that fall under the [Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&uri=CELEX:32019L1024), but programmatic access appears to be problematic. We need to secure reproducible, programmatic access to these important open data sources. 
 
 ### Knowledge Monopolizations, Killer Acquisitions {#knowledge-monopoly}
 
-In killer aquisitoins, a large company, for example, in pharmaceutical or technology fiedls, buys a small company, or even a start-up, to avoid disruptive innovation. We’re building several types of indicators in this field. 
+In killer acquisitions, a large company, for example, in pharmaceutical or technology fiedls, buys a small company, or even a start-up, to avoid disruptive innovation. We are building several types of indicators in this field. 
 
 -	What type of patents companies hold in smaller entities of mergers and acquisitions? How can we characterize potentially disruptive technology?
 -	Which economic activities (industries as describe by NACE) are more and less effected?
