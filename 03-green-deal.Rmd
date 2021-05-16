@@ -1,0 +1,59 @@
+# Green Deal Indicators {#green-deal}
+
+Climate change and environmental degradation are an existential threat to Europe and the world. To overcome these challenges, the European Union created the European Green Deal strategic plan. It aims to make the EU’s economy sustainable by turning climate and environmental challenges into opportunities, and making the transition just and inclusive for all.
+
+Our data observatory is competing in the EU Datathon 2021. We believe that introducing Open Policy Analysis standards with open data, open-source software and research automation can help the Green Deal policymaking process. Our collaboration is open for individuals, citizens scientists, research institutes, NGOS, companies.
+
+```{r green-deal-observatory, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "green_deal_observatory.png"
+))
+```
+
+
+## Social Attituted to Climate Change
+
+what do people think about climate change in Europe and other parts of the world? Do they believe that the climate is changing? How? What they think about the causes? Do they report that they change their behavior?  Teach their children to do so? 
+
+Please take a look at our blogpost [Is Drought Risk Uninsurable?](http://greendeal.dataobservatory.eu/post/2021-04-23-belgium-flood-insurance/) as an example.
+
+As a data curator:
+
+- You identify openly accessible surveys that are harmonized (use standardized questions.) In our tutorial we projected the public opinion data from Eurobarometer 90.2 (fieldwork: October-November 2018.) on the municipal map of Belgium
+- Tell us which question items would be good candidates to report. We used the answers to the multiple choice question `QB1 Do you think that the following extreme weather events are due to climate change?` We highlighted areas where people find it more likely to be exposed to `Droughts and wildfires`
+- How we should calculate the indicator?  Take a certain answer and average it over a region? Weight the answers? How?
+- You write at least 1-2 unit tests: what must we check when the calculation is over.  No negative numbers?  Number of regions must up to 265?
+
+If you write R code, you can get involved in our suvey harmonization and regional coding efforts. 
+
+See our tutorial: 
+
+[Regional Geocoding Harmonization Case Study - Regional Climate Change Awareness Datasets](http://greendeal.dataobservatory.eu/post/2021-03-06-regions-climate/)
+
+
+```{r regional-climate-attitutes-tutorial, fig.cap="Regional attituteds to climate change, from our survey regionalization tutorial", fig.alt="Climate change attitutes, regionalization excercise", out.width='67%'}
+knitr::include_graphics(file.path(
+  "plots", "eurobarometer_climate_attitude_tutorial.png"
+))
+```
+
+
+## Environmental Impact Indicator for Economic Activities
+
+Our [iotables](https://iotables.dataobservatory.eu/) package practically implements The [Eurostat Manual of Supply, Use and Input-Output Tables](https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/KS-RA-07-013) with real life data and in R, and it is checked against the published results from [Jörg Beutel](http://ec.europa.eu/eurostat/documents/3859598/5902113/KS-RA-07-013-EN.PDF/b0b3d71e-3930-4442-94be-70b36cea9b39?version=1.0) (the author of this excellent manual), the Spicosa Project Report, and official UK statistical tables. 
+
+We used it to calculate the effects of cultural activities on various economies, but this methodology is particularly well-suited to measure the effects, or predict the effects of policy changes on greenhouse gas or pollutant emissions. 
+
+As a data curator:
+
+- You identify openly accessible surveys data that can contains environmental effects for industries (Eurostat publishes them for many pollutants and greenhouse gases from the European Environmental Data.)
+- Tell us which particular data table would be good candidate to report. Give us ideas how to bridge various problems. (The SIOT matrix must be 60x60 or 64x64), sometimes industries must be added together.
+- If you write R code, we help you make the calculation yourself, if not, we'll take over.  
+- Please assess the results with us, and let's publish them regularly. (Some EU member states update their SIOTs every year, others every 5 years, but pollutant data may be available annually.)
+
+
+## Sensory Data Measuring Climate Change Physical Affects
+
+## Ecological Data
+
+

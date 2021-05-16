@@ -1,6 +1,20 @@
 # Music Data Indicators {#music-data}
 
-With no particular order
+The Digital Music Observatory (DMO) is a fully automated, open source, open data observatory that links public datasets in order to provide a comprehensive view of the European music industry. While the current music ecosystem provides European consumers with ease of access, its effects on artists and creative businesses have been devastating. The DMO produces key business and policy indicators that enable the growth of music business strategies and national music policies in a way that works both for music lover audiences and the creative enterprises of the sector. 
+
+Music is one of the most data-driven service industries where the majority of sales are already made by AI-driven autonomous systems. We provide a template that enables making these AI-driven systems accountable and trustworthy, with the goal of re-balancing the legitimate interests of creators and consumers. Music, like all creative industries, can create high-value, human jobs in the future that utilize digital skills and human creativity. Within Europe, this new balance will be an important use case of the European Data Strategy and the Digital Services Act. 
+
+The DMO places the values of the European Data Strategy at its center: our observatory model allows the seamless flow of data within the EU and across sectors; it abides by European rules concerning privacy, access, and use; it pools data from a wide range of industries and sectors and makes it available for further research. The music industry is a global industry, and the best known European music scene in the world is the British. Our observatory aims to support a new relationship between the European and the UK music industries while offering international open data products from global sources.
+
+The DMO is a fully-functional service that can function as a testing ground of the European Data Strategy, showcasing the ways in which the music industry is affected by the problems that the Digital Services Act and European Trustworthy AI initiatives attempt to regulate. Our observatory’s policy insights also shed new light on important aspects of the Digital Skills and Connectivity agenda of the European Union. As a user-friendly one-stop shop for all things concerning data and the music industry, our DMO provides the foundations for a healthier and accountable European music ecosystem.
+
+
+
+```{r digital-music-observatory, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "dmo_opening_page.png"
+))
+```
 
 ## Music Economy
 
