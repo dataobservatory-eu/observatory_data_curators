@@ -7,7 +7,8 @@ Our observatory is monitoring the European economy to protect the consumers and 
 We would like to create early-warning, risk, economic effect, and impact indicators that can be used in scientific, business and policy contexts for professionals who are working on re-setting the European economy after a devastating pandemic and in the age of AI. We are particularly interested in designing indicators that can be early warnings for killer acquisitions, algorithmic and offline discrimination against consumers based on nationality or place of residence, signs of undermining key economic and competition policy goals, and generally help small and medium-sized enterprises and start-ups to grow, and the financial sector to provide loanable and equity funds for their growth. 
 
 ```{r future-economy-observatory, fig.out="85%", fig.align="center", echo=FALSE}
-
+knitr::include_graphics( 
+  file.path("plots", "screenshots", "fmo_screenshot.png"))
 ```
 
 >An important aspect of the EU Datathon Challenges is ".. to propose the development of an application that links and uses open datasets [...] to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data."
