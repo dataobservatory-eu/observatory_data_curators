@@ -1,5 +1,6 @@
 fig:zenodo-example
 fig:regional-climate-attitutes-tutorial
+fig:regional-climate-attitutes-tutorial-2
 intro
 solution-as-service-offered-in-the-challenges
 service-flow
@@ -9,10 +10,6 @@ data-api
 long-form-documentation
 front-end-website
 technology
-challenges
-challenge-green-deal
-challenge-economy
-challenge-digital-age
 data-curators
 open-data
 reproducible-research
@@ -27,6 +24,13 @@ social-attituted-to-climate-change
 environmental-impact-indicator-for-economic-activities
 sensory-data-measuring-climate-change-physical-affects
 ecological-data
+future-economy
+social-attitutes-to-economic-change
+compeition-indicators
+knowledge-monopoly
+sme-indicators
+economic-impact-indicators
+sensory-data-measuring-changes-in-economic-activy
 music-data
 music-economy
 demand-drivers

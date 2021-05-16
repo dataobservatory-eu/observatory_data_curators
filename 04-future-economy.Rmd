@@ -35,7 +35,7 @@ See our tutorial:
 [Regional Geocoding Harmonization Case Study - Regional Climate Change Awareness Datasets](http://greendeal.dataobservatory.eu/post/2021-03-06-regions-climate/)
 
 
-```{r regional-climate-attitutes-tutorial, fig.cap="Regional attituteds to climate change, from our survey regionalization tutorial", fig.alt="Climate change attitutes, regionalization excercise", out.width='67%'}
+```{r regional-climate-attitutes-tutorial-2, fig.cap="Regional attituteds to climate change, from our survey regionalization tutorial", fig.alt="Climate change attitutes, regionalization excercise", out.width='67%'}
 knitr::include_graphics(file.path(
   "plots", "eurobarometer_climate_attitude_tutorial.png"
 ))

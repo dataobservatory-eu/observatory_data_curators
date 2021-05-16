@@ -99,7 +99,7 @@
 
 \title{Automated Observatory Data Curator's Handbook}
 \author{Daniel Antal, CFA}
-\date{2021-05-14}
+\date{2021-05-16}
 
 \begin{document}
 \maketitle
@@ -136,9 +136,9 @@ We want to win at least one first prize in the EU Datathon 2021.
   the \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/digital-services-act-ensuring-safe-and-accountable-online-environment_en}{Digital Services Act}, \href{https://digital-strategy.ec.europa.eu/en/policies/digital-skills-and-jobs}{Digital Skills} and \href{https://digital-strategy.ec.europa.eu/en/policies/connectivity}{Connectivity}. We will showcase these horizontal topics with our Digital Music Observatory.
 \end{itemize}
 
-These are the EU's official strategic policies for the next decade. We want to contest at least \protect\hyperlink{challenge-green-deal}{Challenge 1} and \protect\hyperlink{challenge-digital-age}{Challenge 3}, and if we find enough partners and volunteers, also {[}Challenge 2{]}(\#challenge-economy.
-
-For Challenge 1, we are preparing the \href{http://greendeal.dataobservatory.eu/}{Green Deal Data Observatory}. For Challenge 3, we will rebrand our \href{https://music.dataobservatory.eu/}{Digital Music Observatory} to highlight our efforts in trustworthy, ethical AI, and to find a new balance between the interests of artists and music audiences.
+For Challenge 1, we are preparing the \href{http://greendeal.dataobservatory.eu/}{Green Deal Data Observatory}.
+For Challenge 2, we are preparing the \href{https://pensive-hawking-276760.netlify.app/}{Future Music Observatory} -- any better name is welcome.
+For Challenge 3, we will rebrand our \href{https://music.dataobservatory.eu/}{Digital Music Observatory} to highlight our efforts in trustworthy, ethical AI, and to find a new balance between the interests of artists and music audiences.
 
 \hypertarget{problem-statement}{%
 \section*{Problem Statement}\label{problem-statement}}
@@ -269,40 +269,6 @@ We create via Rmarkdown / bookdown an automated, long-form documentation to all 
 This workflow can incorporate seaborne visualizations from the Datasette, too, but the visualization effort should be comfortable for both R and Python-based curators.
 We create a hugo website as a frontend to each observatory to present our curators, recruit new ones, blog about great new use cases, in a hugo website. These are our current ones, but it would be nice to have a hugo manager who takes it over from Daniel \url{https://greendeal.netlify.app/}, \url{https://music.dataobservatory.eu/} {[}we'll completely overhaul this{]}
 
-\hypertarget{challenges}{%
-\chapter{Challenges}\label{challenges}}
-
-An important aspect of the EU Datathon Challenges is ``.. to propose the development of an application that links and uses open datasets {[}\ldots{]} to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data.''
-
-The three challenges are linked to the European Commissions strategic policy agenda. We would like to contest at least two, or even all three challenges to show that our solution is a \emph{general} and not policy or domain-specific solution. We believe that \href{https://www.bitss.org/opa/\#:~:text=BITSS\%20supports\%20Open\%20Policy\%20Analysis,collaboration\%2C\%20discussion\%2C\%20and\%20reuse.}{open policy analysis} based on open data should work for all.
-
-\hypertarget{challenge-green-deal}{%
-\section{Challenge 1: European Green Deal}\label{challenge-green-deal}}
-
-Climate change and environmental degradation are an existential threat to Europe and the world. To overcome these challenges, the European Union created the European Green Deal strategic plan. It aims to make the EU's economy sustainable by turning climate and environmental challenges into opportunities, and making the transition just and inclusive for all.
-
-Our data observatory is competing in the EU Datathon 2021. We believe that introducing Open Policy Analysis standards with open data, open-source software and research automation can help the Green Deal policymaking process. Our collaboration is open for individuals, citizens scientists, research institutes, NGOS, companies.
-
-\begin{center}\includegraphics[width=0.8\linewidth]{plots/green_deal_observatory} \end{center}
-
-\hypertarget{challenge-economy}{%
-\section{Challenge 2: An economy that works for people}\label{challenge-economy}}
-
-We are still looking for partners in the \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people_en\#:~:text=Individuals\%20and\%20businesses\%20in\%20the,needs\%20of\%20the\%20EU's\%20citizens.}{An economy that works for people}, challenge, with a particular focus on the \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people/internal-market_en}{Single market strategy}, and particular attention to the strategy's goals of 1. Modernising our standards system, 2. Consolidating Europe's intellectual property framework, and 3. Enabling the balanced development of the collaborative economy strategic goals.
-
-\hypertarget{challenge-digital-age}{%
-\section{Challenge 3: A Europe fit for the digital age - Empowering people with a new generation of technologies}\label{challenge-digital-age}}
-
-The Digital Music Observatory (DMO) is a fully automated, open source, open data observatory that links public datasets in order to provide a comprehensive view of the European music industry. While the current music ecosystem provides European consumers with ease of access, its effects on artists and creative businesses have been devastating. The DMO produces key business and policy indicators that enable the growth of music business strategies and national music policies in a way that works both for music lover audiences and the creative enterprises of the sector.
-
-Music is one of the most data-driven service industries where the majority of sales are already made by AI-driven autonomous systems. We provide a template that enables making these AI-driven systems accountable and trustworthy, with the goal of re-balancing the legitimate interests of creators and consumers. Music, like all creative industries, can create high-value, human jobs in the future that utilize digital skills and human creativity. Within Europe, this new balance will be an important use case of the European Data Strategy and the Digital Services Act.
-
-The DMO places the values of the European Data Strategy at its center: our observatory model allows the seamless flow of data within the EU and across sectors; it abides by European rules concerning privacy, access, and use; it pools data from a wide range of industries and sectors and makes it available for further research. The music industry is a global industry, and the best known European music scene in the world is the British. Our observatory aims to support a new relationship between the European and the UK music industries while offering international open data products from global sources.
-
-The DMO is a fully-functional service that can function as a testing ground of the European Data Strategy, showcasing the ways in which the music industry is affected by the problems that the Digital Services Act and European Trustworthy AI initiatives attempt to regulate. Our observatory's policy insights also shed new light on important aspects of the Digital Skills and Connectivity agenda of the European Union. As a user-friendly one-stop shop for all things concerning data and the music industry, our DMO provides the foundations for a healthier and accountable European music ecosystem.
-
-\begin{center}\includegraphics[width=0.8\linewidth]{plots/dmo_opening_page} \end{center}
-
 \hypertarget{data-curators}{%
 \chapter{Data Curators}\label{data-curators}}
 
@@ -320,6 +286,10 @@ We are looking for data curators who
 \item
   Make the authoritative copy of their indicator available on the Zenodo data repository, and keep it up-to-date with our automated observatory's help.
 \end{enumerate}
+
+\begin{quote}
+An important aspect of the EU Datathon Challenges is ``.. to propose the development of an application that links and uses open datasets {[}\ldots{]} to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data.''
+\end{quote}
 
 \hypertarget{open-data}{%
 \section{Open Data}\label{open-data}}
@@ -470,7 +440,11 @@ Your first contribution can be made without writing a single program code -- but
 \hypertarget{green-deal}{%
 \chapter{Green Deal Indicators}\label{green-deal}}
 
-With no particular order
+Climate change and environmental degradation are an existential threat to Europe and the world. To overcome these challenges, the European Union created the European Green Deal strategic plan. It aims to make the EU's economy sustainable by turning climate and environmental challenges into opportunities, and making the transition just and inclusive for all.
+
+Our data observatory is competing in the EU Datathon 2021. We believe that introducing Open Policy Analysis standards with open data, open-source software and research automation can help the Green Deal policymaking process. Our collaboration is open for individuals, citizens scientists, research institutes, NGOS, companies.
+
+\begin{center}\includegraphics[width=0.8\linewidth]{plots/green_deal_observatory} \end{center}
 
 \hypertarget{social-attituted-to-climate-change}{%
 \section{Social Attituted to Climate Change}\label{social-attituted-to-climate-change}}
@@ -535,10 +509,140 @@ As a data curator:
 \hypertarget{ecological-data}{%
 \section{Ecological Data}\label{ecological-data}}
 
+\hypertarget{future-economy}{%
+\chapter{Future Economy Observatory}\label{future-economy}}
+
+Big data and automation create new inequalities and injustices and has a potential to create a jobless growth. Our Economy Observatory is a fully automated, open source, open data observatory that produces new indicators from open data sources and experimental big data sources, with authoritative copies and a modern API.
+
+Our observatory is monitoring the European economy to protect the consumers and the small companies from unfair competition both from data and knowledge monopolization and robotization. We take a critical SME-, intellectual property policy and competition policy point of view automation, robotization, and the AI revolution on the service-oriented European social market economy.
+
+We would like to create early-warning, risk, economic effect, and impact indicators that can be used in scientific, business and policy contexts for professionals who are working on re-setting the European economy after a devastating pandemic and in the age of AI. We are particularly interested in designing indicators that can be early warnings for killer acquisitions, algorithmic and offline discrimination against consumers based on nationality or place of residence, signs of undermining key economic and competition policy goals, and generally help small and medium-sized enterprises and start-ups to grow, and the financial sector to provide loanable and equity funds for their growth.
+
+\begin{center}\includegraphics[width=0.8\linewidth]{plots/screenshots/fmo_screenshot} \end{center}
+
+\begin{quote}
+An important aspect of the EU Datathon Challenges is ``.. to propose the development of an application that links and uses open datasets {[}\ldots{]} to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data.''
+\end{quote}
+
+In the \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people_en\#:~:text=Individuals\%20and\%20businesses\%20in\%20the,needs\%20of\%20the\%20EU's\%20citizens.}{An economy that works for people} challenge we are focusing on the \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people/internal-market_en}{Single market strategy}, and particular attention to the strategy's goals of 1. Modernising our standards system, 2. Consolidating Europe's intellectual property framework, and 3. Enabling the balanced development of the collaborative economy strategic goals.
+
+\hypertarget{social-attitutes-to-economic-change}{%
+\section{Social Attitutes to Economic Change}\label{social-attitutes-to-economic-change}}
+
+what do people think about climate change in Europe and other parts of the world? Do they believe that the climate is changing? How? What they think about the causes? Do they report that they change their behavior? Teach their children to do so?
+
+Please take a look at our blogpost \href{http://greendeal.dataobservatory.eu/post/2021-04-23-belgium-flood-insurance/}{Is Drought Risk Uninsurable?} as an example.
+
+As a data curator:
+
+\begin{itemize}
+\tightlist
+\item
+  You identify openly accessible surveys that are harmonized (use standardized questions.) In our tutorial we projected the public opinion data from Eurobarometer 90.2 (fieldwork: October-November 2018.) on the municipal map of Belgium
+\item
+  Tell us which question items would be good candidates to report. We used the answers to the multiple choice question \texttt{QB1\ Do\ you\ think\ that\ the\ following\ extreme\ weather\ events\ are\ due\ to\ climate\ change?} We highlighted areas where people find it more likely to be exposed to \texttt{Droughts\ and\ wildfires}
+\item
+  How we should calculate the indicator? Take a certain answer and average it over a region? Weight the answers? How?
+\item
+  You write at least 1-2 unit tests: what must we check when the calculation is over. No negative numbers? Number of regions must up to 265?
+\end{itemize}
+
+If you write R code, you can get involved in our suvey harmonization and regional coding efforts.
+
+See our tutorial:
+
+\href{http://greendeal.dataobservatory.eu/post/2021-03-06-regions-climate/}{Regional Geocoding Harmonization Case Study - Regional Climate Change Awareness Datasets}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.67\linewidth]{plots/eurobarometer_climate_attitude_tutorial} 
+
+}
+
+\caption{Regional attituteds to climate change, from our survey regionalization tutorial}\label{fig:regional-climate-attitutes-tutorial-2}
+\end{figure}
+
+\hypertarget{compeition-indicators}{%
+\section{Competition}\label{compeition-indicators}}
+
+We are seeking API level access to the European Commissions Mergers database, and monitor approved and declined merger requests programatically. These mergers are important cases enough to have a potential impact on the structure of the European economy.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{plots/screenshots/ec_competition_merger_screenshot} 
+
+}
+
+\end{figure}
+
+As a data curator, you help us designing datasets
+
+\begin{itemize}
+\tightlist
+\item
+  created from Commission and member state merger decision text databases (we will use NLP extraction from the text of the decisions)
+\item
+  top-down indicators that show the structural (concentration) changes in the European economy
+\item
+  connect them to patent databases
+\end{itemize}
+
+These indicators are particularly interestign, because we are trying to connect to databases that fall under the \href{https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433\&uri=CELEX:32019L1024}{Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024}, but programmatic access appears to be problematic. We need to secure reproducible, programmatic access to these important open data sources.
+
+\hypertarget{knowledge-monopoly}{%
+\subsection{Knowledge Monopolizations, Killer Acquisitions}\label{knowledge-monopoly}}
+
+In killer acquisitions, a large company, for example, in pharmaceutical or technology fiedls, buys a small company, or even a start-up, to avoid disruptive innovation. We are building several types of indicators in this field.
+
+\begin{itemize}
+\tightlist
+\item
+  What type of patents companies hold in smaller entities of mergers and acquisitions? How can we characterize potentially disruptive technology?
+\item
+  Which economic activities (industries as describe by NACE) are more and less effected?
+\item
+  How is patent concentration changing?
+\end{itemize}
+
+\hypertarget{sme-indicators}{%
+\section{SME Activity Indicators}\label{sme-indicators}}
+
+\hypertarget{economic-impact-indicators}{%
+\section{Economic Impact Indicators}\label{economic-impact-indicators}}
+
+Our \href{https://iotables.dataobservatory.eu/}{iotables} package practically implements The \href{https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/KS-RA-07-013}{Eurostat Manual of Supply, Use and Input-Output Tables} with real life data and in R, and it is checked against the published results from \href{http://ec.europa.eu/eurostat/documents/3859598/5902113/KS-RA-07-013-EN.PDF/b0b3d71e-3930-4442-94be-70b36cea9b39?version=1.0}{Jörg Beutel} (the author of this excellent manual), the Spicosa Project Report, and official UK statistical tables.
+
+We used it to calculate the effects of cultural activities on various economies, but this methodology is particularly well-suited to measure the effects, or predict the effects of policy changes on greenhouse gas or pollutant emissions.
+
+As a data curator:
+
+\begin{itemize}
+\tightlist
+\item
+  You identify openly accessible surveys data that can contains environmental effects for industries (Eurostat publishes them for many pollutants and greenhouse gases from the European Environmental Data.)
+\item
+  Tell us which particular data table would be good candidate to report. Give us ideas how to bridge various problems. (The SIOT matrix must be 60x60 or 64x64), sometimes industries must be added together.
+\item
+  If you write R code, we help you make the calculation yourself, if not, we'll take over.\\
+\item
+  Please assess the results with us, and let's publish them regularly. (Some EU member states update their SIOTs every year, others every 5 years, but pollutant data may be available annually.)
+\end{itemize}
+
+\hypertarget{sensory-data-measuring-changes-in-economic-activy}{%
+\section{Sensory Data Measuring Changes in Economic Activy}\label{sensory-data-measuring-changes-in-economic-activy}}
+
 \hypertarget{music-data}{%
 \chapter{Music Data Indicators}\label{music-data}}
 
-With no particular order
+The Digital Music Observatory (DMO) is a fully automated, open source, open data observatory that links public datasets in order to provide a comprehensive view of the European music industry. While the current music ecosystem provides European consumers with ease of access, its effects on artists and creative businesses have been devastating. The DMO produces key business and policy indicators that enable the growth of music business strategies and national music policies in a way that works both for music lover audiences and the creative enterprises of the sector.
+
+Music is one of the most data-driven service industries where the majority of sales are already made by AI-driven autonomous systems. We provide a template that enables making these AI-driven systems accountable and trustworthy, with the goal of re-balancing the legitimate interests of creators and consumers. Music, like all creative industries, can create high-value, human jobs in the future that utilize digital skills and human creativity. Within Europe, this new balance will be an important use case of the European Data Strategy and the Digital Services Act.
+
+The DMO places the values of the European Data Strategy at its center: our observatory model allows the seamless flow of data within the EU and across sectors; it abides by European rules concerning privacy, access, and use; it pools data from a wide range of industries and sectors and makes it available for further research. The music industry is a global industry, and the best known European music scene in the world is the British. Our observatory aims to support a new relationship between the European and the UK music industries while offering international open data products from global sources.
+
+The DMO is a fully-functional service that can function as a testing ground of the European Data Strategy, showcasing the ways in which the music industry is affected by the problems that the Digital Services Act and European Trustworthy AI initiatives attempt to regulate. Our observatory's policy insights also shed new light on important aspects of the Digital Skills and Connectivity agenda of the European Union. As a user-friendly one-stop shop for all things concerning data and the music industry, our DMO provides the foundations for a healthier and accountable European music ecosystem.
+
+\begin{center}\includegraphics[width=0.8\linewidth]{plots/dmo_opening_page} \end{center}
 
 \hypertarget{music-economy}{%
 \section{Music Economy}\label{music-economy}}
