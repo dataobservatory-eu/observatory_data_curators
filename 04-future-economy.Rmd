@@ -1,4 +1,4 @@
-# Future Economy Observatory {#future-economy}
+# Economy Data Observatory {#future-economy}
 
 Big data and automation create new inequalities and injustices and has a potential to create a jobless growth. Our Economy Observatory is a fully automated, open source, open data observatory that produces new indicators from open data sources and experimental big data sources, with authoritative copies and a modern API.
 

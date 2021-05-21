@@ -99,7 +99,7 @@
 
 \title{Automated Observatory Data Curator's Handbook}
 \author{Daniel Antal, CFA}
-\date{2021-05-16}
+\date{2021-05-21}
 
 \begin{document}
 \maketitle
@@ -322,12 +322,13 @@ Our mission is to create standardized data about a social, economic or environme
 \hypertarget{remain-critical}{%
 \subsection{Remain Critical}\label{remain-critical}}
 
-Cathy O'Neil: \href{https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction}{Weapons of math destruction}, which O'Neil are mathematical models or algorithms that claim to quantify important traits: teacher quality, recidivism risk, creditworthiness but have harmful outcomes and often reinforce inequality, keeping the poor poor and the rich rich. They have three things in common: opacity, scale, and damage. \url{https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/}{]}(\url{https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/})
-
-Catherine D'Ignazio and Lauren F. Klein: \href{https://mitpress.mit.edu/books/data-feminism}{Data Feminism}. This is a much celebrated book, and with a good reason. It views AI and data problems with a feminist point of view, but the examples and the toolbox can be easily imagined for small-country biases, racial, ethnic, or small enterprise problems. A very good introduction to the injustice of big data and the fight for a more fair use of data, and how bad data collection practices through garbe in garbe out lead to misleading information, or even misinformation.
+Sometimes we put our hands on data that looks like a unique starting point to create a new indicator. But our indicator will be flawed, if the original dataset is flawed. And it can be flawed in many ways, most likely that some important aspect of the information was omitted, or the data is autoselected, for example, under-sampling women, people of color, or observations from small or less developed countries.
 
 \begin{itemize}
-\tightlist
+\item
+  Cathy O'Neil: \href{https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction}{Weapons of math destruction}, which O'Neil are mathematical models or algorithms that claim to quantify important traits: teacher quality, recidivism risk, creditworthiness but have harmful outcomes and often reinforce inequality, keeping the poor poor and the rich rich. They have three things in common: opacity, scale, and damage. \url{https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/}{]}(\url{https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/})
+\item
+  Catherine D'Ignazio and Lauren F. Klein: \href{https://mitpress.mit.edu/books/data-feminism}{Data Feminism}. This is a much celebrated book, and with a good reason. It views AI and data problems with a feminist point of view, but the examples and the toolbox can be easily imagined for small-country biases, racial, ethnic, or small enterprise problems. A very good introduction to the injustice of big data and the fight for a more fair use of data, and how bad data collection practices through garbe in garbe out lead to misleading information, or even misinformation.
 \item
   \href{https://fivethirtyeight.com/features/why-the-bronx-really-burned/}{Why The Bronx Burned}. Between 1970 and 1980, seven census tracts in the Bronx lost more than 97 percent of their buildings to fire and abandonment. In his book \href{https://www.amazon.com/Fires-Computer-Intentions-City-Determined/dp/1594485062}{The Fires}, Joe Flood lays the blame on misguided ``best and brightest'' effort by New York City to increase government efficiency. With the help of the Rand Corp., the city tried to measure fire response times, identify redundancies in service, and close or re-allocate fire stations accordingly. What resulted, though, was a perfect storm of bad data: The methodology was flawed, the analysis was rife with biases, and the results were interpreted in a way that stacked the deck against poorer neighborhoods. The slower response times allowed smaller fires to rage uncontrolled in the city's most vulnerable communities. Listen to the podcast \href{https://podcasts.apple.com/us/podcast/19-why-the-bronx-burned/id1011406983?i=1000391467912}{here}
 \item
@@ -371,8 +372,7 @@ In the EU, open data is governed by the \href{https://eur-lex.europa.eu/legal-co
 \hypertarget{reproducible-research}{%
 \section{Reproducible Research}\label{reproducible-research}}
 
-\textbf{Reproducible research} is a scientific concept that can be applied to a wide range of professional designations. We are applying this concept to \protect\hyperlink{opa}{Evidence-based, Open Policy Analysis} and \protect\hyperlink{business-professional-standards}{Professional Standards in Business}.
-
+\textbf{Reproducible research} is a scientific concept that can be applied to a wide range of professional designations. We are applying this concept to \protect\hyperlink{opa}{Evidence-based, Open Policy Analysis} and \protect\hyperlink{business-professional-standards}{Professional Standards in Business},
 for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on the computational reproducibility we believe that the following principles should be followed.
 
 \begin{itemize}
@@ -422,6 +422,22 @@ Some of the requirements of reproducible research are usually required by profes
 
 We are committing ourselves in the final deliverable to follow the indicator design principles set out by Eurostat:
 \citep{eurostat_harmonised_indicators_2014, kotzeva_harmonised_indicators_2017, eurostat_harmonised_indicators_2014} to create high-quality, validated indicators that receive appropriate feedback from users, i.e.~music businesses, their trade associations and policy-makers.
+
+What are the characteristics of a good indicator? Based on the above mentioned Eurostat expectation, we formulated it for our observatories in this way.
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{Relevance}: Indicators must `meet the users' needs'; if they do not measure anything useful to policymakers, the public or researchers, they will probably not be widely used. Indicators should also be unambiguous in showing which direction is `desirable'.
+\item
+  \texttt{Accuracy\ and\ reliability}: Indicators must `accurately and reliably portray reality'; an inaccurate indicator can lead to erroneous conclusions, steer the business or policy making process in the wrong direction or let negative effects go undetected.
+\item
+  \texttt{Timeliness\ and\ punctuality}: Indicators must be released at a time that is relevant to the end user. If we cannot produce an accurate indicator in a timely manner, we should aim to create a leading indicator that is sooner available and with relatively high accuracy correlates with the indicator that is not available on time.
+\item
+  \texttt{Coherence\ and\ comparability}: Indicators should be `consistent internally, over time and comparable between regions and countries. This is particularly relevant for indicators used for policy monitoring and assessment, and in international business planning and assessment.
+\item
+  \texttt{Accessibility\ and\ clarity}
+\end{itemize}
 
 Examples for indicators in our \href{https://music.dataobservatory.eu/}{Digital Music Observatory}:
 
@@ -578,9 +594,6 @@ As a data curator:
 
 \hypertarget{sensory-data-measuring-climate-change-physical-affects}{%
 \section{Sensory Data Measuring Climate Change Physical Affects}\label{sensory-data-measuring-climate-change-physical-affects}}
-
-\hypertarget{ecological-data}{%
-\section{Ecological Data}\label{ecological-data}}
 
 \hypertarget{future-economy}{%
 \chapter{Future Economy Observatory}\label{future-economy}}

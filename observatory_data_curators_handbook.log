@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.16)  16 MAY 2021 16:43
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.5.19)  21 MAY 2021 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **observatory_data_curators_handbook.tex
 (./observatory_data_curators_handbook.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-05-07>
+L3 programming layer <2021-05-11>
 (c:/Users/Daniel Antal/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.c
 ls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
@@ -159,7 +159,7 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 h/unicode-math.sty
 (c:/Users/Daniel Antal/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/ex
 pl3.sty
-Package: expl3 2021-05-07 L3 programming layer (loader) 
+Package: expl3 2021-05-11 L3 programming layer (loader) 
 
 (c:/Users/Daniel Antal/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l
 3backend-xetex.def
@@ -1204,17 +1204,29 @@ Chapter 2.
 Package natbib Warning: Citation `dataandlyrics' on page 10 undefined on input 
 line 301.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
-[][][][][][][] [][] [][] [][] [][][][] [][] [][][][][][][][][][][][]$[][]\TU/lm
-r/m/n/10 ]([][]$[][][][][] [] [] [] [][][][][] [] [][][][][][][][][][][][][][][
-][][][] [] [][][] [] [][][][][] [][] [][] [][] [][][][][] [] [][][][][][] [][] 
-[][][][][][][] [][] [][] [][]
- []
-
 [10
 
-] [11] [12] [13] [14]
+]
+Underfull \hbox (badness 1297) in paragraph at lines 329--331
+[]\TU/lmr/m/n/10 Cathy O’Neil: [][]Weapons of math destruction[][], which O’Nei
+l are mathematical models or
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 329--331
+\TU/lmr/m/n/10 itworthiness but have harmful outcomes and often reinforce inequ
+ality, keeping the poor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
+[][]$[][][][][] [] [] [] [][][][][] [] [][][][][][][][][][][][][][][][][][] [] 
+[][][] [] [][][][][] [][] [][] [][] [][][][][] [] [][][][][][] [][] [][][][][][
+][] [][] [][] [][] [][][][] [][] [][][][][][][][][][][][]$[][]\TU/lmr/m/n/10 ](
+[][]$[][][][][] []
+ []
+
+[11] [12] [13] [14]
 File: plots/screenshots/zenodo_deposition_example.png Graphic file (type bmp)
 <plots/screenshots/zenodo_deposition_example.png>
 [15] [16]
@@ -1222,7 +1234,7 @@ Chapter 3.
 File: plots/screenshots/green_deal_observatory.png Graphic file (type bmp)
 <plots/screenshots/green_deal_observatory.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
 \TU/lmtt/m/n/10 We need to improve conservation by improving wildlife monitorin
 g. Counting plants and
  []
@@ -1237,7 +1249,7 @@ File: plots/eurobarometer_climate_attitude_tutorial.png Graphic file (type bmp)
 
 <plots/eurobarometer_climate_attitude_tutorial.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 574--576
+Underfull \hbox (badness 10000) in paragraph at lines 590--592
 
  []
 
@@ -1255,7 +1267,7 @@ File: plots/screenshots/ec_competition_merger_screenshot.png Graphic file (type
  bmp)
 <plots/screenshots/ec_competition_merger_screenshot.png>
 [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 699--701
+Underfull \hbox (badness 10000) in paragraph at lines 712--714
 
  []
 
@@ -1274,7 +1286,7 @@ Chapter 7.
 [29
 
 ] [30] [31]
-Overfull \hbox (54.4859pt too wide) in paragraph at lines 1024--1026
+Overfull \hbox (54.4859pt too wide) in paragraph at lines 1037--1039
 []\TU/lmr/m/n/10 Use filenames with \TU/lmtt/m/n/10 snake_case_formatting_witho
 ut_space.txt \TU/lmr/m/n/10 or \TU/lmtt/m/n/10 snake-case-formatting-with-dash.
 jpg\TU/lmr/m/n/10 .
@@ -1288,10 +1300,10 @@ Package natbib Warning: There were undefined citations.
 
 ] (./observatory_data_curators_handbook.aux) ) 
 Here is how much of TeX's memory you used:
- 20160 strings out of 478749
- 364530 string characters out of 5860865
- 870192 words of memory out of 5000000
- 39808 multiletter control sequences out of 15000+600000
+ 20158 strings out of 478739
+ 364507 string characters out of 5860696
+ 870373 words of memory out of 5000000
+ 39816 multiletter control sequences out of 15000+600000
  409995 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  85i,7n,121p,1134b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
