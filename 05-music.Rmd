@@ -16,6 +16,10 @@ knitr::include_graphics(file.path(
 ))
 ```
 
+## Curators
+
+[Eszter Kabai: New Indicators for Royalty Pricing and Music Antitrust](https://music.dataobservatory.eu/post/2021-06-02-data-curator-eszter-kabai/)
+
 ## Music Economy
 
 ### Demand Drivers

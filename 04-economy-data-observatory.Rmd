@@ -20,6 +20,9 @@ knitr::include_graphics(
   file.path("plots", "screenshots", "Economy_Data_Observatory_timeline.jpg"))
 ```
 
+## Curators
+
+[Peter Ormosi: New Indicators for Computational Antitrust](https://economy.dataobservatory.eu/post/2021-06-02-data-curator-peter-ormosi/)
 
 ## Social Attitutes to Economic Change
 
