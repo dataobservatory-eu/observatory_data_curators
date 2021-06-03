@@ -1,6 +1,12 @@
 # Data Curators {#data-curators}
 
-We are looking for data curators who 
+We are looking for data curators into our
+
+- [Green Deal Data Observatory](https://greendeal.dataobservatory.eu/#contributors)
+
+- [Economy Data Observatory](https://economy.dataobservatory.eu/#contributors)
+
+- [Digital Music Observatory](https://music.dataobservatory.eu/#contributors) 
 
 1. Work with governmental or scientific or otherwise [open data](#open-data).
 2. Committed to high policy or business professional standards, and by making their work [reproducible](#reproducible-research), they adhere to reviewability, reproducability, confirmability and auditability, regardless if they work, or study for various professsional roles in business, academia, public or non-governmental policy, and data journalism.
@@ -14,7 +20,7 @@ Where to find us:
 
 - [Creative Data Observatories LinkedIn Page](https://www.linkedin.com/company/reprexbv/). Make sure you follow us, and spread our messages.
 
-- [@dataandlyrics](https://twitter.com/dataandlyrics) is our twitter handle for our music-oriented blog. If you are on twitter, please follow us, and retweet our blogposts.
+- [twitter.com/dataandlyrics](https://twitter.com/dataandlyrics) is our twitter handle for our music-oriented blog. If you are on twitter, please follow us, and retweet our blogposts.
 
 - [keybase.io/team/reprexcommunity](https://keybase.io/team/reprexcommunity) is our landing page to our otherwise private and invisible internal communication platform. (See more in subchapter\@ref(keybase) of [Tools](#keybase).)
 
@@ -28,8 +34,7 @@ Our mission is to create standardized data about a social, economic or environme
 - [This Scientist Stung Himself With Dozens Of Insects Because No One Else Would](https://fivethirtyeight.com/features/this-scientist-stung-himself-with-dozens-of-insects-because-no-one-else-would/): The Schmidt Pain Index, as its informally known, runs from 1-4. The common honey bee serves as its anchor point, a solid 2. At the top end of the scale lie the bullet ant and the tarantula hawk (which is neither a tarantula nor a hawk; it’s [a wasp](https://www.wired.com/2015/07/absurd-creature-of-the-week-tarantula-hawk/)). Watch the video with [Dr. Schmidt](https://youtu.be/i0LjT-qkUes), and listen to the whole interview [here](https://podcasts.apple.com/us/podcast/48-the-schmidt-sting-pain-index/id1011406983?i=1000391467968).
 - [Big Data Is Saving This Little Bird](https://fivethirtyeight.com/features/big-data-is-saving-this-little-bird/) “We need to improve conservation by improving wildlife monitoring. Counting plants and animals is really tricky business.”
 
-
-### Remain Critical
+### Remain Critical {#critical-attitude}
 
 Sometimes we put our hands on data that looks like a unique starting point to create a new indicator.  But our indicator will be flawed, if the original dataset is flawed.  And it can be flawed in many ways, most likely that some important aspect of the information was omitted, or the data is autoselected, for example, under-sampling women, people of color, or observations from small or less developed countries. 
 
@@ -67,7 +72,7 @@ _Our data is mainly processed in R language software, and sometimes in Python la
 
 In the EU, open data is governed by the [Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&uri=CELEX:32019L1024). It entered into force on 16 July 2019. It replaces the [Public Sector Information Directive](https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098), also known as the *PSI Directive* which dated from 2003 and was subsequently amended in 2013.
 
-## Reproducible Research {#reproducible-research}
+## Reproducible Research {#reproducible-research-theory}
 
 **Reproducible research** is a scientific concept that can be applied to a wide range of professional designations. We are applying this concept to  [Evidence-based, Open Policy Analysis](#opa) and [Professional Standards in Business](#business-professional-standards), 
 for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on the computational reproducibility we believe that the following principles should be followed. 
@@ -161,7 +166,7 @@ knitr::include_graphics(file.path(
 
 You can see this dataset [here](https://zenodo.org/record/3759811#.YJ6R3qgzbIU), which was used in [this](https://dataandlyrics.com/publication/scholarly_pirate_libraries_2020/) high-profile scientific publication.
 
-### Authentic Depositions of Indicators {#deposit-indicator}
+## Authentic Depositions of Indicators {#deposit-indicator}
 
 We designed a workflow that helps our curators to put their indicator tables to [Zenodo](https://zenodo.org/). In many cases, particularly if they do EU-funded research, this is also usually a grant requirement. At the same time, we place the indicator to our database, and make it available on our data observatory's API.
 
@@ -169,3 +174,41 @@ With low-frequency data, such as annual data tables, we place all copies to Zeno
 
 With high-frequency data, such as data tables that are refreshing daily or several times a day, we do not think that authentic versioning is useful. In such cases, we create an authentic version at a pre-agreed time frequency, for example, monthly.
 
+
+### How to Add your Existing Zenodo Depositions to Our Observatory
+
+If you have a relevant dataset on Zenodo that should be featured in one of our observatories, or you are just uploading a new dataset, you should send it to our observatory `communities`.  Communities are just collections that make your data easier to find and cite.
+
+On your new or existing deposition, go to Edit, and you will find `Communities` right after `Files` and above `Upload Type`.
+
+```{r how-to-add-zenodo, out.width='85%', fig.cap='How to Add your Existing Zenodo Depositions to Our Observatory?'}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "zenodo_how_to_add.png"
+))
+```
+
+If you want to be featured regularly in our observatories, your data should conform our database schema. In this case, we will help you maintaining the timeliness of your data -- basically we will together keep your dataset growing, expanding, and be available via our API, too. (See an example [here](http://34.226.91.55).  We will add a tutorial on this shortly to our blog.)
+
+#### Digital Music Observatory
+
+You can deposit your data, or search for new, exciting data on Zenodo itself to our music observatory on [zenodo.org/communities/music_observatory](https://zenodo.org/communities/music_observatory?page=1&size=20).
+
+```{r dmo-zenodo, fig.cap="Deposit Data, Curate Data on Zenodo for the Digital Music Observatory", fig.align='center', out.width='85%'}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "dmo_and_zenodo.png"
+))
+```
+
+### Green Deal Data Observatory
+
+You can deposit your data, or search for new, exciting data on Zenodo itself to our green deal data observatory on [zenodo.org/communities/greendeal_observatory](https://zenodo.org/communities/greendeal_observatory?page=1&size=20).
+
+```{r greendeal-zenodo, fig.cap="Deposit Data, Curate Data on Zenodo for the Green Deal Data Observatory", fig.align='center', out.width='85%'}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "greendeal_and_zenodo.png"
+))
+```
+
+#### Economy Data Observatory
+
+You can deposit your data, or search for new, exciting data on Zenodo itself to our green deal data observatory on [zenodo.org/communities/economy_observatory/](https://zenodo.org/communities/economy_observatory?page=1&size=20).

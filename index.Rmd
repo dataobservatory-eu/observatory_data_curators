@@ -49,8 +49,8 @@ We want to win at least one first prize in the EU Datathon 2021.
 the [Digital Services Act](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/digital-services-act-ensuring-safe-and-accountable-online-environment_en), [Digital Skills](https://digital-strategy.ec.europa.eu/en/policies/digital-skills-and-jobs) and [Connectivity](https://digital-strategy.ec.europa.eu/en/policies/connectivity). We will showcase these horizontal topics with our Digital Music Observatory. 
 
 For Challenge 1, we are preparing the [Green Deal Data Observatory](http://greendeal.dataobservatory.eu/). 
-For Challenge 2, we are preparing the [Future Music Observatory](https://pensive-hawking-276760.netlify.app/) -- any better name is welcome.
-For Challenge 3, we will rebrand our [Digital Music Observatory](https://music.dataobservatory.eu/) to highlight our efforts in trustworthy, ethical AI, and to find a new balance between the interests of artists and music audiences. 
+For Challenge 2, the [Economy Data Observatory](https://economy.dataobservatory.eu/) -- any better name is welcome.
+For Challenge 3, our [Digital Music Observatory](https://music.dataobservatory.eu/) to highlight our efforts in trustworthy, ethical AI, and to find a new balance between the interests of artists and music audiences. 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warnings=FALSE, out.width ='80%', fig.align='center')
@@ -70,6 +70,12 @@ knitr::write_bib(c(
 The EU has a 18-year-old open data regime and it makes public taxpayer-funded data in the values of tens of billions of euros per year; the Eurostat program alone handles 20,000 international data products, including at least 5000 pan-European environmental indicators.
 
 As open science principles gain increased acceptance, scientific researchers are making hundreds of thousands of valuable datasets public and available for replication every year.
+
+```{r observatories, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots","screenshots", "observatory_collage_16x9_800.png"
+))
+```
 
 The EU, the OECD, and UN institutions run around 100 data collection programs, so-called ‘data observatories’ that more or less avoid touching this data, and buy proprietary data instead. Annually, each observatory spends between 50 thousand and 3 million EUR on collecting untidy and proprietary data of inconsistent quality, while never even considering open data.
 

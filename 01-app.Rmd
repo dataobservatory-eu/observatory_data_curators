@@ -1,20 +1,8 @@
 # Application for the Datathlon Prizes: Automated Data Observatories {#intro}
 
-This year's Datathlon has three challenges that we can contest with an application.  We want to answer at least 2 of the challenges with the same technology, knowledge management, but partly different data used.
+This year's Datathlon has three challenges that we can contest with an application.  We are contesting all three challenges with the same technology, knowledge management, but partly different data used.
 
-## Solution as Service offered in the Challenges
-
-- We create automated data observatories that re-process governmental and scientific open data into high-quality data that can replace better processed, but lower content value proprietary data. 
-
-- We put the open data into a tidy format that allows it to be joined, and not only be used in isolation.
-
-- We fix common, simple problems, such as currency translations, unit conversions, interpolations of missing data, bad geographical coding that, without software support, makes open data not competitive.
-
-- We automate part of the documentation process, because of one of the competitive disadvantages of open data that often it is lacking any documentation.
-
-- Our automated data observatories offer re-processed, tidy and documented open data for the 2 or 3 key challenges of the EU.
-
-## Service Flow
+## How We Add Value to Data
 
 ```{r open-source-slide, fig.out="85%", fig.align="center", echo=FALSE}
 knitr::include_graphics(file.path(
@@ -22,62 +10,132 @@ knitr::include_graphics(file.path(
 ))
 ```
 
-### New, high quality data
+### Reproducible Research {#reproducible-research}
 
-We can rely on existing packages of our team, and probably the entire rOpenGov collective, where Daniel had been active for many years.  Via Kasia, we could bring in the environmental open data community. 
+1. **Our curatotrs**: help finding the best available information source.  This is often open data, which does not equal public data. Open data is a governmental or scientific data source which you can legally access.  It is almost never available for direct download, and requires much processing.  You could probably do this in Excel -- if the data was not in various `sql`, `pdf`, `sav`, `csv`, `tsv`, `xls` and various other file formats. 
 
-```{r new-high-quality-data, fig.out="85%", fig.align="center", echo=FALSE}
-knitr::include_graphics(file.path(
-  "plots", "gold_panning_slide.png"
-))
+2. **We process the data**: Yes, anybody can change million euros to euros in a spreadshit, tons to kilograms, maybe even ounces to grams, but many unit conversation are error-prone if done by humans. Not everybody can make valid currency translation (*When do I use year-end USD/EUR rate? Today's EUR/GBP? Or GBP/EUR? Annual average rate?*) We do it in a way that it confirms the tidy data definition, which allows its easy integration, joining and importing into your database. While the unit conversions can be automated in Excel or PowerBI, the data tidying requires a more programatic approach.
+
+3. **Quality control**:  Our data goes through dozens of computer logical checks (*Do assets and liabilities match? Dollar and euro amounts lead to the same result?*) Our algorithms go through automated and human statistical peer-review, and are open to your experts for checking, because transparency and openness allows for the best quality control. This unit testing is not really possible in Excel or Power BI, not to mention the senior supervision of such tasks. To maintain data integrity, we place an authoritative copy with a digital object identifier in Zenodo scientific data repository. We place both our algorithms and our methods into peer-reviewed scientific publications, and our data products are checked and improved by competent experts in the field.
+
+4. **We produce** the data and its visualization in easy to reuse, machine-readable, platform-independent formats. Just like that, `csv`, `json`, `jpg`, `png`, `doxc`, `epub`, `pdf`, `pptx`, `odt`, `sav`, you name it, we do it.
+
+**Reproducible research** is a scientific concept that can be applied to a wide range of professional designations, such as accounting, finance or the legal profession. We are applying this concept to  [Evidence-based, Open Policy Analysis](#opa) and [Professional Standards in Business](#business-professional-standards), 
+for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on the computational reproducibility we believe that the following principles should be followed: 
+    - **Reviewability** means that our application’s results are can be assessed and judged by our user’s experts, or experts they trust. 
+    - **Reproducibility** means that we are providing data products and tools that allow the exact duplication of our results during assessments.  This ensures that all logical steps can be verified.
+    - **Confirmability** means that using our applications findings leads to the same professional results as other available software and information. Our data products use the open-source statistical programming language R. We provide details about our algorithms and methodology to confirm our results in SPSS or Stata or sometimes even in Excel.
+    - **Auditability** means that our data and software is archived in a way that external auditors can later review, reproduce and confirm our findings.  This is a _stricter form of data retention_ that most organizations apply, because we do not only archive results step-by-step but all computational steps – as if your colleagues would not only save every step in Excel but also their keystrokes. [Read more about this topic here](#reproducible-research-theory).
+
+
+```{r observatory-value-chain, echo=FALSE}
+knitr::include_graphics(
+  file.path("plots", "business_development", "value_chain.png")
+)
 ```
 
-### Authoritative data
+### Research Automation {#research-automation}
 
-So, we must somehow connect to a DOI registrar, and Harvard’s Dataverse or Zenodo are the candidates. 
+Because every step of our data acquisition, processing, strucutring, testing is going through machines, it can be replicated any given year, month, day, or hour.  The research automation means that we update our data every day (Is there new data at the source? Corrections? Known issues?) and place the current version in an API.  
 
-The Dataverse is much better served, the API is better documented, and technically we could even set up our own instance (new dataverses can be installed.)  The problem is that I have not found an EU-endorsed instance, although Open Data Belgium has an instance.  The best instance is of course the original Harvard Dataverse, but taking out European open data to an American private university would not be a winning idea. Currently Dataverse has no support on CRAN - the R package was just kicked out of CRAN, and it is buggy, but it can be fixed. 
+1. **Continous data collection**:  Big data sources usually provide the user with a large quantity of insignificant data. Because of the large quantity, the data is usually not available historically: you capture it today or it is gone. You need to process them in big quantities to find signficiant, meaningful information in them. Most small enterprises and research teams do not have the engineering capactity to organize this. We do continous data collection on all sources to capture the latest updates, or corrections.
 
-Zenodo is a semi-endorsed EU solution, originating from CERN, and in the last EU budget period all EU-funded research was supposed to deposit data there. The API is far less documented. Manual deposition is working fine, and we can very easily retrieve our own data in various versions.  It is also free data storage.  But communicating with the API is a challenge. In R, Zen4R is supposed to be on CRAN, but extremely ill-documented, and uses a special R6 class which is beyond the level and practicality of 99% R users. It seems that it is very well supported in Python, though.
+2. **Focus on reusability**:  In our experience, the resuability of research and consulting work is greatly reduced by two factors, which we resolve with continous data collection and documentation: 
+   - poor documentation (the bibliography updates and file descriptions are the least priortized tasks)
+   - data tables, charts, visualizations became dated then obsolete.
+   
+3. From tidy and open data to **data-as-service**: Because all our assets, including key business indicators, policy indicators, scientific replication sets, and their visualizations, maps, are created by open source and reproducible software, the software can run continously. Instead of providing our users with data tables, charts and maps, we provide them with a subsription to the latest data and its latest visualizations.
 
-### Data API
+## Service Flow
 
-We have settled for Datasette, which is powering the John Hopkins Covid database, for example. It is a lightweight, Python-based application that turns a Sqlite database into a powerful API.  Botond has set up our first instances and we are very happy with the results.
+### Data Acquisition and Processing
 
+We are accessing various open governmental and open scientific sources programatically.  Our programs are mainly written in the R language, but we have a growing body of software written in Python, too. We thrive to be open for both R and Python developers, and as much as possible, exploit the more synergies between the more statistically oriented R language and the more genereal application-oriented Python.  We are welcoming [curators](https://economy.dataobservatory.eu/authors/curator/) and [developers](https://greendeal.dataobservatory.eu/authors/developer/) in both languages.
+
+An important aspect of our quality control is that our processing code is open and peer-reviewed. Our observatories are turning the peer-reviewed statistical software of the 
+[rOpenGov](http://ropengov.org/) community into a continous data-as-service product. This means that we are creating collector software that is making reproducible data assets, mainly business and policy indicators. Then we are running this software daily in the cloud, and place the new data acquisitions' [authoritative copies](#zenodo) into a scientific repository for data integrity purposes, then upload it to our [API](#api), describe it in our [long form documentation](#bookdown), and eventually blog about the newsworthy finds on our [Front-end Websites](#hugo).
+
+The entire research automation system is maintained by [Reprex](https://reprex.nl/), a Dutch research automation startup, in an open collaboration with [rOpenGov](http://ropengov.org/) and other [developers](https://greendeal.dataobservatory.eu/#contributors).
+
+We entered into the annual [EU Datathon](https://reprex.nl/project/eu-datathon_2021/) competition in all three challenges with our applications to not only provide open-source software.
+
+### Data Integrity: Authoritative Copies {#zenodo}
+
+We rely on a data repository to keep a final, authoritative copy of our data assets and visualizations.  This repository is independent from us. 
+
+Zenodo is a semi-endorsed EU solution, originating from CERN. In the last EU budget period all EU-funded research was supposed to deposit data there, although this requirement was not often endorsed. Manual deposition is working fine, and we can very easily retrieve our own data in various versions. It is also free data storage. 
+
+The Zenodo API is not very well documented, particularly for R.  But it is supported both in Python and R. We have a tutorial and a code how to deposit our assets programatically via the [Zen4R](https://github.com/eblondel/zen4R/wiki) package.  It is a bit difficult to use - it mimics "true" object oriented programming with relying on R6 classes, which is extremely rarely used by R programmers.
+
+The Dataverse is much better served, the API is better documented, and technically we could even set up our own instance (new dataverses can be installed.)  The best instance is of course the original Harvard Dataverse. Currently Dataverse has no support on CRAN - the R package was just kicked out of CRAN, and it is buggy, but it can be fixed. Should there be a need, we can make a connector to Dataverse, too.
+
+### Automated Data Observatory API {#api}
+
+Our observatories APIs are [Datasette](https://datasette.io/) instances. It is a lightweight, Python-based application that turns a SQLite database into a powerful API. Our developer, [Botond Vitos](https://music.dataobservatory.eu/author/botond-vitos/) is taking care of our APIs.
+
+The indicator table contains the actual values, and the various estimated/imputed values of the indicator, clearly marking missing values, too.
 
 ```{r data-api-slide, fig.out="85%", fig.align="center", echo=FALSE}
 knitr::include_graphics(file.path(
-  "plots", "data-api-artist-gender-table.png"
+  "plots", "screenshots", "EDO_API_indicator_table.png"
 ))
 ```
 
-### Long form documentation
+The descriptive metadata is contained in the **description** tables. 
 
-Our long-form documentation is based in R rmarkdown, knitr, and bookdown.  It is a very mature workflow, it produces a long-form website, and PDF, ePUB or Word versions. 
+```{r data-api-description, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "EDO_API_description_table.png"
+))
+```
 
-We take the data from our Data API / Zenodo, describe it and visualize it as it changes. 
+The data transactional and processing metadata is contained in the **metadata** tables. 
 
-### Front-end Website
 
-We create a front-end website to present our curators, recruit new ones, blog about great new use cases, in a hugo website. 
+```{r data-api-metadata, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "EDO_API_metadata_table.png"
+))
+```
 
-Our website needs a chief editor, and hugo website operations manager. 
+The variable labelling and unit labelling information is stored in the  **labelling** tables. 
 
-The current websites are powered by a hugo template, formerly known as academic, currently as wowchemy academic.The idea was that an offspring of bookdown, i.e. blogdown can integrate this hugo technology into an R workflow.  This is a semi-success, and while academic is a super-popular template, it is getting further and further away from blogdown.  The original advantage that it can be managed in the same workflow as the indicator generation, package documentation, the long-form documentation is a bit gone. 
+```{r data-api-labelling, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "EDO_API_labelling_table.png"
+))
+```
+
+Currently our APIs are re-freshed by an R code. We will soon add a Python collector, too.
+
+### Long form documentation {#bookdown}
+
+Our long-form documentation is based on [bookdown](https://bookdown.org/yihui/bookdown/), which relies on pandoc, rmarkdown and knitr. This handbook is also created in bookdown.
+
+```{r bookdown-book, fig.out="50%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "bookdown.jpg"
+))
+```
+
+It is a very mature workflow, it produces a long-form website, and PDF, ePUB or Word versions from the API. The current automation is not operational, as we have recently included the API.
+
+
+### Front-End Websites {#hugo}
+
+Our observatory's client-facing front end is made by the static website generator hugo, which is programmed in the `go` language. We use the open-source [Starter Hugo Academic](https://github.com/wowchemy/starter-hugo-academic) template of [wowchemy](https://wowchemy.com/docs/getting-started/page-builder/). If we will win a price, we'll certainly offer them a share!
+
+```{r hugo-website}
+knitr::include_graphics(
+  file.path("plots", "screenshots", "dmo_opening_screen.png")
+)
+```
+
+The hugo-bookdown integration is partly supported by the R package [blogdown](https://bookdown.org/yihui/blogdown/). This is a semi-success, and while academic is a super-popular template, it is getting further and further away from blogdown.  The original advantage that it can be managed in the same workflow as the indicator generation, package documentation, the long-form documentation is a bit gone. 
 
 ```{r hugo, fig.out="50%", fig.align="center", echo=FALSE}
 knitr::include_graphics(file.path(
   "plots", "green_deal_hugo.png"
 ))
 ```
-
-## Technology
-
-Peer-reviewed R packages on CRAN, and potentially peer-reviewed Python libraries which attest that our new datasets are sound from a (1) processing point of view.
-Help with R/ Python code, tutorials our curators to create well-documented, authored open datasets, and deposit them on Zenodo (preferred) or Harvard Dataverse.  
-Each observatory will maintain a “Zenodo community” where we also take in any other related data via our curators, and we give authenticated copies of our data with DOIs.
-We make our data available in a neat Datasette API.  The Datasette API should harvest the data from several points (with low-frequency data, from Zenodo, as it will be in synch with the DOI versions; with high frequency data, the other way around: every month we should make a DOI versioned authentic copy of the high-frequency data from a Datasette dump)
-We create via Rmarkdown / bookdown an automated, long-form documentation to all our datasets, including, when applicable, maps or visualizations.
-This workflow can incorporate seaborne visualizations from the Datasette, too, but the visualization effort should be comfortable for both R and Python-based curators.
-We create a hugo website as a frontend to each observatory to present our curators, recruit new ones, blog about great new use cases, in a hugo website. These are our current ones, but it would be nice to have a hugo manager who takes it over from Daniel https://greendeal.netlify.app/, https://music.dataobservatory.eu/  [we’ll completely overhaul this]
 
