@@ -247,7 +247,13 @@ We would like to create early-warning, risk, economic effect, and impact indicat
 
 In the EU, open data is governed by the \href{https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433\&uri=CELEX:32019L1024}{Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024}. It entered into force on 16 July 2019. It replaces the \href{https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098}{Public Sector Information Directive}, also known as the \emph{PSI Directive} which dated from 2003 and was subsequently amended in 2013.
 
-\href{https://greendeal.dataobservatory.eu/post/2021-06-10-founder-daniel-antal/}{Open Data is Like Gold in the Mud Below the Chilly Waves of Mountain Rivers}
+\begin{itemize}
+\tightlist
+\item
+  \href{https://dataandlyrics.com/post/2021-06-18-gold-without-rush/}{Open Data - The New Gold Without the Rush}
+\item
+  \href{https://greendeal.dataobservatory.eu/post/2021-06-10-founder-daniel-antal/}{Open Data is Like Gold in the Mud Below the Chilly Waves of Mountain Rivers}
+\end{itemize}
 
 The EU has an 18-year-old open data regime and it makes public taxpayer-funded data in the values of tens of billions of euros per year; the Eurostat program alone handles 20,000 international data products, including at least 5,000 pan-European environmental indicators.
 
@@ -340,7 +346,7 @@ These computational requirements require a data workflow that relies on further 
 \hypertarget{fair}{%
 \section{FAIR}\label{fair}}
 
-In 2016, the `\textbf{\href{http://www.nature.com/articles/sdata201618}{FAIR Guiding Principles for scientific data management and stewardship'}} were published in \emph{Scientific Data}. The authors intended to provide guidelines to improve the \textbf{F}indability, \textbf{A}ccessibility, \textbf{I}nteroperability, and \textbf{R}euse of digital assets. The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.
+In 2016, the \textbf{\href{http://www.nature.com/articles/sdata201618}{FAIR Guiding Principles for scientific data management and stewardship}} were published in \emph{Scientific Data}. The authors intended to provide guidelines to improve the \textbf{F}indability, \textbf{A}ccessibility, \textbf{I}nteroperability, and \textbf{R}euse of digital assets. The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.
 
 We are trying to make our API service FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the \href{https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties}{mandatory requirements}, and most of the \href{https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties}{recommended requirements} of DataCite.
 
@@ -488,33 +494,31 @@ Because every step of our data acquisition, processing, structuring, and testing
 \hypertarget{service}{%
 \chapter{Service Design and Business Case Development}\label{service}}
 
-We decided to take a new, modern approach to the `data observatory' concept, and modernize it with the application of 21st century data and metadata standards, the new results of reproducible research and data science. Various UN and OECD bodies, and particularly the European Union support or maintain more than 60 data observatories, or permanent data collection and dissemination points, but even these do not use these organizations and their members open data.
+We are taking a new and modern approach to the \texttt{data\ observatory} concept, and modernizing it with the application of 21st century data and metadata standards, the new results of reproducible research and data science. Various UN and OECD bodies, and particularly the European Union support or maintain more than 60 data observatories, or permanent data collection and dissemination points, but even these do not use these organizations and their members open data. We are building open-source data observatories, which run open-source statistical software that automatically processes and documents reusable public sector data (from public transport, meteorology, tax offices, taxpayer funded satellite systems, etc.) and reusable scientific data (from EU taxpayer funded research) into new, high quality statistical indicators.
 
 We are building open-source data observatories, which run open-source statistical software that automatically processes and documents reusable public sector data (from public transport, meteorology, tax offices, taxpayer funded satellite systems, etc.) and reusable scientific data (from EU taxpayer funded research) into new, high quality statistical indicators.
 
 We are building various open-source data collection tools in R and Python to bring up data from big data APIs and legally open, but not public, and not well served data sources. For example, we are working on capturing representative data from the Spotify API or creating harmonized datasets from the Eurobarometer and Afrobarometer survey programs.
 
-Open data is usually not public; whatever is legally accessible is usually not ready to use for commercial or scientific purposes. In Europe, almost all taxpayer funded data is legally open for reuse, but it is usually stored in heterogenous formats, processed into an original government or scientific need, and with various and low documentation standards. Our expert data curators are looking for new data sources that should be (re-) processed and re-documented to be usable for a wider community.
-
-We would like to introduce our service flow, which touches upon many important aspects of data scientist, data engineer and data curatorial work.
-
 \begin{itemize}
 \tightlist
 \item
+  Open data is usually not public; whatever is legally accessible is usually not ready to use for commercial or scientific purposes. In Europe, almost all taxpayer funded data is legally open for reuse, but it is usually stored in heterogeneous formats, processed into an original government or scientific need, and with various and low documentation standards. Our expert data curators are looking for new data sources that should be (re-) processed and re-documented to be usable for a wider community. We would like to introduce our service flow, which touches upon many important aspects of data scientist, data engineer and data curatorial work.
+\item
   We believe that even such generally trusted data sources as Eurostat often need to be reprocessed, because various legal and political constraints do not allow the common European statistical services to provide optimal quality data -- for example, on the regional and city levels.
 \item
-  With rOpenGov and other partners we are creating open-source statistical software in R to re-process these heterogenous and low-quality data into tidy statistical indicators, and automatically validate, and document it.
+  With \href{/authors/ropengov/}{rOpenGov} and other partners, we are creating open-source statistical software in R to re-process these heterogenous and low-quality data into tidy statistical indicators to automatically validate and document it.
 \item
-  We are carefully documenting and releasing administrative, processing, and descriptive metadata, following international metadata standards, to make our data easy to find and easy to use for data analysist.
+  We are carefully documenting and releasing administrative, processing, and descriptive metadata, following international metadata standards, to make our data easy to find and easy to use for data analysts.
 \item
   We are automatically creating depositions and authoritative copies marked with an individual digital object identifier (DOI) to maintain data integrity.
 \item
-  We are building a simple database and supporting API that releases the data without restrictions, in a tidy format that is easy to join with other data, or easy to join into databases, together with standardized metadata.
+  We are building simple databases and supporting APIs that release the data without restrictions, in a tidy format that is easy to join with other data, or easy to join into databases, together with standardized metadata.
 \item
-  We maintain observatory website where not only the data is available, but we are placing tutorials and use cases to make it easier to use them. Our aim is to show a modern, 21st century reimagination of the data observatory concept developed and supported by the UN, EU and OECD, and we want to show that modern reproducible research and open data could make the existing 60 data observatories and the planned new ones grow faster into data ecosystems.
+  We maintain observatory websites (see: \href{https://music.dataobservatory.eu/}{Digital Music Observatory}, \href{https://greendeal.dataobservatory.eu/}{Green Deal Data Observatory}, \href{https://economy.dataobservatory.eu/}{Economy Data Observatory}) where not only the data is available, but we provide tutorials and use cases to make it easier to use them. Our mission is to show a modern, 21st century reimagination of the data observatory concept developed and supported by the UN, EU and OECD, and we want to show that modern reproducible research and open data could make the existing 60 data observatories and the planned new ones grow faster into data ecosystems.
 \end{itemize}
 
-We are working around the open collaboration concept, which is well-known in open source software development and reproducible science, but we try to make this agile project management methodology more inclusive, and include data curators, and various institutional partners into this approach. Based around our early-stage startup, Reprex, and the open-source developer community rOpenGov, we are working together with other developers, data scientists, and domain specific data experts in climate change and mitigation, antitrust and innovation policies, and various aspect of the music and film industry.
+We are working around the open collaboration concept, which is well-known in open source software development and reproducible science, but we try to make this agile project management methodology more inclusive, and include data curators, and various institutional partners into this approach. Based around our early-stage startup, Reprex, and the open-source developer community rOpenGov, we are working together with other developers, data scientists, and domain specific data experts in climate change and mitigation, antitrust and innovation policies, and various aspects of the music and film industry.
 
 \begin{figure}
 
@@ -525,7 +529,9 @@ We are working around the open collaboration concept, which is well-known in ope
 \caption{Our open collaboration is truly open: new data curators, data scientists and data engineers are welcome to join in.}\label{fig:unnamed-chunk-2}
 \end{figure}
 
-Our open collaboration is truly open: new data curators, data scientists and data engineers are welcome to join in. We develop open-source software in an agile way, so you can join in with an intermediate programming skill to build unit tests or add new functionality, and if you are beginner, you can start with documentation and testing our tutorials. For business, policy, and scientific data analysts, we provide unexploited, exciting new datasets. And of course, advanced developers can join our development team: the statistical data creation is mainly made in the R language, and the service infrastructure in Python and Go components.
+Our open collaboration is truly open: new \href{https://music.dataobservatory.eu/author/new-curators/}{data curators}, data scientists and data engineers are welcome to join. We develop open-source software in an agile way, so you can join in with an intermediate programming skill to build unit tests or add new functionality, and if you are a beginner, you can start with documentation and testing our tutorials. For business, policy, and scientific data analysts, we provide unexploited, exciting new datasets. Advanced developers can \href{https://greendeal.dataobservatory.eu/author/new-developers/}{join} our development team: the statistical data creation is mainly made in the R language, and the service infrastructure in Python and Go components.
+
+\emph{See or share this introduction to the service plans in a} \href{https://dataandlyrics.com/post/2021-06-18-gold-without-rush/}{blogpost}.
 
 \hypertarget{business-professional-standards}{%
 \section{Professional Standards in Business}\label{business-professional-standards}}
