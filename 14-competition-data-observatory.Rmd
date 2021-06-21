@@ -1,0 +1,47 @@
+# Competition Data Observatory {#competition}
+
+Big data and automation create new inequalities and injustices and has a potential to create a jobless growth. Our Economy Observatory is a fully automated, open source, open data observatory that produces new indicators from open data sources and experimental big data sources, with authoritative copies and a modern API.
+
+Our observatory is monitoring the European economy to protect the consumers and the small companies from unfair competition both from data and knowledge monopolization and robotization. We take a critical SME-, intellectual property policy and competition policy point of view automation, robotization, and the AI revolution on the service-oriented European social market economy.
+
+We would like to create early-warning, risk, economic effect, and impact indicators that can be used in scientific, business and policy contexts for professionals who are working on re-setting the European economy after a devastating pandemic and in the age of AI. We are particularly interested in designing indicators that can be early warnings for killer acquisitions, algorithmic and offline discrimination against consumers based on nationality or place of residence, signs of undermining key economic and competition policy goals, and generally help small and medium-sized enterprises and start-ups to grow, and the financial sector to provide loanable and equity funds for their growth. 
+
+```{r cdo-opening-page}
+knitr::include_graphics(
+  here::here( "plots", "screenshots", "cdo_opening_page.png")
+)
+```
+
+
+## Curators {#competition-curators}
+
+[Peter Ormosi: New Indicators for Computational Antitrust](https://economy.dataobservatory.eu/post/2021-06-02-data-curator-peter-ormosi/)
+
+See our [inspirational examples]({#get-inspired}) and [Your First Data Contribution](#first-contribution) in the \@ref(curators) chapter.
+
+## Competition {#compeition-indicators}
+
+We are seeking API level access to the European Commissions Mergers database, and monitor approved and declined merger requests programatically.  These mergers are important cases enough to have a potential impact on the structure of the European economy.
+
+```{r ec-compeptition-merger, fig.cap="", out.width='80%', echo=FALSE, warning=FALSE}
+knitr::include_graphics(
+  file.path("plots", "screenshots", "ec_competition_merger_screenshot.png")
+)
+```
+
+As a data curator, you help us designing datasets
+
+- created from Commission and member state merger decision text databases (we will use NLP extraction from the text of the decisions)
+- top-down indicators that show the structural (concentration) changes in the European economy
+- connect them to patent databases
+
+These indicators are particularly interestign, because we are trying to connect to databases that fall under the [Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&uri=CELEX:32019L1024), but programmatic access appears to be problematic. We need to secure reproducible, programmatic access to these important open data sources. 
+
+### Knowledge Monopolizations, Killer Acquisitions {#knowledge-monopoly}
+
+In killer acquisitions, a large company, for example, in pharmaceutical or technology fiedls, buys a small company, or even a start-up, to avoid disruptive innovation. We are building several types of indicators in this field. 
+
+-	What type of patents companies hold in smaller entities of mergers and acquisitions? How can we characterize potentially disruptive technology?
+-	Which economic activities (industries as describe by NACE) are more and less effected?
+-	How is patent concentration changing?
+

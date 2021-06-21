@@ -1,0 +1,36 @@
+# Partnerships {#partnerships}
+
+We are looking for partners to develop our [technological solution](#app) in [financially sustainable way](service) with bringing more and more relevant, [curated](#data-curators) open data [to light](#open-data).
+
+## Policy Partners {#policy-partners}
+
+We are looking for policy partners who want to use open data from various governmental (including publicly funded surveys), scientific, and big data sources, processed and validated to meet scientific standards; or who want to build use cases for trustworthy AI and data governance policy papers. We provide peer-reviewed statistical software solutions, daily data harvesting, and re-processing to meet our partners' research agenda.  
+
+In return, we ask academic partners to: 
+1.	Help us curate data – tell us what sort of information is missing for their research agenda, and select what is valuable and what is not;
+2.	Use our validated, correctly documented, open datasets, identified with DOIs (possibly with an embargo period) in their peer-reviewed scientific output;
+3.	Support the growth of our data observatories by including them in their data acquisitions plans;
+4.	Publicly endorse with testimonials the observatory they use for the EU Datathon Prize.
+
+
+## Academic Partners {#academic-partners}
+
+We are looking for academic partners who want to use open data from various governmental (including publicly funded surveys), scientific, and big data sources, processed and validated to meet scientific standards. We provide peer-reviewed statistical software solutions, daily data harvesting, and re-processing to meet our partners research agenda.  
+
+In return, we ask academic partners to 
+
+1.	Help us curate data – tell us what sort of information is missing for their research agenda, and select what is valuable and what is not;
+2.	Use our validated, correctly documented, open datasets, identified with DOIs (possibly with an embargo period) in their peer-reviewed scientific output;
+3.	Support the growth of our data observatories by including them in their data acquisitions plans;
+4.	Publicly endorse with testimonials the observatory they use for the EU Datathlon Prize.
+
+
+## Business Partners {#business-partners}
+
+"To take part, you should propose the development of an application that links and uses open datasets. Your application should showcase 
+
+We are looking for a consulting partner to form a joint project with our open collaboration team of data scientists and submit proposals to at least 2 of the 3 challenges of the EU Datathlon with the objective of winning the first prize. We are particularly looking for a first class consultancy to help build a "showcase ... for concrete business models [... and] find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of [our observatories'] open data."
+
+Because of the way the challenge is formulated, winning the prize gives a natural advantage for our consulting partner to win future policy consulting work in the three strategic objective areas of the European Commission. Furthermore, we believe that our research automation technology and know-how can significantly reduce non-billable hours in research and validation, as well as in sales preparation and re-sale.
+
+The partners of the Datathon Challenge are important EU and member state organizations, including the World Bank Group, FAO of the United Nations, the European Central Bank, the EU IP Office, and EFTA. We believe that winning this prize could give a competitive edge for our partners, given the high profile and rigor of the competition.

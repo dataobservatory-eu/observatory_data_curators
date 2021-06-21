@@ -1,5 +1,5 @@
 --- 
-title: "Automated Observatory Data Curator's Handbook"
+title: "Automated Observatory Contributors' Handbook"
 author: "Daniel Antal, CFA"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -29,84 +29,156 @@ linestretch: 1.1
 urlcolor: blue
 linkcolor: blue
 link-citations: yes
-description: "We want to win an EU Datathon prize by processing the vast, already available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users."
+description: "If open data is the new gold, why even those who release fail to reuse it?   We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones.  We turn reproducible research software into research- as-service."
 ---
 
 # Introduction {-}
 
+If open data is the new gold, why even those who release fail to reuse it?   We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones.  We turn reproducible research software into research- as-service.
 
-## Mission statement {-}
-
-We want to win an [EU Datathon prize](https://op.europa.eu/en/web/eudatathon) by processing the vast, already-available governmental and scientific open data made usable for policy-makers, scientific researchers, and business researcher end-users. 
-
-"*To take part, you should propose the development of an application that links and uses open datasets. Your application should showcase opportunities for concrete business models or social enterprises. It is also expected to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data.*"
-
-We want to win at least one first prize in the EU Datathon 2021.
-
-- Challenge 1: [A European Green Deal](https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en), with a particular focus on the [The European Climate Pact](https://ec.europa.eu/commission/presscorner/detail/en/ip_20_2323), the [Organic Action Plan](https://ec.europa.eu/info/food-farming-fisheries/farming/organic-farming/organic-action-plan_en), and the [New European Bauhaus](https://ec.europa.eu/commission/presscorner/detail/en/IP_21_111), i.e. mitigation strategies.
-- Challenge 2: [An economy that works for people](https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people_en#:~:text=Individuals%20and%20businesses%20in%20the,needs%20of%20the%20EU's%20citizens.), with a particular focus on the [Single market strategy](https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people/internal-market_en), and particular attention to the strategy's goals of 1. Modernising our standards system, 2. Consolidating Europe’s intellectual property framework, and 3. Enabling the balanced development of the collaborative economy strategic goals.
-- Challenge 3: [A Europe fit for the digital age](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age_en), with a particular focus [Artificial Intelligence](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/excellence-trust-artificial-intelligence_en), the [European Data Strategy](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/european-data-strategy_en), 
-the [Digital Services Act](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/digital-services-act-ensuring-safe-and-accountable-online-environment_en), [Digital Skills](https://digital-strategy.ec.europa.eu/en/policies/digital-skills-and-jobs) and [Connectivity](https://digital-strategy.ec.europa.eu/en/policies/connectivity). We will showcase these horizontal topics with our Digital Music Observatory. 
-
-For Challenge 1, we are preparing the [Green Deal Data Observatory](http://greendeal.dataobservatory.eu/). 
-For Challenge 2, the [Economy Data Observatory](https://economy.dataobservatory.eu/) -- any better name is welcome.
-For Challenge 3, our [Digital Music Observatory](https://music.dataobservatory.eu/) to highlight our efforts in trustworthy, ethical AI, and to find a new balance between the interests of artists and music audiences. 
+Reprex, a Dutch start-up enterprise formed to utilize open source software and open data, is looking for partners in an agile, open collaboration to win at least one of the three EU Datathon Prizes. We are looking for policy partners, academic partners and a consultancy partner. Our project is based on agile, open collaboration with three types of contributors.
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=FALSE, message=FALSE, warnings=FALSE, out.width ='80%', fig.align='center')
-library(kableExtra); 
-library(knitr); library(ggplot2); library(scales); library(dplyr); library(tidyr)
-library(webshot)
+library(knitr)
+library(here)
+# chunk defaults:
+knitr::opts_chunk$set(echo = FALSE, 
+                      fig.align='center', 
+                      fig.out='80%')
+# include=FALSE omits it from the final document even though eval=TRUE.
+
+# Find the root directory of this project
+here::here()
 ```
+ 
+ 
+- *To take part, you should propose the development of an application that links and uses open datasets.* - we are curating new, exciting [data sources](#data-domains), that are legally open but usually have never seen the sunlight.
+
+- *Your application ... is also expected to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data.*” - we have a prototype of this [application](#tech-solution)
+
+- *Your application should showcase opportunities for concrete business models or social enterprises.* - our [service development team](#business-solution) is working to make this happen!
+
+We believe in [open collaboration]() that involves [scientific](#intro-academic-partners), [business](#intro-business-partners), public and NGO [policy](#intro-policy-partners) partnerships.
 
 ```{r packages, include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'ggplot2', 'scales', 'dplyr', 'tidyr', 'tidyverse',  'ggplot2','stats', 'purrr', 'kableExtra', 'webshot' ), 'packages.bib')
+  .packages(), 'eurostat', 'regions', 'iotables', 'retroharmonize' ), 'packages.bib')
 ```
 
-## Problem Statement {-}
 
-The EU has a 18-year-old open data regime and it makes public taxpayer-funded data in the values of tens of billions of euros per year; the Eurostat program alone handles 20,000 international data products, including at least 5000 pan-European environmental indicators.
+## 1. Whats's Wrong With Open Data? {-}
 
-As open science principles gain increased acceptance, scientific researchers are making hundreds of thousands of valuable datasets public and available for replication every year.
+Open data is like gold in the mud below the chilly waves of mountain rivers. Panning it out requires a lot of patience, or a good machine. I think we will come to as surprising and strong findings as Bellingcat, but we are not focusing on individual events and stories, but on social and environmental processes and changes.
 
-```{r observatories, fig.out="85%", fig.align="center", echo=FALSE}
-knitr::include_graphics(file.path(
-  "plots","screenshots", "observatory_collage_16x9_800.png"
-))
+```{r gold-panning-intro}
+knitr::include_graphics(
+  here::here("plots", "slides", "gold_panning_slide_notitle.png")
+)
 ```
 
-The EU, the OECD, and UN institutions run around 100 data collection programs, so-called ‘data observatories’ that more or less avoid touching this data, and buy proprietary data instead. Annually, each observatory spends between 50 thousand and 3 million EUR on collecting untidy and proprietary data of inconsistent quality, while never even considering open data.
+In \@ref(open-data) [Open Data](#open-data) we investigate why not even those organizations, like the European Commission, use open data in their own data dissemination practices, who make them at least legally available.
 
-The problem with the current EU data strategy is that while it produces enormous quantities of valuable open data, in the absence of common basic data science and documentation principles, it seems often cheaper to create new data than to put the existing open data into shape.
+## 2. Our Technological Solution {- #tech-solution}
+We use open source software and open data. The applications are hosted on the cloud resources of [Reprex](#reprex), an early-stage technology startup currently building a viable, open-source, open-data business model to create reproducible research products.
 
-This is an absolute waste of resources and efforts. With a few R packages and our deep understanding of advanced data science techniques, we can create valuable datasets from unprocessed open data. In most domains, we are able to repurpose data originally created for other purposes at a historical cost of several billions of euros, converting these unused data assets into valuable datasets that can replace tens of millions' worth of proprietary data. 
+Our development team works on an open collaboration basis. Our indicator R packages, and our services are developed together with [rOpenGov](https://music.dataobservatory.eu/author/ropengov/).
 
-What we want to achieve with this project--and we believe such an accomplishment would merit one of the first prizes--is to add value to a significant portion of pre-existing EU open data: 
-[data.europa.eu/data](https://data.europa.eu/data/) is the new open data portal of the EU that replaces two previous versions (one for the common institutions, and technically harvesting all EU member states' national open data portals).
+- Open data often cannot be downloaded.
+- Open data often lacks quality control.
+- Public data sources are not tidy.
+- The risk of importing or committing trivial data processing errors is huge.
+- Open data is usually not documented.
 
-What we want to achieve with this project -- and we believe such an accomplishment would merit one of the first prizes -- is to add value to a significant portion of pre-existing EU open data by re-processing and integrating them into a modern, tidy database with an API access, and to find a business model that emphasises a triangular use of data in 1. business, 2. science and 3. policy-making. Our mission was to modernize the concept of ‘data observatories’.
+See \@ref(app). [Application: Automated Data Observatories](#app) for further details.
 
-## Our solution {-}
+## 3. Our Business Solution {- #business-solution}
 
-Recruit data curators who know how to put important policy data (according to the EU challenges) into a useful, processed format.
-Help them with open-source statistical software solutions, and open-source data services to make it available for end-use in policy research (NGOs, public entities), scientific research, or business research.
+We decided to take a new, modern approach to the ‘data observatory’ concept, and modernize it with the application of 21st century data and metadata standards, the new results of reproducible research and data science. Various UN and OECD bodies, and particularly the European Union support or maintain more than 60 data observatories, or permanent data collection and dissemination points, but even these do not use these organizations and their members open data. 
 
-Find a for-profit business model or a non-profit social enterprise model to make our service sustainable.
-Contest at least 2 of the 3 Datathon challenges to show that our solution is general and not domain specific: minimally, we plan to contest the Green Deal Challenge with environmental and climate policy data, and we plan to convert our Demo Music Observatory into a Digital Music Observatory that showcases important policy issues in the Digital Life challenge.
+We are building open-source data observatories, which run open-source statistical software that automatically processes and documents reusable public sector data (from public transport, meteorology, tax offices, taxpayer funded satellite systems, etc.) and reusable scientific data (from EU taxpayer funded research) into new, high quality statistical indicators.
 
-If we were to find reliable partners in the time prior to the deadline, we would also consider submitting a bid to the third challenge, which mainly deals with economic and social policy.
+```{r value-added-intro, include=FALSE, fig.align="Service Flow"}
+knitr::include_graphics(
+  here::here("plots", "slides", "automated_observatory_value_chain.jpg")
+)
+```
 
-Our R packages offer a professionally sound version of the data that renders it usable and reliable. In this project, we want so scale up their productivity by embedding them (and other similar packages, and even Python libraries if we can) to services. 
+Our Product/Market Fit was validated in the world’s 2nd ranked university-backed incubator program, the [Yes!Delft AI Validation Lab](https://music.dataobservatory.eu/post/2020-09-25-yesdelft-validation/). We are currently developing this project with the help of the [JUMP European Music Market Accelerator](https://www.jumpmusic.eu/fellow2021/automated-music-observatory/) program.
 
-- [regions](https://regions.dataobservatory.eu/) corrects inconsistent geographical coding.
-- [iotables](https://iotables.dataobservatory.eu/) puts extremely complex national accounts data into actually useful environmental and economic impact indicators.
-- [retroharmonize](https://retroharmonize.dataobservatory.eu/) connects cross-sectional surveys with non-European countries, puts pan-European surveys into time series, and corrects regional subsamples.
-- indicator, in  its early stage, attempts to bring to a common, tidy format the diverse and untidy indicators of European governmental open data. 
+See \@ref(service). [Service Design and Business Case Development](#service)
 
-The results are new statistical products, which are, in a way, a subjective interpretation of the data that is far more useful than leaving it in its original state. The usefulness of our data products is linked to our reputation, the peer-reviewed processes of our packages, and eventually, the peer-reviewed uses of the datasets created.  
+## 4. Open Collaboration: Partners and Partnership {- #open-for-partners}
 
-This means that all of our data products must possess an authentic, authored, and accountable version; therefore, all versions of our data assets are assigned Digital Object Identifiers (DOI).
+We are looking for partners to develop our [technological solution](#app) in [financially sustainable way](service) with bringing more and more relevant, [curated](#data-curators) open data [to light](#open-data).
 
-For instance, if we recreate a Eurostat statistical product with corrected geocoding (member states have no mandate to correct historical data, which often results in badly-coded data), such as a new version of, say, regional CO2 emission or GDP, our version must be traceable, and eventually be available for rigorous peer-review.
+### Academic partners {- #intro-academic-partners}
+
+We are looking for academic partners who want to use open data from various governmental (including publicly funded surveys), scientific, and big data sources, processed and validated to meet scientific standards. We provide peer-reviewed statistical software solutions, daily data harvesting, and re-processing to meet our partners research agenda.  See more in \@ref(academic-partners) [Academic partners](#academic-partners)
+
+### Policy partners {- #intro-policy-partners}
+
+We are looking for policy partners who want to use open data from various governmental (including publicly funded surveys), scientific, and big data sources, processed and validated to meet scientific standards; or who want to build use cases for trustworthy AI and data governance policy papers. We provide peer-reviewed statistical software solutions, daily data harvesting, and re-processing to meet our partners' research agenda. See more in \@ref(policy-partners) [Policy partners](#policy-partners)
+
+### Business partner(s) in Consulting {- #intro-business-partners}
+
+We are looking for a consulting partner to form a joint project with our open collaboration team of data scientists and submit proposals to at least 2 of the 3 challenges of the EU Datathlon with the objective of winning the first prize. We are particularly looking for a first class consultancy to help build a "showcase ... for concrete business models [... and] find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of [our observatories'] open data." See more in \@ref(business-partners) [Business partners](#business-partners)
+
+## 5. Data Domains {- #data-domains}
+
+- We are working together with experts in the domain as curators (check out our guidelines if you want to join: [Data Curators: Get Inspired!](https://curators.dataobservatory.eu/data-curators.html)).
+
+### Green Deal Data Observaotry {-}
+
+The Challenge [A European Green Deal](https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en), with a particular focus on the [The European Climate Pact](https://ec.europa.eu/commission/presscorner/detail/en/ip_20_2323), the [Organic Action Plan](https://ec.europa.eu/info/food-farming-fisheries/farming/organic-farming/organic-action-plan_en), and the [New European Bauhaus](https://ec.europa.eu/commission/presscorner/detail/en/IP_21_111), i.e., mitigation strategies. Our [Green Deal Data Observatory](http://greendeal.dataobservatory.eu/) is a modern reimagination of existing ‘data observatories’; currently, there are over 70 permanent international data collection and dissemination points. One of our objectives is to understand why the dozens of the EU’s observatories do not use open data and reproducible research. We want to show that open governmental data, open science, and reproducible research can lead to a higher quality and faster data ecosystem that fosters growth for policy, business, and academic data users.
+
+```{r gdo}
+knitr::include_graphics(
+  here::here("plots", "screenshots", "greendeal_and_zenodo.png"))
+```
+
+Please, follow us on social media, it really helps us finding new users and showing that we are able to grow our ecosystem: the [Green Deal Data Observatory on Linkedin](https://www.linkedin.com/company/78556699) and the [Green Deal Data Observatory on Twitter](https://twitter.com/GreenDealObs), and join our [contributor team](https://greendeal.dataobservatory.eu/#contributors).
+
+### Digital Music Observatory {-}
+
+The [Digital Music Observatory](https://music.dataobservatory.eu/) is a fully automated, open source, open data observatory that creates public datasets to provide a comprehensive view of the European music industry. It provides high-quality and timely indicators in all four pillars of the planned official European Music Observatory as a modern, open source and largely open data-based, automated, API-supported alternative solution for this planned observatory. The insight and methodologies we are refining in the DMO are applicable and transferable to about 60 other data observatories funded by the EU which do not currently employ governmental or scientific open data.
+
+See further details in \@ref(music) [Digital Music Observatory Chapter](#music).
+
+
+```{r dmo-intro}
+knitr::include_graphics(
+  here::here( "plots", "slides", "open_source_slide.png")
+)
+```
+
+Please, follow us on social media, it really helps us finding new users and showing that we are able to grow our ecosystem: the [Digital Music Data Observatory on Linkedin](https://www.linkedin.com/company/79286750/) and the [Digital Music Data Observatory on Twitter](https://twitter.com/DigitalMusicObs) and join our [contributor team](https://music.dataobservatory.eu/#contributors).
+
+### Economy Data Observatory {-}
+
+Our [Economy Data Observatory](https://economy.dataobservatory.eu/) was created as a prototype for the EU Datathon Challenge 2: [An economy that works for people](https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people_en#:~:text=Individuals%20and%20businesses%20in%20the,needs%20of%20the%20EU's%20citizens.), with a particular focus on the [Single market strategy](https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people/internal-market_en), and particular attention to the strategy’s goals of 1. Modernising our standards system, 2. Consolidating Europe’s intellectual property framework, and 3. Enabling the balanced development of the collaborative economy strategic goals.
+
+Big data and automation create new inequalities and injustices and have the potential to create a jobless growth economy. Our is a fully automated, open source, open data observatory that produces new indicators from open data sources and experimental big data sources, with authoritative copies and a modern API.
+
+The [Economy Data Observatory](https://economy.dataobservatory.eu/) works now as an incubator for economy-focused data observatories. See further details in \@ref(economy) [Economy Data Observatory Chapter](#economy).
+
+```{r edo-zenodo}
+knitr::include_graphics(
+  here::here("plots", "screenshots", "edo_and_zenodo.png")
+  )
+```
+
+Please, follow us on social media, it really helps us finding new users and showing that we are able to grow our ecosystem: the [Economy Data Observatory on Linkedin](https://www.linkedin.com/company/78562153/) and the [Economy Data Observatory on Twitter](https://twitter.com/EconDataObs/) and join our [contributor team](https://economy.dataobservatory.eu/#contributors).
+
+
+### Competition Data Observatory {-}
+
+The [Competition Data Observatory](https://competition-data-observatory.netlify.app/) is the first offspring of the [Economy Data Observatory](https://economy.dataobservatory.eu/) incubator. See further details in \@ref(competition) [Competition Data Observatory Chapter](#competition).
+
+We would like to create early-warning, risk, economic effect, and impact indicators that can be used in scientific, business and policy contexts for professionals who are working on re-setting the European economy after a devastating pandemic and in the age of AI. We would like to map data between economic activities (NACE), antitrust markets, and sub-national, regional, metropolitian area data.
+
+```{r cdo-intro}
+knitr::include_graphics(
+  here::here( "plots", "screenshots", "cdo_opening_page.png")
+)
+```

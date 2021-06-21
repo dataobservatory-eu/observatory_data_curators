@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Open Data | Automated Observatory Contributors’ Handbook</title>
+  <meta name="description" content="If open data is the new gold, why even those who release fail to reuse it? We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones. We turn reproducible research software into research- as-service." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Open Data | Automated Observatory Contributors’ Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="If open data is the new gold, why even those who release fail to reuse it? We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones. We turn reproducible research software into research- as-service." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Open Data | Automated Observatory Contributors’ Handbook" />
+  
+  <meta name="twitter:description" content="If open data is the new gold, why even those who release fail to reuse it? We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones. We turn reproducible research software into research- as-service." />
+  
+
+<meta name="author" content="Daniel Antal, CFA" />
+
+
+<meta name="date" content="2021-06-21" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="app.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Automated Observatory Contributors' Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#whatss-wrong-with-open-data"><i class="fa fa-check"></i>1. Whats’s Wrong With Open Data?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tech-solution"><i class="fa fa-check"></i>2. Our Technological Solution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#business-solution"><i class="fa fa-check"></i>3. Our Business Solution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#open-for-partners"><i class="fa fa-check"></i>4. Open Collaboration: Partners and Partnership</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#intro-academic-partners"><i class="fa fa-check"></i>Academic partners</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#intro-policy-partners"><i class="fa fa-check"></i>Policy partners</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#intro-business-partners"><i class="fa fa-check"></i>Business partner(s) in Consulting</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-domains"><i class="fa fa-check"></i>5. Data Domains</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#green-deal-data-observaotry"><i class="fa fa-check"></i>Green Deal Data Observaotry</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#digital-music-observatory"><i class="fa fa-check"></i>Digital Music Observatory</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#economy-data-observatory"><i class="fa fa-check"></i>Economy Data Observatory</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#competition-data-observatory"><i class="fa fa-check"></i>Competition Data Observatory</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="open-data.html"><a href="open-data.html"><i class="fa fa-check"></i><b>1</b> Open Data</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="open-data.html"><a href="open-data.html#add-value"><i class="fa fa-check"></i><b>1.1</b> How We Add Value to Data</a></li>
+<li class="chapter" data-level="1.2" data-path="open-data.html"><a href="open-data.html#reproducible-research"><i class="fa fa-check"></i><b>1.2</b> Reproducible Research</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="open-data.html"><a href="open-data.html#reproducible-research-theory"><i class="fa fa-check"></i><b>1.2.1</b> Reproducible Research</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="open-data.html"><a href="open-data.html#fair"><i class="fa fa-check"></i><b>1.3</b> FAIR</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="app.html"><a href="app.html"><i class="fa fa-check"></i><b>2</b> Application: Automated Data Observatories</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="app.html"><a href="app.html#data-acquisition-and-processing"><i class="fa fa-check"></i><b>2.1</b> Data Acquisition and Processing</a></li>
+<li class="chapter" data-level="2.2" data-path="app.html"><a href="app.html#zenodo"><i class="fa fa-check"></i><b>2.2</b> Data Integrity: Authoritative Copies</a></li>
+<li class="chapter" data-level="2.3" data-path="app.html"><a href="app.html#api"><i class="fa fa-check"></i><b>2.3</b> Automated Data Observatory API</a></li>
+<li class="chapter" data-level="2.4" data-path="app.html"><a href="app.html#bookdown"><i class="fa fa-check"></i><b>2.4</b> Long form documentation</a></li>
+<li class="chapter" data-level="2.5" data-path="app.html"><a href="app.html#hugo"><i class="fa fa-check"></i><b>2.5</b> Front-End Websites</a></li>
+<li class="chapter" data-level="2.6" data-path="app.html"><a href="app.html#research-automation"><i class="fa fa-check"></i><b>2.6</b> Research Automation</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="service.html"><a href="service.html"><i class="fa fa-check"></i><b>3</b> Service Design and Business Case Development</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="service.html"><a href="service.html#business-professional-standards"><i class="fa fa-check"></i><b>3.1</b> Professional Standards in Business</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="service.html"><a href="service.html#key-business-indicators"><i class="fa fa-check"></i><b>3.1.1</b> Key Business Indicators</a></li>
+<li class="chapter" data-level="3.1.2" data-path="service.html"><a href="service.html#business-record-retention"><i class="fa fa-check"></i><b>3.1.2</b> Business Record Retention</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="service.html"><a href="service.html#policy-professional-standards"><i class="fa fa-check"></i><b>3.2</b> Professional Standards in Policy</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="service.html"><a href="service.html#opa"><i class="fa fa-check"></i><b>3.2.1</b> Evidence-based, Open Policy Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="service.html"><a href="service.html#contributors"><i class="fa fa-check"></i><b>3.3</b> Contributors</a></li>
+<li class="chapter" data-level="3.4" data-path="service.html"><a href="service.html#topic-associate"><i class="fa fa-check"></i><b>3.4</b> Passion About Our Topic</a></li>
+<li class="chapter" data-level="3.5" data-path="service.html"><a href="service.html#open-associate"><i class="fa fa-check"></i><b>3.5</b> Passion For Trustworthy AI, Open Data and Open Source Projects</a></li>
+<li class="chapter" data-level="3.6" data-path="service.html"><a href="service.html#technical-requirements-associate"><i class="fa fa-check"></i><b>3.6</b> Technical Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-curators.html"><a href="data-curators.html"><i class="fa fa-check"></i><b>4</b> Data Curators</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="data-curators.html"><a href="data-curators.html#get-inspired"><i class="fa fa-check"></i><b>4.1</b> Get Inspired</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="data-curators.html"><a href="data-curators.html#create-new-datasets"><i class="fa fa-check"></i><b>4.1.1</b> Create New Datasets</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-curators.html"><a href="data-curators.html#critical-attitude"><i class="fa fa-check"></i><b>4.1.2</b> Remain Critical</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-curators.html"><a href="data-curators.html#first-contribution"><i class="fa fa-check"></i><b>4.1.3</b> Your First Data Contribution</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="data-curators.html"><a href="data-curators.html#indicator-design"><i class="fa fa-check"></i><b>4.2</b> Indicator Design</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="data-curators.html"><a href="data-curators.html#authoring-indicator"><i class="fa fa-check"></i><b>4.2.1</b> Creation and Quality Control of Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="data-curators.html"><a href="data-curators.html#deposit-indicator"><i class="fa fa-check"></i><b>4.3</b> Authentic Depositions of Indicators</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="data-curators.html"><a href="data-curators.html#how-to-add-your-existing-zenodo-depositions-to-our-observatory"><i class="fa fa-check"></i><b>4.3.1</b> How to Add your Existing Zenodo Depositions to Our Observatory</a></li>
+<li class="chapter" data-level="4.3.2" data-path="data-curators.html"><a href="data-curators.html#green-deal-data-observatory"><i class="fa fa-check"></i><b>4.3.2</b> Green Deal Data Observatory</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="green-deal.html"><a href="green-deal.html"><i class="fa fa-check"></i><b>5</b> Green Deal Indicators</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="green-deal.html"><a href="green-deal.html#curators"><i class="fa fa-check"></i><b>5.1</b> Curators</a></li>
+<li class="chapter" data-level="5.2" data-path="green-deal.html"><a href="green-deal.html#aggregating-count-data"><i class="fa fa-check"></i><b>5.2</b> Aggregating Count Data</a></li>
+<li class="chapter" data-level="5.3" data-path="green-deal.html"><a href="green-deal.html#social-attitude-climate-change"><i class="fa fa-check"></i><b>5.3</b> Social Attituted to Climate Change</a></li>
+<li class="chapter" data-level="5.4" data-path="green-deal.html"><a href="green-deal.html#environmental-impact-indicator-for-economic-activities"><i class="fa fa-check"></i><b>5.4</b> Environmental Impact Indicator for Economic Activities</a></li>
+<li class="chapter" data-level="5.5" data-path="green-deal.html"><a href="green-deal.html#sensory-data-measuring-climate-change-physical-affects"><i class="fa fa-check"></i><b>5.5</b> Sensory Data Measuring Climate Change Physical Affects</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="music.html"><a href="music.html"><i class="fa fa-check"></i><b>6</b> Digital Music Observatory</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="music.html"><a href="music.html#music-curators"><i class="fa fa-check"></i><b>6.1</b> Curators</a></li>
+<li class="chapter" data-level="6.2" data-path="music.html"><a href="music.html#music-economy"><i class="fa fa-check"></i><b>6.2</b> Music Economy</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="music.html"><a href="music.html#demand-drivers"><i class="fa fa-check"></i><b>6.2.1</b> Demand Drivers</a></li>
+<li class="chapter" data-level="6.2.2" data-path="music.html"><a href="music.html#supply-indicators"><i class="fa fa-check"></i><b>6.2.2</b> Supply Indicators</a></li>
+<li class="chapter" data-level="6.2.3" data-path="music.html"><a href="music.html#price-indicators"><i class="fa fa-check"></i><b>6.2.3</b> Price Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="music.html"><a href="music.html#music-diversity"><i class="fa fa-check"></i><b>6.3</b> Music Diversity</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="music.html"><a href="music.html#gender-language-ethnic-and-other-inclusion-attributes"><i class="fa fa-check"></i><b>6.3.1</b> Gender, Language, Ethnic and Other Inclusion Attributes</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="music.html"><a href="music.html#music-circulation"><i class="fa fa-check"></i><b>6.4</b> Music Circulation</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="music.html"><a href="music.html#market-shares"><i class="fa fa-check"></i><b>6.4.1</b> Market shares</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="music.html"><a href="music.html#music-society"><i class="fa fa-check"></i><b>6.5</b> Music &amp; Society</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="music.html"><a href="music.html#social-attitutes-to-music"><i class="fa fa-check"></i><b>6.5.1</b> Social Attitutes to Music</a></li>
+<li class="chapter" data-level="6.5.2" data-path="music.html"><a href="music.html#participation-in-music"><i class="fa fa-check"></i><b>6.5.2</b> Participation in Music</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="economy.html"><a href="economy.html"><i class="fa fa-check"></i><b>7</b> Economy Data Observatory</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="economy.html"><a href="economy.html#curators-1"><i class="fa fa-check"></i><b>7.1</b> Curators</a></li>
+<li class="chapter" data-level="7.2" data-path="economy.html"><a href="economy.html#social-attitutes-to-economic-change"><i class="fa fa-check"></i><b>7.2</b> Social Attitutes to Economic Change</a></li>
+<li class="chapter" data-level="7.3" data-path="economy.html"><a href="economy.html#sme-indicators"><i class="fa fa-check"></i><b>7.3</b> SME Activity Indicators</a></li>
+<li class="chapter" data-level="7.4" data-path="economy.html"><a href="economy.html#economic-impact-indicators"><i class="fa fa-check"></i><b>7.4</b> Economic Impact Indicators</a></li>
+<li class="chapter" data-level="7.5" data-path="economy.html"><a href="economy.html#sensory-data-measuring-changes-in-economic-activy"><i class="fa fa-check"></i><b>7.5</b> Sensory Data Measuring Changes in Economic Activy</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="competition.html"><a href="competition.html"><i class="fa fa-check"></i><b>8</b> Competition Data Observatory</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="competition.html"><a href="competition.html#competition-curators"><i class="fa fa-check"></i><b>8.1</b> Curators</a></li>
+<li class="chapter" data-level="8.2" data-path="competition.html"><a href="competition.html#compeition-indicators"><i class="fa fa-check"></i><b>8.2</b> Competition</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="competition.html"><a href="competition.html#knowledge-monopoly"><i class="fa fa-check"></i><b>8.2.1</b> Knowledge Monopolizations, Killer Acquisitions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="partnerships.html"><a href="partnerships.html"><i class="fa fa-check"></i><b>9</b> Partnerships</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="partnerships.html"><a href="partnerships.html#policy-partners"><i class="fa fa-check"></i><b>9.1</b> Policy Partners</a></li>
+<li class="chapter" data-level="9.2" data-path="partnerships.html"><a href="partnerships.html#academic-partners"><i class="fa fa-check"></i><b>9.2</b> Academic Partners</a></li>
+<li class="chapter" data-level="9.3" data-path="partnerships.html"><a href="partnerships.html#business-partners"><i class="fa fa-check"></i><b>9.3</b> Business Partners</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>10</b> Tools</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="tools.html"><a href="tools.html#internal-communication-collaboration"><i class="fa fa-check"></i><b>10.1</b> Internal communication &amp; collaboration</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="tools.html"><a href="tools.html#keybase"><i class="fa fa-check"></i><b>10.1.1</b> Keybase</a></li>
+<li class="chapter" data-level="10.1.2" data-path="tools.html"><a href="tools.html#github"><i class="fa fa-check"></i><b>10.1.2</b> Git &amp; Github</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="tools.html"><a href="tools.html#filemanagement"><i class="fa fa-check"></i><b>10.2</b> Basic file management</a></li>
+<li class="chapter" data-level="10.3" data-path="tools.html"><a href="tools.html#writing-blogging"><i class="fa fa-check"></i><b>10.3</b> Writing, blogging</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="tools.html"><a href="tools.html#markdown"><i class="fa fa-check"></i><b>10.3.1</b> Markdown</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="http://contributors.dataobservatory.eu/" target="blank">EU Datathon 2021</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automated Observatory Contributors’ Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="open-data" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Open Data</h1>
+<p>In the EU, open data is governed by the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&amp;uri=CELEX:32019L1024">Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024</a>. It entered into force on 16 July 2019. It replaces the <a href="https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098">Public Sector Information Directive</a>, also known as the <em>PSI Directive</em> which dated from 2003 and was subsequently amended in 2013.</p>
+<p><a href="https://greendeal.dataobservatory.eu/post/2021-06-10-founder-daniel-antal/">Open Data is Like Gold in the Mud Below the Chilly Waves of Mountain Rivers</a></p>
+<p>The EU has an 18-year-old open data regime and it makes public taxpayer-funded data in the values of tens of billions of euros per year; the Eurostat program alone handles 20,000 international data products, including at least 5,000 pan-European environmental indicators.</p>
+<p>As open science principles gain increased acceptance, scientific researchers are making hundreds of thousands of valuable datasets public and available for replication every year.</p>
+<p>The EU, the OECD, and UN institutions run around 100 data collection programs, so-called ‘data observatories’ that more or less avoid touching this data, and buy proprietary data instead. Annually, each observatory spends between 50 thousand and 3 million EUR on collecting untidy and proprietary data of inconsistent quality, while never even considering open data.</p>
+<p><img src="plots/screenshots/observatory_collage_16x9_800.png" width="400" style="display: block; margin: auto;" /></p>
+<p>The problem with the current EU data strategy is that while it produces enormous quantities of valuable open data, in the absence of common basic data science and documentation principles, it seems often cheaper to create new data than to put the existing open data into shape.</p>
+<p>This is an absolute waste of resources and efforts. With a few R packages and our deep understanding of advanced data science techniques, we can create valuable datasets from unprocessed open data. In most domains, we are able to repurpose data originally created for other purposes at a historical cost of several billions of euros, converting these unused data assets into valuable datasets that can replace tens of millions’ worth of proprietary data.</p>
+<p>What we want to achieve with this project – and we believe such an accomplishment would merit one of the first prizes - is to add value to a significant portion of pre-existing EU open data (for example, available on <a href="https://data.europa.eu/data/">data.europa.eu/data</a>) by re-processing and integrating them into a modern, tidy database with an API access, and to find a business model that emphasises a triangular use of data in 1. business, 2. science and 3. policy-making. Our mission is to modernize the concept of <code>data observatories.</code></p>
+<p><img src="plots/slides/open_source_slide.PNG" width="896" style="display: block; margin: auto;" /></p>
+<div id="add-value" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> How We Add Value to Data</h2>
+<p>While the EU announces every year that again billions and billions of worth data became “open” again, this is not gold. At least not in the form of nicely minted gold coins, but in gold dust and nuggets found in the muddy banks of chilly rivers. There is no rush for it, because panning out its value requires plenty of hard work. We are trying to automate this work to make open data useable at scale, even in trustworthy AI solutions.</p>
+<p><img src="plots/slides/gold_panning_slide_notitle.png" width="896" style="display: block; margin: auto;" /></p>
+<p>Most open data is not public, it is not downloadable from the Internet – in the EU parlance, “open” only means a legal entitlement to get access to it. And even in the rare cases when data is open and public, often it is mired by data quality issues. We are working on the prototypes of a data-as-serve and research-as-service built with open-source statistical software that taps into various and often neglected open data sources.</p>
+<p>We are in a prototype phase in June, but we hope that we will have a well-functioning service by the time of the conference, because we are working only with open-source software elements; our technological readiness level is already very high. The novelty of our process is that we are trying to further develop and integrate a few open-source technology items into a technologically and financially sustainable data-as-service and even research-as-service solutions.</p>
+<p>We decided to take a new, modern approach to the ‘data observatory’ concept, and modernize it with the application of 21st century data and metadata standards, the new results of reproducible research and data science. See <a href="service.html#service">3</a>. <a href="service.html#service">Service Design and Business Case Development</a></p>
+</div>
+<div id="reproducible-research" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Reproducible Research</h2>
+<ol style="list-style-type: decimal">
+<li><p><strong>Our curatotrs</strong> help finding the best available information source. This is often open data, which is not equal to public data. Open data is a governmental or scientific data source which you can legally access. It is almost never available for direct download, and requires much processing. You could probably do this in Excel – if the data was not in various <code>sql</code>, <code>pdf</code>, <code>sav</code>, <code>csv</code>, <code>tsv</code>, <code>xls</code> and various other file formats.</p></li>
+<li><p><strong>We process the data</strong>: Yes, anybody can convert from millions of euros to euros in a spreadsheet, tons to kilograms, maybe even ounces to grams, but many unit conversions are error-prone if done by humans. Not everybody can make valid currency translations (<em>When do I use year-end USD/EUR rate? Today’s EUR/GBP? Or GBP/EUR? Annual average rate?</em>) We do this processing in a way that conforms to the tidy data definition, which allows easy integration, joining, and importing of data into your database. While the unit conversions can be automated in Excel or PowerBI, the data tidying requires a more programatic approach.</p></li>
+<li><p><strong>Quality control</strong>: Our data goes through dozens of computer logical checks (<em>Do assets and liabilities match? Do dollar and euro amounts lead to the same result?</em>) Our algorithms go through automated and human statistical peer-review, and are open to your experts for checking, because transparency and openness allow for the best quality control. This unit testing is not really possible in Excel or Power BI, not to mention the senior supervision of such tasks. To maintain data integrity, we place an authoritative copy with a digital object identifier in the Zenodo scientific data repository. We place both our algorithms and our methods into peer-reviewed scientific publications, and our data products are checked and improved by competent experts in the field.</p></li>
+<li><p><strong>We produce</strong> the data and its visualization in easy to reuse, machine-readable, platform-independent formats. Just like that, <code>csv</code>, <code>json</code>, <code>jpg</code>, <code>png</code>, <code>doxc</code>, <code>epub</code>, <code>pdf</code>, <code>pptx</code>, <code>odt</code>, <code>sav</code>, you name it, we do it.</p></li>
+</ol>
+<p><strong>Reproducible research</strong> is a scientific concept that can be applied to a wide range of professional designations, such as accounting, finance or the legal profession. We are applying this concept to <a href="service.html#opa">Evidence-based, Open Policy Analysis</a> and <a href="service.html#business-professional-standards">Professional Standards in Business</a>, including, for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on computational reproducibility we believe that the following principles should be followed:
+- <strong>Reviewability</strong> means that our application’s results are can be assessed and judged by our user’s experts, or experts they trust.
+- <strong>Reproducibility</strong> means that we provide data products and tools that allow the exact duplication of our results during assessments. This ensures that all logical steps can be verified.
+- <strong>Confirmability</strong> means that using our applications findings leads to the same professional results as other available software and information. Our data products use the open-source statistical programming language R. We provide details about our algorithms and methodology to confirm our results in SPSS or Stata or sometimes even in Excel.
+- <strong>Auditability</strong> means that our data and software is archived in a way that external auditors can later review, reproduce and confirm our findings. This is a <em>stricter form of data retention</em> than most organizations apply, because we do not only archive results step-by-step but all computational steps – as if your colleagues would not only save every step in Excel but also their keystrokes. <a href="open-data.html#reproducible-research-theory">Read more about this topic here</a>.</p>
+<p><img src="plots/business_development/value_chain.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="reproducible-research-theory" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Reproducible Research</h3>
+<p><strong>Reproducible research</strong> is a scientific concept that can be applied to a wide range of professional designations. We are applying this concept to <a href="service.html#opa">Evidence-based, Open Policy Analysis</a> and <a href="service.html#business-professional-standards">Professional Standards in Business</a>,
+for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on the computational reproducibility we believe that the following principles should be followed.</p>
+<ul>
+<li><p><strong>Reviewability</strong> means that our application’s results are can be assessed and judged by our user’s experts, or experts they trust. We help reviewability with full transparency: we publish the software code that created the indicators, our methodology, and an automatically refreshing statistical description of the indicator each day when it receives new data or corrections from the original source.</p></li>
+<li><p><strong>Reproducibility</strong> means that we are providing data products and tools that allow the exact duplication of our results during assessments. This ensures that all logical steps can be verified. Reproducibility ensures that there is no lock-in to our applications. You can always chose a different data and software vendor, or compare our results with them.</p></li>
+<li><p><strong>Confirmability</strong> means that using our applications findings leads to the same professional results as other available software and information. Our data products use the open-source statistical programming language R. We provide details about our algorithms and methodology to confirm our results in SPSS or Stata or sometimes even in Excel.</p></li>
+<li><p><strong>Auditability</strong> means that our data and software is archived in a way that external auditors can later review, reproduce and confirm our findings. This is a <em>stricter form of data retention</em> that most organizations apply, because we do not only archive results step-by-step but all computational steps – as if your colleagues would not only save every step in Excel but also their keystrokes. While auditability is a requirement in accounting, we are extending this approach to all the quantitative work of a professional organization in an advisory or consulting capacity.</p></li>
+<li><p><strong>Reviewable findings</strong>: The descriptions of the methods can be independently assessed, and the results judged credible. In our view, this is a fundamental requirement for all professional applications. CEEMID’s music data is used to settle royalty disputes in judicial procedures, or in grant and policy design. We believe that the future European Music Observatory should aim at the same bar, making its data &amp; research products open for challenges in the publicity of science, courts, and professional peers.</p></li>
+<li><p><strong>Replicable findings</strong>: We are presenting our findings and provide tools so that our users or auditors or external authorities can duplicate our results.</p></li>
+<li><p><strong>Confirmable findings</strong>: The main conclusions of the research can be obtained independently without our software, because we describe in detail the algorithms and methodology in supplementary materials. We believe that other organizations, analysts, statisticians must come to the same findings with their own methods and software. This avoids lock-in and allows independent cross-examination.</p></li>
+<li><p><strong>Auditable findings</strong>: Sufficient records (including data and software) have been archived so that the research can be defended later if necessary or differences between independent confirmations resolved. The archive might be private, as with traditional laboratory notebooks. See <a href="#opencollaboration">Open collaboration</a> with academia, auditors, and industry.</p></li>
+</ul>
+<p>These computational requirements require a data workflow that relies on further principles.</p>
+<ul>
+<li><p><strong>Record retention</strong>: all aspects of reproducibility require a high level of standardized documentation. The standardization of documentation requires the use of standardized metadata, metadata structures, taxonomies, vocabularies.</p></li>
+<li><p><strong>Best available information / data universe</strong>: the quality of the findings, their confirmation and auditing success will improve with better data and facts used.</p></li>
+<li><p><strong>Data validations</strong>: The quality of the findings will greatly depend on the factual inputs. While the reproducible findings may have many problems, inputting erroneous data or faulty information will likely lead to wrong conclusions, and in all cases will make confirmation and auditing impossible. Especially when organizations use large and heterogeneous data sources, even small errors, such as erroneous currency translations or accidental misuse of decimals, units can cause results that will not pass confirmation or auditing.</p></li>
+</ul>
+</div>
+</div>
+<div id="fair" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> FAIR</h2>
+<p>In 2016, the ‘<strong><a href="http://www.nature.com/articles/sdata201618">FAIR Guiding Principles for scientific data management and stewardship’</a></strong> were published in <em>Scientific Data</em>. The authors intended to provide guidelines to improve the <strong>F</strong>indability, <strong>A</strong>ccessibility, <strong>I</strong>nteroperability, and <strong>R</strong>euse of digital assets. The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.</p>
+<p>We are trying to make our API service FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties">mandatory requirements</a>, and most of the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties">recommended requirements</a> of DataCite.</p>
+<p>A practical “how to” guidance to go FAIR can be found in the <strong><a href="https://www.go-fair.org/how-to-go-fair/">Three-point FAIRification Framework</a></strong>.</p>
+<p><strong><span style="text-decoration:underline;">F</span>indable</strong></p>
+<p>The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the <strong><a href="https://www.go-fair.org/fair-principles/fairification-process/">FAIRification process</a></strong>.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/fair-data-principles-explained/f1-meta-data-assigned-globally-unique-persistent-identifiers/">F1. (Meta)data are assigned a globally unique and persistent identifier</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/fair-data-principles-explained/f2-data-described-rich-metadata/">F2. Data are described with rich metadata (defined by R1 below)</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/f3-metadata-clearly-explicitly-include-identifier-data-describe/">F3. Metadata clearly and explicitly include the identifier of the data they describe</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/f4-metadata-registered-indexed-searchable-resource/">F4. (Meta)data are registered or indexed in a searchable resource</a></strong></p>
+<p><strong><span style="text-decoration:underline;">A</span>ccessible</strong></p>
+<p>Once the user finds the required data, she/he/they need to know how can they be accessed, possibly including authentication and authorisation.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/542-2/">A1. (Meta)data are retrievable by their identifier using a standardised communications protocol</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/a1-1-protocol-open-free-universally-implementable/">A1.1 The protocol is open, free, and universally implementable</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/a1-2-protocol-allows-authentication-authorisation-required/">A1.2 The protocol allows for an authentication and authorisation procedure, where necessary</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/a2-metadata-accessible-even-data-no-longer-available/">A2. Metadata are accessible, even when the data are no longer available</a></strong></p>
+<p><strong><span style="text-decoration:underline;">I</span>nteroperable</strong></p>
+<p>The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/">I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/">I2. (Meta)data use vocabularies that follow FAIR principles</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/">I3. (Meta)data include qualified references to other (meta)data</a></strong></p>
+<p><strong><span style="text-decoration:underline;">R</span>eusable</strong></p>
+<p>The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/">R1. (Meta)data are richly described with a plurality of accurate and relevant attributes</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/">R1.1. (Meta)data are released with a clear and accessible data usage license</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/">R1.2. (Meta)data are associated with detailed provenance</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/">R1.3. (Meta)data meet domain-relevant community standards</a></strong></p>
+<p>The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure. For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="app.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["observatory_contributors_handbook.pdf", "PDF"], ["observatory_contributors_handbook.epub", "EPUB"], ["observatory_contributors_handbook.docx", "Word Doc"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

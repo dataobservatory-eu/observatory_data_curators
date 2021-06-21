@@ -3,10 +3,10 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Automated Observatory Data Curator's Handbook</a></li>
+        <li><a href="./">Automated Observatory Contributors' Handbook</a></li>
       after: |
-        <li><a href="http://datathon.dataobservatory.eu/" target="blank">EU Datathon 2021</a></li>
-    download: [["observatory_data_curators_handbook.pdf", "PDF"], ["observatory_data_curators_handbook.epub", "EPUB"], ["observatory_data_curators_handbook.docx", "Word Doc"]]
+        <li><a href="http://contributors.dataobservatory.eu/" target="blank">EU Datathon 2021</a></li>
+    download: [["observatory_contributors_handbook.pdf", "PDF"], ["observatory_contributors_handbook.epub", "EPUB"], ["observatory_contributors_handbook.docx", "Word Doc"]]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

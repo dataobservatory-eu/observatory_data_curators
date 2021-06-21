@@ -1,0 +1,159 @@
+# Open Data {#open-data}
+
+In the EU, open data is governed by the [Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&uri=CELEX:32019L1024). It entered into force on 16 July 2019. It replaces the [Public Sector Information Directive](https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098), also known as the *PSI Directive* which dated from 2003 and was subsequently amended in 2013.
+
+[Open Data is Like Gold in the Mud Below the Chilly Waves of Mountain Rivers](https://greendeal.dataobservatory.eu/post/2021-06-10-founder-daniel-antal/)
+
+The EU has an 18-year-old open data regime and it makes public taxpayer-funded data in the values of tens of billions of euros per year; the Eurostat program alone handles 20,000 international data products, including at least 5,000 pan-European environmental indicators.
+
+As open science principles gain increased acceptance, scientific researchers are making hundreds of thousands of valuable datasets public and available for replication every year.
+
+The EU, the OECD, and UN institutions run around 100 data collection programs, so-called ‘data observatories’ that more or less avoid touching this data, and buy proprietary data instead. Annually, each observatory spends between 50 thousand and 3 million EUR on collecting untidy and proprietary data of inconsistent quality, while never even considering open data.
+
+
+```{r problem-obs-collage, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(file.path(
+  "plots", "screenshots", "observatory_collage_16x9_800.png"
+))
+```
+
+
+The problem with the current EU data strategy is that while it produces enormous quantities of valuable open data, in the absence of common basic data science and documentation principles, it seems often cheaper to create new data than to put the existing open data into shape.
+
+This is an absolute waste of resources and efforts. With a few R packages and our deep understanding of advanced data science techniques, we can create valuable datasets from unprocessed open data. In most domains, we are able to repurpose data originally created for other purposes at a historical cost of several billions of euros, converting these unused data assets into valuable datasets that can replace tens of millions’ worth of proprietary data.
+
+What we want to achieve with this project – and we believe such an accomplishment would merit one of the first prizes - is to add value to a significant portion of pre-existing EU open data (for example, available on [data.europa.eu/data](https://data.europa.eu/data/)) by re-processing and integrating them into a modern, tidy database with an API access, and to find a business model that emphasises a triangular use of data in 1. business, 2. science and 3. policy-making. Our mission is to modernize the concept of `data observatories.`
+
+```{r open-source-slide, fig.out="85%", fig.align="center", echo=FALSE}
+knitr::include_graphics(
+  here::here( "plots", "slides", "open_source_slide.png"))
+```
+
+
+## How We Add Value to Data {#add-value}
+
+While the EU announces every year that again billions and billions of worth data became "open" again, this is not gold. At least not in the form of nicely minted gold coins, but in gold dust and nuggets found in the muddy banks of chilly rivers. There is no rush for it, because panning out its value requires plenty of hard work. We are trying to automate this work to make open data useable at scale, even in trustworthy AI solutions.
+
+```{r}
+knitr::include_graphics(
+  here::here("plots", "slides", "gold_panning_slide_notitle.png")
+)
+```
+
+
+Most open data is not public, it is not downloadable from the Internet – in the EU parlance, “open” only means a legal entitlement to get access to it. And even in the rare cases when data is open and public, often it is mired by data quality issues.  We are working on the prototypes of a data-as-serve and research-as-service built with open-source statistical software that taps into various and often neglected open data sources.
+
+We are in a prototype phase in June, but we hope that we will have a well-functioning service by the time of the conference, because we are working only with open-source software elements; our technological readiness level is already very high.  The novelty of our process is that we are trying to further develop and integrate a few open-source technology items into a technologically and financially sustainable data-as-service and even research-as-service solutions.
+
+We decided to take a new, modern approach to the ‘data observatory’ concept, and modernize it with the application of 21st century data and metadata standards, the new results of reproducible research and data science. See \@ref(service). [Service Design and Business Case Development](#service)
+
+## Reproducible Research {#reproducible-research}
+
+1. **Our curatotrs** help finding the best available information source.  This is often open data, which is not equal to public data. Open data is a governmental or scientific data source which you can legally access.  It is almost never available for direct download, and requires much processing.  You could probably do this in Excel -- if the data was not in various `sql`, `pdf`, `sav`, `csv`, `tsv`, `xls` and various other file formats. 
+
+2. **We process the data**: Yes, anybody can convert from millions of euros to euros in a spreadsheet, tons to kilograms, maybe even ounces to grams, but many unit conversions are error-prone if done by humans. Not everybody can make valid currency translations (*When do I use year-end USD/EUR rate? Today's EUR/GBP? Or GBP/EUR? Annual average rate?*) We do this processing in a way that conforms to the tidy data definition, which allows easy integration, joining, and importing of data into your database. While the unit conversions can be automated in Excel or PowerBI, the data tidying requires a more programatic approach.
+
+3. **Quality control**:  Our data goes through dozens of computer logical checks (*Do assets and liabilities match? Do dollar and euro amounts lead to the same result?*) Our algorithms go through automated and human statistical peer-review, and are open to your experts for checking, because transparency and openness allow for the best quality control. This unit testing is not really possible in Excel or Power BI, not to mention the senior supervision of such tasks. To maintain data integrity, we place an authoritative copy with a digital object identifier in the Zenodo scientific data repository. We place both our algorithms and our methods into peer-reviewed scientific publications, and our data products are checked and improved by competent experts in the field.
+
+4. **We produce** the data and its visualization in easy to reuse, machine-readable, platform-independent formats. Just like that, `csv`, `json`, `jpg`, `png`, `doxc`, `epub`, `pdf`, `pptx`, `odt`, `sav`, you name it, we do it.
+
+**Reproducible research** is a scientific concept that can be applied to a wide range of professional designations, such as accounting, finance or the legal profession. We are applying this concept to  [Evidence-based, Open Policy Analysis](#opa) and [Professional Standards in Business](#business-professional-standards), including, for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on computational reproducibility we believe that the following principles should be followed: 
+    - **Reviewability** means that our application’s results are can be assessed and judged by our user’s experts, or experts they trust. 
+    - **Reproducibility** means that we provide data products and tools that allow the exact duplication of our results during assessments.  This ensures that all logical steps can be verified.
+    - **Confirmability** means that using our applications findings leads to the same professional results as other available software and information. Our data products use the open-source statistical programming language R. We provide details about our algorithms and methodology to confirm our results in SPSS or Stata or sometimes even in Excel.
+    - **Auditability** means that our data and software is archived in a way that external auditors can later review, reproduce and confirm our findings.  This is a _stricter form of data retention_ than most organizations apply, because we do not only archive results step-by-step but all computational steps – as if your colleagues would not only save every step in Excel but also their keystrokes. [Read more about this topic here](#reproducible-research-theory).
+
+
+```{r observatory-value-chain-1, echo=FALSE}
+knitr::include_graphics(
+  file.path("plots", "business_development", "value_chain.png")
+)
+```
+
+
+### Reproducible Research {#reproducible-research-theory}
+
+**Reproducible research** is a scientific concept that can be applied to a wide range of professional designations. We are applying this concept to  [Evidence-based, Open Policy Analysis](#opa) and [Professional Standards in Business](#business-professional-standards), 
+for example, reproducible finance in the investment process or reproducible impact assessment in policy consulting. Based on the computational reproducibility we believe that the following principles should be followed. 
+
+- **Reviewability** means that our application’s results are can be assessed and judged by our user’s experts, or experts they trust. We help reviewability with full transparency: we publish the software code that created the indicators, our methodology, and an automatically refreshing statistical description of the indicator each day when it receives new data or corrections from the original source.
+
+- **Reproducibility** means that we are providing data products and tools that allow the exact duplication of our results during assessments.  This ensures that all logical steps can be verified. Reproducibility ensures that there is no lock-in to our applications. You can always chose a different data and software vendor, or compare our results with them.
+
+- **Confirmability** means that using our applications findings leads to the same professional results as other available software and information. Our data products use the open-source statistical programming language R. We provide details about our algorithms and methodology to confirm our results in SPSS or Stata or sometimes even in Excel.
+
+- **Auditability** means that our data and software is archived in a way that external auditors can later review, reproduce and confirm our findings.  This is a _stricter form of data retention_ that most organizations apply, because we do not only archive results step-by-step but all computational steps – as if your colleagues would not only save every step in Excel but also their keystrokes. While auditability is a requirement in accounting, we are extending this approach to all the quantitative work of a professional organization in an advisory or consulting capacity.
+
+-	__Reviewable findings__: The descriptions of the methods can be independently assessed, and the results judged credible. In our view, this is a fundamental requirement for all professional applications. CEEMID’s music data is used to settle royalty disputes in judicial procedures, or in grant and policy design. We believe that the future European Music Observatory should aim at the same bar, making its data & research products open for challenges in the publicity of science, courts, and professional peers.
+
+-	__Replicable findings__: We are presenting our findings and provide tools so that our users or auditors or external authorities can duplicate our results. 
+
+-	__Confirmable findings__: The main conclusions of the research can be obtained independently without our software, because we describe in detail the algorithms and methodology in supplementary materials. We believe that other organizations, analysts, statisticians must come to the same findings with their own methods and software. This avoids lock-in and allows independent cross-examination.
+
+-	__Auditable findings__: Sufficient records (including data and software) have been archived so that the research can be defended later if necessary or differences between independent confirmations resolved. The archive might be private, as with traditional laboratory notebooks. See [Open collaboration](#opencollaboration) with academia, auditors, and industry.
+
+These computational requirements require a data workflow that relies on further principles.
+
+-	__Record retention__: all aspects of reproducibility require a high level of standardized documentation. The standardization of documentation requires the use of standardized metadata, metadata structures, taxonomies, vocabularies.
+
+-	__Best available information / data universe__:  the quality of the findings, their confirmation and auditing success will improve with better data and facts used. 
+
+-	__Data validations__: The quality of the findings will greatly depend on the factual inputs.  While the reproducible findings may have many problems, inputting erroneous data or faulty information will likely lead to wrong conclusions, and in all cases will make confirmation and auditing impossible. Especially when organizations use large and heterogeneous data sources, even small errors, such as erroneous currency translations or accidental misuse of decimals, units can cause results that will not pass confirmation or auditing.
+
+
+## FAIR {#fair}
+
+In 2016, the **[FAIR Guiding Principles for scientific data management and stewardship](http://www.nature.com/articles/sdata201618)** were published in _Scientific Data_. The authors intended to provide guidelines to improve the **F**indability, **A**ccessibility, **I**nteroperability, and **R**euse of digital assets. The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.
+
+We are trying to make our API service FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the [mandatory requirements](https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties), and most of the [recommended requirements](https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties) of DataCite.
+
+A practical “how to” guidance to go FAIR can be found in the **[Three-point FAIRification Framework](https://www.go-fair.org/how-to-go-fair/)**.
+
+**<span style="text-decoration:underline;">F</span>indable**
+
+The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the **[FAIRification process](https://www.go-fair.org/fair-principles/fairification-process/)**.
+
+**[F1. (Meta)data are assigned a globally unique and persistent identifier](https://www.go-fair.org/fair-principles/fair-data-principles-explained/f1-meta-data-assigned-globally-unique-persistent-identifiers/)**
+
+**[F2. Data are described with rich metadata (defined by R1 below)](https://www.go-fair.org/fair-principles/fair-data-principles-explained/f2-data-described-rich-metadata/)**
+
+**[F3. Metadata clearly and explicitly include the identifier of the data they describe](https://www.go-fair.org/fair-principles/f3-metadata-clearly-explicitly-include-identifier-data-describe/)**
+
+**[F4. (Meta)data are registered or indexed in a searchable resource](https://www.go-fair.org/fair-principles/f4-metadata-registered-indexed-searchable-resource/)**
+
+**<span style="text-decoration:underline;">A</span>ccessible**
+
+Once the user finds the required data, she/he/they need to know how can they be accessed, possibly including authentication and authorisation.
+
+**[A1. (Meta)data are retrievable by their identifier using a standardised communications protocol](https://www.go-fair.org/fair-principles/542-2/)**
+
+**[A1.1 The protocol is open, free, and universally implementable](https://www.go-fair.org/fair-principles/a1-1-protocol-open-free-universally-implementable/)**
+
+**[A1.2 The protocol allows for an authentication and authorisation procedure, where necessary](https://www.go-fair.org/fair-principles/a1-2-protocol-allows-authentication-authorisation-required/)**
+
+**[A2. Metadata are accessible, even when the data are no longer available](https://www.go-fair.org/fair-principles/a2-metadata-accessible-even-data-no-longer-available/)**
+
+**<span style="text-decoration:underline;">I</span>nteroperable**
+
+The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
+
+**[I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.](https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/)**
+
+**[I2. (Meta)data use vocabularies that follow FAIR principles](https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/)**
+
+**[I3. (Meta)data include qualified references to other (meta)data](https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/)**
+
+**<span style="text-decoration:underline;">R</span>eusable**
+
+The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
+
+**[R1. (Meta)data are richly described with a plurality of accurate and relevant attributes](https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/)**
+
+**[R1.1. (Meta)data are released with a clear and accessible data usage license](https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/)**
+
+**[R1.2. (Meta)data are associated with detailed provenance](https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/)**
+
+**[R1.3. (Meta)data meet domain-relevant community standards](https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/)**
+
+The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure. For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).
+
