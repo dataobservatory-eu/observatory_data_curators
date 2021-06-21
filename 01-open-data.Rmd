@@ -2,7 +2,8 @@
 
 In the EU, open data is governed by the [Directive on open data and the re-use of public sector information - in short: Open Data Directive (EU) 2019 / 1024](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1561563110433&uri=CELEX:32019L1024). It entered into force on 16 July 2019. It replaces the [Public Sector Information Directive](https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098), also known as the *PSI Directive* which dated from 2003 and was subsequently amended in 2013.
 
-[Open Data is Like Gold in the Mud Below the Chilly Waves of Mountain Rivers](https://greendeal.dataobservatory.eu/post/2021-06-10-founder-daniel-antal/)
+* [Open Data - The New Gold Without the Rush](https://dataandlyrics.com/post/2021-06-18-gold-without-rush/)
+* [Open Data is Like Gold in the Mud Below the Chilly Waves of Mountain Rivers](https://greendeal.dataobservatory.eu/post/2021-06-10-founder-daniel-antal/)
 
 The EU has an 18-year-old open data regime and it makes public taxpayer-funded data in the values of tens of billions of euros per year; the Eurostat program alone handles 20,000 international data products, including at least 5,000 pan-European environmental indicators.
 
