@@ -30,6 +30,7 @@ knitr::include_graphics(
 
 Our open collaboration is truly open: new [data curators](https://music.dataobservatory.eu/author/new-curators/), data scientists and data engineers are welcome to join. We develop open-source software in an agile way, so you can join in with an intermediate programming skill to build unit tests or add new functionality, and if you are a beginner, you can start with documentation and testing our tutorials. For business, policy, and scientific data analysts, we provide unexploited, exciting new datasets. Advanced developers can [join](https://greendeal.dataobservatory.eu/author/new-developers/) our development team: the statistical data creation is mainly made in the R language, and the service infrastructure in Python and Go components.
 
+*See or share this introduction to the service plans in a* [blogpost](https://dataandlyrics.com/post/2021-06-18-gold-without-rush/).
 
 ## Professional Standards in Business {#business-professional-standards} 
 
