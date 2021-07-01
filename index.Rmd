@@ -139,5 +139,3 @@ We are working around the open collaboration concept, which is well-known in ope
 </tr>
 </tbody>
 </table>
-
-
