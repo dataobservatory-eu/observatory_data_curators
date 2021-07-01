@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 FAIR Data and the Added Value of Rich Metadata | Automated Observatory Contributors’ Handbook</title>
+  <meta name="description" content="If open data is the new gold, why even those who release fail to reuse it? We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones. We turn reproducible research software into research- as-service." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 FAIR Data and the Added Value of Rich Metadata | Automated Observatory Contributors’ Handbook" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="If open data is the new gold, why even those who release fail to reuse it? We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones. We turn reproducible research software into research- as-service." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 FAIR Data and the Added Value of Rich Metadata | Automated Observatory Contributors’ Handbook" />
+  
+  <meta name="twitter:description" content="If open data is the new gold, why even those who release fail to reuse it? We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones. We turn reproducible research software into research- as-service." />
+  
+
+<meta name="author" content="Daniel Antal, CFA" />
+
+
+<meta name="date" content="2021-07-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="open-data.html"/>
+<link rel="next" href="trustworhty-ai.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Automated Observatory Contributors' Handbook</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Big Data for All</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-value-added"><i class="fa fa-check"></i>How We Add Value To Your Data?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#big-data-for-all-1"><i class="fa fa-check"></i>Big Data For All</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-observatory"><i class="fa fa-check"></i>Automated Data Observatories</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="open-data.html"><a href="open-data.html"><i class="fa fa-check"></i><b>1</b> Open Data</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="open-data.html"><a href="open-data.html#add-value-open-data"><i class="fa fa-check"></i><b>1.1</b> How We Add Value to Open Data</a></li>
+<li class="chapter" data-level="1.2" data-path="open-data.html"><a href="open-data.html#research-automation"><i class="fa fa-check"></i><b>1.2</b> Research Automation</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="open-data.html"><a href="open-data.html#reproducible-research-theory"><i class="fa fa-check"></i><b>1.2.1</b> Reproducible Research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="FAIR-data.html"><a href="FAIR-data.html"><i class="fa fa-check"></i><b>2</b> FAIR Data and the Added Value of Rich Metadata</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="FAIR-data.html"><a href="FAIR-data.html#FAIR"><i class="fa fa-check"></i><b>2.1</b> FAIR</a></li>
+<li class="chapter" data-level="2.2" data-path="FAIR-data.html"><a href="FAIR-data.html#Dublin-Core"><i class="fa fa-check"></i><b>2.2</b> The Dublin Core</a></li>
+<li class="chapter" data-level="2.3" data-path="FAIR-data.html"><a href="FAIR-data.html#DataCite"><i class="fa fa-check"></i><b>2.3</b> DataCite</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="FAIR-data.html"><a href="FAIR-data.html#recommended"><i class="fa fa-check"></i><b>2.3.1</b> Recommended</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="FAIR-data.html"><a href="FAIR-data.html#processing-metadata"><i class="fa fa-check"></i><b>2.4</b> Processing Metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="trustworhty-ai.html"><a href="trustworhty-ai.html"><i class="fa fa-check"></i><b>3</b> Trustworthy AI</a></li>
+<li class="chapter" data-level="4" data-path="app.html"><a href="app.html"><i class="fa fa-check"></i><b>4</b> Application: Automated Data Observatories</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="app.html"><a href="app.html#data-acquisition-and-processing"><i class="fa fa-check"></i><b>4.1</b> Data Acquisition and Processing</a></li>
+<li class="chapter" data-level="4.2" data-path="app.html"><a href="app.html#zenodo"><i class="fa fa-check"></i><b>4.2</b> Data Integrity: Authoritative Copies</a></li>
+<li class="chapter" data-level="4.3" data-path="app.html"><a href="app.html#api"><i class="fa fa-check"></i><b>4.3</b> Automated Data Observatory API</a></li>
+<li class="chapter" data-level="4.4" data-path="app.html"><a href="app.html#bookdown"><i class="fa fa-check"></i><b>4.4</b> Long form documentation</a></li>
+<li class="chapter" data-level="4.5" data-path="app.html"><a href="app.html#hugo"><i class="fa fa-check"></i><b>4.5</b> Front-End Websites</a></li>
+<li class="chapter" data-level="4.6" data-path="open-data.html"><a href="open-data.html#research-automation"><i class="fa fa-check"></i><b>4.6</b> Research Automation</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="service.html"><a href="service.html"><i class="fa fa-check"></i><b>5</b> Service Design and Business Case Development</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="service.html"><a href="service.html#business-professional-standards"><i class="fa fa-check"></i><b>5.1</b> Professional Standards in Business</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="service.html"><a href="service.html#key-business-indicators"><i class="fa fa-check"></i><b>5.1.1</b> Key Business Indicators</a></li>
+<li class="chapter" data-level="5.1.2" data-path="service.html"><a href="service.html#business-record-retention"><i class="fa fa-check"></i><b>5.1.2</b> Business Record Retention</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="service.html"><a href="service.html#policy-professional-standards"><i class="fa fa-check"></i><b>5.2</b> Professional Standards in Policy</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="service.html"><a href="service.html#opa"><i class="fa fa-check"></i><b>5.2.1</b> Evidence-based, Open Policy Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="service.html"><a href="service.html#contributors"><i class="fa fa-check"></i><b>5.3</b> Contributors</a></li>
+<li class="chapter" data-level="5.4" data-path="service.html"><a href="service.html#topic-associate"><i class="fa fa-check"></i><b>5.4</b> Passion About Our Topic</a></li>
+<li class="chapter" data-level="5.5" data-path="service.html"><a href="service.html#open-associate"><i class="fa fa-check"></i><b>5.5</b> Passion For Trustworthy AI, Open Data and Open Source Projects</a></li>
+<li class="chapter" data-level="5.6" data-path="service.html"><a href="service.html#technical-requirements-associate"><i class="fa fa-check"></i><b>5.6</b> Technical Requirements</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-curators.html"><a href="data-curators.html"><i class="fa fa-check"></i><b>6</b> Data Curators</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="data-curators.html"><a href="data-curators.html#get-inspired"><i class="fa fa-check"></i><b>6.1</b> Get Inspired</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="data-curators.html"><a href="data-curators.html#create-new-datasets"><i class="fa fa-check"></i><b>6.1.1</b> Create New Datasets</a></li>
+<li class="chapter" data-level="6.1.2" data-path="data-curators.html"><a href="data-curators.html#critical-attitude"><i class="fa fa-check"></i><b>6.1.2</b> Remain Critical</a></li>
+<li class="chapter" data-level="6.1.3" data-path="data-curators.html"><a href="data-curators.html#first-contribution"><i class="fa fa-check"></i><b>6.1.3</b> Your First Data Contribution</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="data-curators.html"><a href="data-curators.html#indicator-design"><i class="fa fa-check"></i><b>6.2</b> Indicator Design</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="data-curators.html"><a href="data-curators.html#authoring-indicator"><i class="fa fa-check"></i><b>6.2.1</b> Creation and Quality Control of Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="data-curators.html"><a href="data-curators.html#deposit-indicator"><i class="fa fa-check"></i><b>6.3</b> Authentic Depositions of Indicators</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="data-curators.html"><a href="data-curators.html#how-to-add-your-existing-zenodo-depositions-to-our-observatory"><i class="fa fa-check"></i><b>6.3.1</b> How to Add your Existing Zenodo Depositions to Our Observatory</a></li>
+<li class="chapter" data-level="6.3.2" data-path="data-curators.html"><a href="data-curators.html#green-deal-data-observatory"><i class="fa fa-check"></i><b>6.3.2</b> Green Deal Data Observatory</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="green-deal.html"><a href="green-deal.html"><i class="fa fa-check"></i><b>7</b> Green Deal Indicators</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="green-deal.html"><a href="green-deal.html#curators"><i class="fa fa-check"></i><b>7.1</b> Curators</a></li>
+<li class="chapter" data-level="7.2" data-path="green-deal.html"><a href="green-deal.html#aggregating-count-data"><i class="fa fa-check"></i><b>7.2</b> Aggregating Count Data</a></li>
+<li class="chapter" data-level="7.3" data-path="green-deal.html"><a href="green-deal.html#social-attitude-climate-change"><i class="fa fa-check"></i><b>7.3</b> Social Attituted to Climate Change</a></li>
+<li class="chapter" data-level="7.4" data-path="green-deal.html"><a href="green-deal.html#environmental-impact-indicator-for-economic-activities"><i class="fa fa-check"></i><b>7.4</b> Environmental Impact Indicator for Economic Activities</a></li>
+<li class="chapter" data-level="7.5" data-path="green-deal.html"><a href="green-deal.html#sensory-data-measuring-climate-change-physical-affects"><i class="fa fa-check"></i><b>7.5</b> Sensory Data Measuring Climate Change Physical Affects</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="music.html"><a href="music.html"><i class="fa fa-check"></i><b>8</b> Digital Music Observatory</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="music.html"><a href="music.html#music-curators"><i class="fa fa-check"></i><b>8.1</b> Curators</a></li>
+<li class="chapter" data-level="8.2" data-path="music.html"><a href="music.html#music-economy"><i class="fa fa-check"></i><b>8.2</b> Music Economy</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="music.html"><a href="music.html#demand-drivers"><i class="fa fa-check"></i><b>8.2.1</b> Demand Drivers</a></li>
+<li class="chapter" data-level="8.2.2" data-path="music.html"><a href="music.html#supply-indicators"><i class="fa fa-check"></i><b>8.2.2</b> Supply Indicators</a></li>
+<li class="chapter" data-level="8.2.3" data-path="music.html"><a href="music.html#price-indicators"><i class="fa fa-check"></i><b>8.2.3</b> Price Indicators</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="music.html"><a href="music.html#music-diversity"><i class="fa fa-check"></i><b>8.3</b> Music Diversity</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="music.html"><a href="music.html#gender-language-ethnic-and-other-inclusion-attributes"><i class="fa fa-check"></i><b>8.3.1</b> Gender, Language, Ethnic and Other Inclusion Attributes</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="music.html"><a href="music.html#music-circulation"><i class="fa fa-check"></i><b>8.4</b> Music Circulation</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="music.html"><a href="music.html#market-shares"><i class="fa fa-check"></i><b>8.4.1</b> Market shares</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="music.html"><a href="music.html#music-society"><i class="fa fa-check"></i><b>8.5</b> Music &amp; Society</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="music.html"><a href="music.html#social-attitutes-to-music"><i class="fa fa-check"></i><b>8.5.1</b> Social Attitutes to Music</a></li>
+<li class="chapter" data-level="8.5.2" data-path="music.html"><a href="music.html#participation-in-music"><i class="fa fa-check"></i><b>8.5.2</b> Participation in Music</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="economy.html"><a href="economy.html"><i class="fa fa-check"></i><b>9</b> Economy Data Observatory</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="economy.html"><a href="economy.html#curators-1"><i class="fa fa-check"></i><b>9.1</b> Curators</a></li>
+<li class="chapter" data-level="9.2" data-path="economy.html"><a href="economy.html#social-attitutes-to-economic-change"><i class="fa fa-check"></i><b>9.2</b> Social Attitutes to Economic Change</a></li>
+<li class="chapter" data-level="9.3" data-path="economy.html"><a href="economy.html#sme-indicators"><i class="fa fa-check"></i><b>9.3</b> SME Activity Indicators</a></li>
+<li class="chapter" data-level="9.4" data-path="economy.html"><a href="economy.html#economic-impact-indicators"><i class="fa fa-check"></i><b>9.4</b> Economic Impact Indicators</a></li>
+<li class="chapter" data-level="9.5" data-path="economy.html"><a href="economy.html#sensory-data-measuring-changes-in-economic-activy"><i class="fa fa-check"></i><b>9.5</b> Sensory Data Measuring Changes in Economic Activy</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="competition.html"><a href="competition.html"><i class="fa fa-check"></i><b>10</b> Competition Data Observatory</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="competition.html"><a href="competition.html#competition-curators"><i class="fa fa-check"></i><b>10.1</b> Curators</a></li>
+<li class="chapter" data-level="10.2" data-path="competition.html"><a href="competition.html#compeition-indicators"><i class="fa fa-check"></i><b>10.2</b> Competition</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="competition.html"><a href="competition.html#knowledge-monopoly"><i class="fa fa-check"></i><b>10.2.1</b> Knowledge Monopolizations, Killer Acquisitions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="partnerships.html"><a href="partnerships.html"><i class="fa fa-check"></i><b>11</b> Partnerships</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="partnerships.html"><a href="partnerships.html#open-collaboration"><i class="fa fa-check"></i><b>11.1</b> Open Collaboration</a></li>
+<li class="chapter" data-level="11.2" data-path="partnerships.html"><a href="partnerships.html#policy-partners"><i class="fa fa-check"></i><b>11.2</b> Policy Partners</a></li>
+<li class="chapter" data-level="11.3" data-path="partnerships.html"><a href="partnerships.html#academic-partners"><i class="fa fa-check"></i><b>11.3</b> Academic Partners</a></li>
+<li class="chapter" data-level="11.4" data-path="partnerships.html"><a href="partnerships.html#business-partners"><i class="fa fa-check"></i><b>11.4</b> Business Partners</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>12</b> Tools</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="tools.html"><a href="tools.html#internal-communication-collaboration"><i class="fa fa-check"></i><b>12.1</b> Internal communication &amp; collaboration</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="tools.html"><a href="tools.html#keybase"><i class="fa fa-check"></i><b>12.1.1</b> Keybase</a></li>
+<li class="chapter" data-level="12.1.2" data-path="tools.html"><a href="tools.html#github"><i class="fa fa-check"></i><b>12.1.2</b> Git &amp; Github</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="tools.html"><a href="tools.html#filemanagement"><i class="fa fa-check"></i><b>12.2</b> Basic file management</a></li>
+<li class="chapter" data-level="12.3" data-path="tools.html"><a href="tools.html#writing-blogging"><i class="fa fa-check"></i><b>12.3</b> Writing, blogging</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="tools.html"><a href="tools.html#markdown"><i class="fa fa-check"></i><b>12.3.1</b> Markdown</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="http://contributors.dataobservatory.eu/" target="blank">EU Datathon 2021</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Automated Observatory Contributors’ Handbook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="FAIR-data" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> FAIR Data and the Added Value of Rich Metadata</h1>
+<p>FAIR data is far more valuable than non-fair data.</p>
+<p>We are making our API service FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties">mandatory requirements</a>, and most of the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties">recommended requirements</a> of DataCite.</p>
+<div id="FAIR" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> FAIR</h2>
+<p>In 2016, the <strong><a href="http://www.nature.com/articles/sdata201618">FAIR Guiding Principles for scientific data management and stewardship</a></strong> were published in <em>Scientific Data</em>. The authors intended to provide guidelines to improve the <strong>F</strong>indability, <strong>A</strong>ccessibility, <strong>I</strong>nteroperability, and <strong>R</strong>euse of digital assets. The principles emphasize machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data because of the increase in volume, complexity, and creation speed of data.</p>
+<p>A practical “how to” guidance to go FAIR can be found in the <strong><a href="https://www.go-fair.org/how-to-go-fair/">Three-point FAIRification Framework</a></strong>.</p>
+<p><strong><span style="text-decoration:underline;">F</span>indable</strong></p>
+<p>The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the <strong><a href="https://www.go-fair.org/fair-principles/fairification-process/">FAIRification process</a></strong>.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/fair-data-principles-explained/f1-meta-data-assigned-globally-unique-persistent-identifiers/">F1. (Meta)data are assigned a globally unique and persistent identifier</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/fair-data-principles-explained/f2-data-described-rich-metadata/">F2. Data are described with rich metadata (defined by R1 below)</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/f3-metadata-clearly-explicitly-include-identifier-data-describe/">F3. Metadata clearly and explicitly include the identifier of the data they describe</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/f4-metadata-registered-indexed-searchable-resource/">F4. (Meta)data are registered or indexed in a searchable resource</a></strong></p>
+<p><strong><span style="text-decoration:underline;">A</span>ccessible</strong></p>
+<p>Once the user finds the required data, she/he/they need to know how can they be accessed, possibly including authentication and authorisation.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/542-2/">A1. (Meta)data are retrievable by their identifier using a standardised communications protocol</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/a1-1-protocol-open-free-universally-implementable/">A1.1 The protocol is open, free, and universally implementable</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/a1-2-protocol-allows-authentication-authorisation-required/">A1.2 The protocol allows for an authentication and authorisation procedure, where necessary</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/a2-metadata-accessible-even-data-no-longer-available/">A2. Metadata are accessible, even when the data are no longer available</a></strong></p>
+<p><strong><span style="text-decoration:underline;">I</span>nteroperable</strong></p>
+<p>The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/">I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/">I2. (Meta)data use vocabularies that follow FAIR principles</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/">I3. (Meta)data include qualified references to other (meta)data</a></strong></p>
+<p><strong><span style="text-decoration:underline;">R</span>eusable</strong></p>
+<p>The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.</p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/">R1. (Meta)data are richly described with a plurality of accurate and relevant attributes</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/">R1.1. (Meta)data are released with a clear and accessible data usage license</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/">R1.2. (Meta)data are associated with detailed provenance</a></strong></p>
+<p><strong><a href="https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/">R1.3. (Meta)data meet domain-relevant community standards</a></strong></p>
+<p>The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure. For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).</p>
+</div>
+<div id="Dublin-Core" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> The Dublin Core</h2>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Contributor</td>
+<td align="center">An entity responsible for making contributions to the resource.</td>
+</tr>
+<tr class="even">
+<td align="left">Coverage</td>
+<td align="center">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</td>
+</tr>
+<tr class="odd">
+<td align="left">Creator</td>
+<td align="center">An entity primarily responsible for making the resource.</td>
+</tr>
+<tr class="even">
+<td align="left">Date</td>
+<td align="center">A point or period of time associated with an event in the lifecycle of the resource.</td>
+</tr>
+<tr class="odd">
+<td align="left">Description</td>
+<td align="center">An account of the resource.</td>
+</tr>
+<tr class="even">
+<td align="left">Format</td>
+<td align="center">The file format, physical medium, or dimensions of the resource.</td>
+</tr>
+<tr class="odd">
+<td align="left">Identifier</td>
+<td align="center">An unambiguous reference to the resource within a given context.</td>
+</tr>
+<tr class="even">
+<td align="left">Language</td>
+<td align="center">A language of the resource.</td>
+</tr>
+<tr class="odd">
+<td align="left">Publisher</td>
+<td align="center">An entity responsible for making the resource available.</td>
+</tr>
+<tr class="even">
+<td align="left">Relation</td>
+<td align="center">A related resource.</td>
+</tr>
+<tr class="odd">
+<td align="left">Rights</td>
+<td align="center">Information about rights held in and over the resource.</td>
+</tr>
+<tr class="even">
+<td align="left">Source</td>
+<td align="center">A related resource from which the described resource is derived.</td>
+</tr>
+<tr class="odd">
+<td align="left">Subject</td>
+<td align="center">The topic of the resource.</td>
+</tr>
+<tr class="even">
+<td align="left">Title</td>
+<td align="center">A name given to the resource.</td>
+</tr>
+<tr class="odd">
+<td align="left">Type</td>
+<td align="center">The nature or genre of the resource.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="DataCite" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> DataCite</h2>
+<p>We use all <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties">mandatory</a> DataCite metadata fields, and many of <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties">the recommended and optional</a> ones.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Identifier</td>
+<td align="center">An unambiguous reference to the resource within a given context. (Dublin Core item), but several identifiders allowed, and we will use several of them.</td>
+</tr>
+<tr class="even">
+<td align="left">Creator</td>
+<td align="center">The main researchers involved in producing the data, or the authors of the publication, in priority order. To supply multiple creators, repeat this property. (Extends the Dublin Core with multiple authors, and legal persons, and adds affiliation data.)</td>
+</tr>
+<tr class="odd">
+<td align="left">Title</td>
+<td align="center">A name given to the resource. Extends Dublin Core with alternative title</td>
+</tr>
+<tr class="even">
+<td align="left">subtitle, translated Title, and other title(s)</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="left">Publisher</td>
+<td align="center">The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role. For software, use Publisher for the code repository. (Dublin Core item.)</td>
+</tr>
+<tr class="even">
+<td align="left">Publication Year</td>
+<td align="center">The year when the data was or will be made publicly available.</td>
+</tr>
+<tr class="odd">
+<td align="left">Resource Type</td>
+<td align="center">We publish Datasets, Images, Report, and Data Papers. (Dublin Core item with controlled vocabulary.)</td>
+</tr>
+</tbody>
+</table>
+<div id="recommended" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Recommended</h3>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Subject</td>
+<td align="center">The topic of the resource. (Dublin Core item.)</td>
+</tr>
+<tr class="even">
+<td align="left">Contributor</td>
+<td align="center">The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource. (Extends the Dublin Core with multiple authors, and legal persons, and adds affiliation data.) When applicable, we add Distributor (of the datasets and images), Contact Person, Data Collector, Data Curator, Data Manager, Hosting Institution, Producer (for images), Project Manager, Researcher, Research Group, Rightsholder, Sponsor, Supervisor</td>
+</tr>
+<tr class="odd">
+<td align="left">Date</td>
+<td align="center">A point or period of time associated with an event in the lifecycle of the resource, besides the Dublin Core minimum we add Collected, Created, Issued, Updated, and if necessary, Withdrawn dates to our datasets.</td>
+</tr>
+<tr class="even">
+<td align="left">Language</td>
+<td align="center">A language of the resource. (Dublin Core item.)</td>
+</tr>
+<tr class="odd">
+<td align="left">Alternative Identifier</td>
+<td align="center">An identifier or identifiers other than the primary Identifier applied to the resource being registered.</td>
+</tr>
+<tr class="even">
+<td align="left">Related Identifier</td>
+<td align="center">An identifier or identifiers other than the primary Identifier applied to the resource being registered.</td>
+</tr>
+<tr class="odd">
+<td align="left">Size</td>
+<td align="center">We give the CSV, downloadable dataset size in bytes.</td>
+</tr>
+<tr class="even">
+<td align="left">Format</td>
+<td align="center">We give file format information. We mainly use CSV and JSON, and occasionally rds and SPSS types. (Dublin Core item.)</td>
+</tr>
+<tr class="odd">
+<td align="left">Version</td>
+<td align="center">The version number of the resource.</td>
+</tr>
+<tr class="even">
+<td align="left">Rights</td>
+<td align="center">We give standards rights description with URLs to the actual license. (Dublin Core item.)</td>
+</tr>
+<tr class="odd">
+<td align="left">Description</td>
+<td align="center">Recommended for discovery.(Dublin Core item.)</td>
+</tr>
+<tr class="even">
+<td align="left">GeoLocation</td>
+<td align="center">Similar to Dublin Core item Coverage</td>
+</tr>
+<tr class="odd">
+<td align="left">Funding Reference</td>
+<td align="center">We provide the funding reference information when applicable. This is usually mandatory with public funds.</td>
+</tr>
+<tr class="even">
+<td align="left">Related Item</td>
+<td align="center">We give information about our observatory partners’ related research products, awards, grants (also Dublin Core item as Relation.) We particularly include source information when the dataset is derived from another resource (which is a Dublin Core item.)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="processing-metadata" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Processing Metadata</h2>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Value Type</td>
+<td align="center">We observe actual, missing, imputed, estimated values.</td>
+</tr>
+<tr class="even">
+<td align="left">Method</td>
+<td align="center">If the value is estimated, we provide modelling information.</td>
+</tr>
+<tr class="odd">
+<td align="left">Unit</td>
+<td align="center">We provide the measurement unit of the data (when applicable.)</td>
+</tr>
+<tr class="even">
+<td align="left">Frequency</td>
+<td align="center">We provide the measurement frequency of the data in a more practical format than the Dublin Core and DataCite descriptive dates.</td>
+</tr>
+<tr class="odd">
+<td align="left">Related Item</td>
+<td align="center">We give information about the software code that processed the data (both Dublin Core and DataCite compliant.)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="open-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="trustworhty-ai.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["observatory_contributors_handbook.pdf", "PDF"], ["observatory_contributors_handbook.epub", "EPUB"], ["observatory_contributors_handbook.docx", "Word Doc"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

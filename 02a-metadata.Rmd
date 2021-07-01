@@ -1,0 +1,123 @@
+# FAIR Data and the Added Value of Rich Metadata {#FAIR-data}
+
+FAIR data is far more valuable than non-fair data.  
+
+We are making our API service FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the [mandatory requirements](https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties), and most of the [recommended requirements](https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties) of DataCite.
+
+## FAIR {#FAIR}
+
+In 2016, the **[FAIR Guiding Principles for scientific data management and stewardship](http://www.nature.com/articles/sdata201618)** were published in _Scientific Data_. The authors intended to provide guidelines to improve the **F**indability, **A**ccessibility, **I**nteroperability, and **R**euse of digital assets. The principles emphasize machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data because of the increase in volume, complexity, and creation speed of data.
+
+A practical “how to” guidance to go FAIR can be found in the **[Three-point FAIRification Framework](https://www.go-fair.org/how-to-go-fair/)**.
+
+**<span style="text-decoration:underline;">F</span>indable**
+
+The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the **[FAIRification process](https://www.go-fair.org/fair-principles/fairification-process/)**.
+
+**[F1. (Meta)data are assigned a globally unique and persistent identifier](https://www.go-fair.org/fair-principles/fair-data-principles-explained/f1-meta-data-assigned-globally-unique-persistent-identifiers/)**
+
+**[F2. Data are described with rich metadata (defined by R1 below)](https://www.go-fair.org/fair-principles/fair-data-principles-explained/f2-data-described-rich-metadata/)**
+
+**[F3. Metadata clearly and explicitly include the identifier of the data they describe](https://www.go-fair.org/fair-principles/f3-metadata-clearly-explicitly-include-identifier-data-describe/)**
+
+**[F4. (Meta)data are registered or indexed in a searchable resource](https://www.go-fair.org/fair-principles/f4-metadata-registered-indexed-searchable-resource/)**
+
+**<span style="text-decoration:underline;">A</span>ccessible**
+
+Once the user finds the required data, she/he/they need to know how can they be accessed, possibly including authentication and authorisation.
+
+**[A1. (Meta)data are retrievable by their identifier using a standardised communications protocol](https://www.go-fair.org/fair-principles/542-2/)**
+
+**[A1.1 The protocol is open, free, and universally implementable](https://www.go-fair.org/fair-principles/a1-1-protocol-open-free-universally-implementable/)**
+
+**[A1.2 The protocol allows for an authentication and authorisation procedure, where necessary](https://www.go-fair.org/fair-principles/a1-2-protocol-allows-authentication-authorisation-required/)**
+
+**[A2. Metadata are accessible, even when the data are no longer available](https://www.go-fair.org/fair-principles/a2-metadata-accessible-even-data-no-longer-available/)**
+
+**<span style="text-decoration:underline;">I</span>nteroperable**
+
+The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
+
+**[I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.](https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/)**
+
+**[I2. (Meta)data use vocabularies that follow FAIR principles](https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/)**
+
+**[I3. (Meta)data include qualified references to other (meta)data](https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/)**
+
+**<span style="text-decoration:underline;">R</span>eusable**
+
+The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
+
+**[R1. (Meta)data are richly described with a plurality of accurate and relevant attributes](https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/)**
+
+**[R1.1. (Meta)data are released with a clear and accessible data usage license](https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/)**
+
+**[R1.2. (Meta)data are associated with detailed provenance](https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/)**
+
+**[R1.3. (Meta)data meet domain-relevant community standards](https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/)**
+
+The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure. For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).
+
+
+## The Dublin Core {#Dublin-Core}
+
+|   |   |   
+|:--|:-:|
+| Contributor | An entity responsible for making contributions to the resource.|
+|Coverage |The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. |
+|Creator | An entity primarily responsible for making the resource.|
+|Date | A point or period of time associated with an event in the lifecycle of the resource.|
+|Description |An account of the resource.|
+|Format |The file format, physical medium, or dimensions of the resource.|
+|Identifier | An unambiguous reference to the resource within a given context.|
+|Language | A language of the resource.|
+|Publisher | An entity responsible for making the resource available. |
+|Relation | A related resource. |
+|Rights | Information about rights held in and over the resource.|
+|Source | A related resource from which the described resource is derived.|
+|Subject| The topic of the resource.|
+|Title |A name given to the resource.|
+|Type |The nature or genre of the resource.|
+
+## DataCite  {#DataCite}
+
+We use all [mandatory](https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties) DataCite metadata fields, and many of [the recommended and optional](https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties) ones. 
+
+|   |   |   
+|:--|:-:|
+|Identifier | An unambiguous reference to the resource within a given context. (Dublin Core item), but several identifiders allowed, and we will use several of them.|
+|Creator | The main researchers involved in producing the data, or the authors of the publication, in priority order. To supply multiple creators, repeat this property. (Extends the Dublin Core with multiple authors, and legal persons, and adds affiliation data.) |
+|Title |A name given to the resource. Extends Dublin Core with alternative title
+subtitle, translated Title, and other title(s) |
+|Publisher | The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role. For software, use Publisher for the code repository. (Dublin Core item.) |
+|Publication Year | The year when the data was or will be made publicly available. |
+|Resource Type |We publish Datasets, Images, Report, and Data Papers. (Dublin Core item with controlled vocabulary.)|
+
+### Recommended
+
+|   |   |   
+|:--|:-:|
+|Subject| The topic of the resource. (Dublin Core item.)|
+|Contributor | The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource. (Extends the Dublin Core with multiple authors, and legal persons, and adds affiliation data.) When applicable, we add Distributor (of the datasets and images), Contact Person, Data Collector, Data Curator, Data Manager, Hosting Institution, Producer (for images), Project Manager, Researcher, Research Group, Rightsholder, Sponsor, Supervisor |
+|Date | A point or period of time associated with an event in the lifecycle of the resource, besides the Dublin Core minimum we add Collected, Created, Issued, Updated, and if necessary, Withdrawn dates to our datasets.|
+|Language | A language of the resource. (Dublin Core item.)|
+|Alternative Identifier |An identifier or identifiers other than the primary Identifier applied to the resource being registered. |
+|Related Identifier |An identifier or identifiers other than the primary Identifier applied to the resource being registered. |
+|Size |We give the CSV, downloadable dataset size in bytes. |
+|Format |We give file format information. We mainly use CSV and JSON, and occasionally rds and SPSS types. (Dublin Core item.) |
+|Version | The version number of the resource.  |
+|Rights | We give standards rights description with URLs to the actual license. (Dublin Core item.)|
+|Description | Recommended for discovery.(Dublin Core item.) |
+|GeoLocation | Similar to Dublin Core item Coverage |
+|Funding Reference |We provide the funding reference information when applicable. This is usually mandatory with public funds. |
+|Related Item |We give information about our observatory partners' related research products, awards, grants (also Dublin Core item as Relation.) We particularly include source information when the dataset is derived from another resource (which is a Dublin Core item.)|
+
+## Processing Metadata
+
+|   |   |   
+|:--|:-:|
+|Value Type| We observe actual, missing, imputed, estimated values. |
+|Method| If the value is estimated, we provide modelling information.|
+|Unit| We provide the measurement unit of the data (when applicable.)|
+|Frequency| We provide the measurement frequency of the data in a more practical format than the Dublin Core and DataCite descriptive dates. |
+|Related Item |We give information about the software code that processed the data (both Dublin Core and DataCite compliant.)|

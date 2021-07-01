@@ -1,0 +1,227 @@
+--- 
+title: "Automated Observatory Contributors' Handbook"
+author: "Daniel Antal, CFA"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+lof: yes
+classoption: openany, a4paper, oneside
+papersize: a4
+geometry: left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm
+bibliography:
+- book.bib
+- antal.bib
+- dcms.bib
+- valuation.bib
+- ccipolicy.bib
+- contentregulation.bib
+- caselaw.bib
+- eulaw.bib
+- musicindustry.bib
+- musicology.bib
+- packages.bib
+- statsoftware.bib
+- statisticalmethodology.bib
+- youtube.bib
+- musiceducation.bib
+biblio-style: apalike
+linestretch: 1.1
+urlcolor: blue
+linkcolor: blue
+link-citations: yes
+description: "If open data is the new gold, why even those who release fail to reuse it?   We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones.  We turn reproducible research software into research- as-service."
+---
+
+# Introduction {-}
+
+Data is potential information, and it lays in datasets, books, sensors, computer memories, accounts.  To make sense of it, to use as business performance indicator, or policy valuation indicator, or as scientific proof, we need to join data from various sources, we need process it, we need to calculate with it.
+
+Big data creates injustices, because it is the big corporations, big government agencies and the biggest, best endowed universities that can finance long-lasting, comprehensive data collection.  We believe that everybody can compete with them if we use open data, we share the data, we use FAIR data principles, and we apply trustworthy AI. 
+
+We are building open collaboration platforms. This agile methodology allows small and large players, citizen scientists and artists, universities, corporations, public policy institutions and NGOs to divide up budgets, tasks, and share data collection and processing roles.  We believe that this is the key to make big data work for all. 
+
+Our open collaboration is a treasure hunt.  We want to find gold in the muddy river of governmental data storehouses and uncut gems in the desert of university data repositories. We are inviting data curators to tell us what to look for, and we are building applications that bring up the treasures, polish them, cut them to size.  We want to make these treasures shared, and we are looking for partners to help our expedition with their knowledge, their existing data assets or with their research budgets.
+
+## Information
+
+Indicators are informative datasets that help business, policy or scientific decision making.  The total GDP in dollars or the total population of a country does not tell us too much – there are small and large countries – but GDP per capita is one of the most used indicators in the world. To create high-quality and timely indicators, we must know that the GDP is in euros or dollars, in thousands or millions or billions, if the population is counted in the beginning or the end of the year.   Data processing uses metadata to bring the data into a form, unit, expression that can make an indicator.  Our data observatories are collecting data, describing it with metadata and generate indicators.
+
+- We are working with various business, policy and statistical indicators, thriving to follow the best indicator design practices. 
+- Our automated data observatories are 
+     
+
+## Research automation: FAIR data
+
+Metadata in technical terms is “a statement about a potentially informative object”: a library catalogue to find a book, a database description, or a map to find gold. Metadata describes if a financial account is stated in dollars or euros, and in thousands or millions of currency unit.  High quality metadata makes data more useful, and potentially more informative. But metadata documentation is boring, error-prone, and in human work it is at the end of the priority list – that is why we automate metadata creation.
+
+- We are currently improving our APIs to meet two important metadata standards: the Dublin Core (see \@ref(Dublin-Core)) and DataCite (see \@ref(DataCite))  . This makes our data [FAIR](https://www.go-fair.org/fair-principles/): findable, accessible, interoperable and reusable. 
+- Interoperability and reusability is a big value for data owners, data users, and data buyers. More information can be squeezed out from one dataset or one research dollar.
+- It's not only nice-to-have, but in the Horizon Europe program, academic and policy researchers are mandated to use these standards. We can not only provide you complience with granting requirements, but actually help you make value out of it.
+     
+## Finding the Data
+     
+Our curatorial work is to find where the data lays.  We are particularly experiences with open data, which is a rather misleading term.  Open data is usually legally open for reuse, and usually it cannot be downloaded, it is not processed and it is absolutely not ready to use. We also know how to collect data, or how to commission research, for example, to opinion polling companies.
+
+- We are working with a growing number of curators, and we inviting new curators.
+- If you own, collect data in the field of xxxx, xxxx, xxxx, you may want to join us, because with our indicator design, processing and metadata capabilities we can add a lot of value to your data. 
+- If you are a data buyer, a researcher, who needs data, you should team up with us, because we are experts on open data (legally accessible but not processed data) and metadata (the map to the data treasures.)  We can help you find better data for your budget or sufficient data for less money.
+
+Our curatorial and data scientific role meets in the area of metadata.  
+
+
+
+     
+We believe that metadata documentation, data processing, validation, checking, dollar to euro translations, millions to billions translation are best down by computers.  Our automated data observatories are working 24/7 to collect new data, to process the data, and to describe the data and its properties in more and more detail to find more and more uses to the data. 
+
+We train or computers to do this faultlessly, and log every step, so if there is still a bug, we can trace, correct it, and see if the error infected other information.  You cannot do this in a speadsheet application, in a library with books, not even in SPSS or STATA.
+On the other hand, we believe in trustworthy AI, which starts with human agency and oversight.  We want to leave more room for ethical and experienced professionals in business, in academia and in policy design or evaluation to understand the problem and interpret the information about the problem. A good data curator finds the potentially informative data and knows how to describe it in a way that it will create reliable information.  We work with consultants, experts, academic, who know how to interpret the information and prepare the best decision alternative.  We want to avoid that computer take over the decision-making process, therefore we make our data and metadata process completely transparent: we make the data, the metadata and the processing code open to our partners.
+
+
+If open data is the new gold, why even those who release fail to reuse it?   We created an open collaboration of data curators and open-source developers to dig into novel open data sources or increase the usability of existing ones.  We turn reproducible research software into research- as-service.
+
+Reprex, a Dutch start-up enterprise formed to utilize open source software and open data, is looking for partners in an agile, open collaboration to win at least one of the three EU Datathon Prizes. We are looking for policy partners, academic partners and a consultancy partner. Our project is based on agile, open collaboration with three types of contributors.
+
+```{r setup, include=FALSE}
+library(knitr)
+library(here)
+# chunk defaults:
+knitr::opts_chunk$set(echo = FALSE, 
+                      fig.align='center', 
+                      fig.out='80%')
+# include=FALSE omits it from the final document even though eval=TRUE.
+
+# Find the root directory of this project
+here::here()
+```
+ 
+ 
+- *To take part, you should propose the development of an application that links and uses open datasets.* - we are curating new, exciting [data sources](#data-domains), that are legally open but usually have never seen the sunlight.
+
+- *Your application ... is also expected to find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of open data.*” - we have a prototype of this [application](#tech-solution)
+
+- *Your application should showcase opportunities for concrete business models or social enterprises.* - our [service development team](#business-solution) is working to make this happen!
+
+We believe in [open collaboration]() that involves [scientific](#intro-academic-partners), [business](#intro-business-partners), public and NGO [policy](#intro-policy-partners) partnerships.
+
+```{r packages, include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'eurostat', 'regions', 'iotables', 'retroharmonize' ), 'packages.bib')
+```
+
+
+## 1. Whats's Wrong With Open Data? {-}
+
+Open data is like gold in the mud below the chilly waves of mountain rivers. Panning it out requires a lot of patience, or a good machine. I think we will come to as surprising and strong findings as Bellingcat, but we are not focusing on individual events and stories, but on social and environmental processes and changes.
+
+```{r gold-panning-intro}
+knitr::include_graphics(
+  here::here("plots", "slides", "gold_panning_slide_notitle.png")
+)
+```
+
+In \@ref(open-data) [Open Data](#open-data) we investigate why not even those organizations, like the European Commission, use open data in their own data dissemination practices, who make them at least legally available.
+
+## 2. Our Technological Solution {- #tech-solution}
+We use open source software and open data. The applications are hosted on the cloud resources of [Reprex](#reprex), an early-stage technology startup currently building a viable, open-source, open-data business model to create reproducible research products.
+
+Our development team works on an open collaboration basis. Our indicator R packages, and our services are developed together with [rOpenGov](https://music.dataobservatory.eu/author/ropengov/).
+
+- Open data often cannot be downloaded.
+- Open data often lacks quality control.
+- Public data sources are not tidy.
+- The risk of importing or committing trivial data processing errors is huge.
+- Open data is usually not documented.
+
+See \@ref(app). [Application: Automated Data Observatories](#app) for further details.
+
+## 3. Our Business Solution {- #business-solution}
+
+We decided to take a new, modern approach to the ‘data observatory’ concept, and modernize it with the application of 21st century data and metadata standards, the new results of reproducible research and data science. Various UN and OECD bodies, and particularly the European Union support or maintain more than 60 data observatories, or permanent data collection and dissemination points, but even these do not use these organizations and their members open data. 
+
+We are building open-source data observatories, which run open-source statistical software that automatically processes and documents reusable public sector data (from public transport, meteorology, tax offices, taxpayer funded satellite systems, etc.) and reusable scientific data (from EU taxpayer funded research) into new, high quality statistical indicators.
+
+```{r value-added-intro, include=FALSE, fig.align="Service Flow"}
+knitr::include_graphics(
+  here::here("plots", "slides", "automated_observatory_value_chain.jpg")
+)
+```
+
+Our Product/Market Fit was validated in the world’s 2nd ranked university-backed incubator program, the [Yes!Delft AI Validation Lab](https://music.dataobservatory.eu/post/2020-09-25-yesdelft-validation/). We are currently developing this project with the help of the [JUMP European Music Market Accelerator](https://www.jumpmusic.eu/fellow2021/automated-music-observatory/) program.
+
+See \@ref(service). [Service Design and Business Case Development](#service)
+
+## 4. Open Collaboration: Partners and Partnership {- #open-for-partners}
+
+We are looking for partners to develop our [technological solution](#app) in [financially sustainable way](service) with bringing more and more relevant, [curated](#data-curators) open data [to light](#open-data).
+
+### Academic partners {- #intro-academic-partners}
+
+We are looking for academic partners who want to use open data from various governmental (including publicly funded surveys), scientific, and big data sources, processed and validated to meet scientific standards. We provide peer-reviewed statistical software solutions, daily data harvesting, and re-processing to meet our partners research agenda.  See more in \@ref(academic-partners) [Academic partners](#academic-partners)
+
+### Policy partners {- #intro-policy-partners}
+
+We are looking for policy partners who want to use open data from various governmental (including publicly funded surveys), scientific, and big data sources, processed and validated to meet scientific standards; or who want to build use cases for trustworthy AI and data governance policy papers. We provide peer-reviewed statistical software solutions, daily data harvesting, and re-processing to meet our partners' research agenda. See more in \@ref(policy-partners) [Policy partners](#policy-partners)
+
+### Business partner(s) in Consulting {- #intro-business-partners}
+
+We are looking for a consulting partner to form a joint project with our open collaboration team of data scientists and submit proposals to at least 2 of the 3 challenges of the EU Datathlon with the objective of winning the first prize. We are particularly looking for a first class consultancy to help build a "showcase ... for concrete business models [... and] find suitable new approaches and solutions to help Europe achieve important goals set by the European Commission through the use of [our observatories'] open data." See more in \@ref(business-partners) [Business partners](#business-partners)
+
+## 5. Data Domains {- #data-domains}
+
+- We are working together with experts in the domain as curators (check out our guidelines if you want to join: [Data Curators: Get Inspired!](https://curators.dataobservatory.eu/data-curators.html)).
+
+### Green Deal Data Observaotry {-}
+
+The Challenge [A European Green Deal](https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en), with a particular focus on the [The European Climate Pact](https://ec.europa.eu/commission/presscorner/detail/en/ip_20_2323), the [Organic Action Plan](https://ec.europa.eu/info/food-farming-fisheries/farming/organic-farming/organic-action-plan_en), and the [New European Bauhaus](https://ec.europa.eu/commission/presscorner/detail/en/IP_21_111), i.e., mitigation strategies. Our [Green Deal Data Observatory](http://greendeal.dataobservatory.eu/) is a modern reimagination of existing ‘data observatories’; currently, there are over 70 permanent international data collection and dissemination points. One of our objectives is to understand why the dozens of the EU’s observatories do not use open data and reproducible research. We want to show that open governmental data, open science, and reproducible research can lead to a higher quality and faster data ecosystem that fosters growth for policy, business, and academic data users.
+
+```{r gdo}
+knitr::include_graphics(
+  here::here("plots", "screenshots", "greendeal_and_zenodo.png"))
+```
+
+Please, follow us on social media, it really helps us finding new users and showing that we are able to grow our ecosystem: the [Green Deal Data Observatory on Linkedin](https://www.linkedin.com/company/78556699) and the [Green Deal Data Observatory on Twitter](https://twitter.com/GreenDealObs), and join our [contributor team](https://greendeal.dataobservatory.eu/#contributors).
+
+### Digital Music Observatory {-}
+
+The [Digital Music Observatory](https://music.dataobservatory.eu/) is a fully automated, open source, open data observatory that creates public datasets to provide a comprehensive view of the European music industry. It provides high-quality and timely indicators in all four pillars of the planned official European Music Observatory as a modern, open source and largely open data-based, automated, API-supported alternative solution for this planned observatory. The insight and methodologies we are refining in the DMO are applicable and transferable to about 60 other data observatories funded by the EU which do not currently employ governmental or scientific open data.
+
+See further details in \@ref(music) [Digital Music Observatory Chapter](#music).
+
+
+```{r dmo-intro}
+knitr::include_graphics(
+  here::here( "plots", "slides", "open_source_slide.png")
+)
+```
+
+Please, follow us on social media, it really helps us finding new users and showing that we are able to grow our ecosystem: the [Digital Music Data Observatory on Linkedin](https://www.linkedin.com/company/79286750/) and the [Digital Music Data Observatory on Twitter](https://twitter.com/DigitalMusicObs) and join our [contributor team](https://music.dataobservatory.eu/#contributors).
+
+### Economy Data Observatory {-}
+
+Our [Economy Data Observatory](https://economy.dataobservatory.eu/) was created as a prototype for the EU Datathon Challenge 2: [An economy that works for people](https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people_en#:~:text=Individuals%20and%20businesses%20in%20the,needs%20of%20the%20EU's%20citizens.), with a particular focus on the [Single market strategy](https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people/internal-market_en), and particular attention to the strategy’s goals of 1. Modernising our standards system, 2. Consolidating Europe’s intellectual property framework, and 3. Enabling the balanced development of the collaborative economy strategic goals.
+
+Big data and automation create new inequalities and injustices and have the potential to create a jobless growth economy. Our is a fully automated, open source, open data observatory that produces new indicators from open data sources and experimental big data sources, with authoritative copies and a modern API.
+
+The [Economy Data Observatory](https://economy.dataobservatory.eu/) works now as an incubator for economy-focused data observatories. See further details in \@ref(economy) [Economy Data Observatory Chapter](#economy).
+
+```{r edo-zenodo}
+knitr::include_graphics(
+  here::here("plots", "screenshots", "edo_and_zenodo.png")
+  )
+```
+
+Please, follow us on social media, it really helps us finding new users and showing that we are able to grow our ecosystem: the [Economy Data Observatory on Linkedin](https://www.linkedin.com/company/78562153/) and the [Economy Data Observatory on Twitter](https://twitter.com/EconDataObs/) and join our [contributor team](https://economy.dataobservatory.eu/#contributors).
+
+
+### Competition Data Observatory {-}
+
+The [Competition Data Observatory](https://competition-data-observatory.netlify.app/) is the first offspring of the [Economy Data Observatory](https://economy.dataobservatory.eu/) incubator. See further details in \@ref(competition) [Competition Data Observatory Chapter](#competition).
+
+We would like to create early-warning, risk, economic effect, and impact indicators that can be used in scientific, business and policy contexts for professionals who are working on re-setting the European economy after a devastating pandemic and in the age of AI. We would like to map data between economic activities (NACE), antitrust markets, and sub-national, regional, metropolitian area data.
+
+```{r cdo-intro}
+knitr::include_graphics(
+  here::here( "plots", "screenshots", "cdo_opening_page.png")
+)
+```

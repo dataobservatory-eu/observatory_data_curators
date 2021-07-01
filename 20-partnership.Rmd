@@ -2,6 +2,13 @@
 
 We are looking for partners to develop our [technological solution](#app) in [financially sustainable way](service) with bringing more and more relevant, [curated](#data-curators) open data [to light](#open-data).
 
+## Open Collaboration {#open-collaboration}
+We use the agile open collaboration project methodology of open source software development to make sure that large universities, consultancies, citizen scientists, individual artists and small NGOs can share the research budget, data assets and research of big data, and remain competitive against big tech and large organizations.
+
+![Our open collaboration is truly open: new data curators, data scientists and data engineers are welcome to join in.](https://greendeal.dataobservatory.eu/media/img/observatory_screenshots/dmo_contributors.png "Our open collaboration is truly open: new data curators, data scientists and data engineers are welcome to join in.")
+
+Our open collaboration is truly open: new data curators, data scientists and data engineers are welcome to join. We develop open-source software in an agile way, so you can join in with an intermediate programming skill to build unit tests or add new functionality, and if you are a beginner, you can start with documentation and testing our tutorials. For business, policy, and scientific data analysts, we provide unexploited, exciting new datasets. Advanced developers can join our development team: the statistical data creation is mainly made in the R language, and the service infrastructure in Python and Go components.
+
 ## Policy Partners {#policy-partners}
 
 We are looking for policy partners who want to use open data from various governmental (including publicly funded surveys), scientific, and big data sources, processed and validated to meet scientific standards; or who want to build use cases for trustworthy AI and data governance policy papers. We provide peer-reviewed statistical software solutions, daily data harvesting, and re-processing to meet our partners' research agenda.  
