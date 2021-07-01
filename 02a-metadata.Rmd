@@ -1,8 +1,31 @@
 # FAIR Data and the Added Value of Rich Metadata {#FAIR-data}
 
-FAIR data is far more valuable than non-fair data.  
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 50%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="even">
+<td style="text-align: center;  vertical-align: top;"><img src="plots/gems/Diamond_Polisher.jpg" /><a href="https://contributors.dataobservatory.eu/FAIR-data.html">Adding metadata exponentially increases the value of data</a></br>Did your region added a new town to its boundaries – how do you adjust old data? Can I practically combine satellite sensory data with my organization records? And do I have the right? Metadata logs the history of the data, gives instructions who to reuse it in indicators, sets the terms of use. We automate this boring and labor-intensive process applying the [FAIR](https://contributors.dataobservatory.eu/FAIR-data.html#FAIR) data concept.</br></td>
+</tr>
+</tbody>
+</table>
+
+The FAIR Data concept stands for **f**indable, **a**ccessibe, **i**nteroperable, and **r**eusable of digital assets.
+
+The problem with [Open Data](#open-data) is that while it is legally accessible, and often cost-free, it in most cases not findable, and not even accessible directly. While the EU has policies since 2003 about making taxpayer funded data reusable, it did not make much technical steps to make this a reality.  Reusability of governmental data and scientific data is a right, but not a practical possiblity for most users.
+
+Interoperability means that you can use governmental open data, scientific open data, your own system's data, your membership organizations shared resources, and data subscriptions together. A special case of lack of interoperability when you do not know if you are facing a legal risk from using a data resource.
+
+In our experience, in most research-driven organizations, such as consultancies, law firms, university research groups, NGOs and public policy bodies, reusability is mainly limited by poor data documentation, and sometimes by the use of of obsolete proprietary file formats. Documentation in the short run is not always a necessity, and it belongs to the non-billable hours, or among the tasks that do not really count in a researchers' promotion. The poor documentation however makes it extremely demanding to re-use a data or document a few years from now. From 2021, if you apply for Horizon Europe funding, your research output must meet basic findability and reusability criteria. 
+
+We believe that the most value in our research automation comes from the documentation automation, which adds automatically rich descriptive, administrative and processing metadata to your data assets. Our data comes with metadata that meets the requirements of two metadata standards, the more general [Dublin Core](#Dublin-Core) and the more specific, mandatory and recommended values of [DataCite](#DataCite) for datasets. We add rich processing metadata beyond these requirements. These are not only nice to have: from 2021, if you apply for Our solution can automate this process, and besides making you compliant, it adds a lot of value to your own data management.
 
 We are making our API service FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the [mandatory requirements](https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties), and most of the [recommended requirements](https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties) of DataCite.
+
+Furthermore, we apply the [tidy data](#tidy-data) concept to our main data assets. The tidy data principle applies a certain structure to datasets that facilitates immediate use and reuse. 
 
 ## FAIR {#FAIR}
 
@@ -121,3 +144,31 @@ subtitle, translated Title, and other title(s) |
 |Unit| We provide the measurement unit of the data (when applicable.)|
 |Frequency| We provide the measurement frequency of the data in a more practical format than the Dublin Core and DataCite descriptive dates. |
 |Related Item |We give information about the software code that processed the data (both Dublin Core and DataCite compliant.)|
+
+## Tidy Data {#tidy-data}
+
+A dataset is a collection of values, usually either numbers (if quantitative) or strings (if qualitative). Values are organised in two ways. Every value belongs to a variable and an observation. A variable contains all values that measure the same underlying attribute (like height, temperature, duration) across units. An observation contains all values measured on the same unit (like a person, or a day, or a race) across attributes.
+
+It is often said that 80% of data analysis is spent on the cleaning and preparing data. And it’s not just a first step, but it must be repeated many times over the course of analysis as new problems come to light or new data is collected. The tidy data principle applies a certain structure to datasets that facilitates immediate use and reuse. 
+
+The principles of tidy data provide a standard way to organise data values within a dataset. A standard makes initial data cleaning easier because you don’t need to start from scratch and reinvent the wheel every time. 
+
+Tidy data is a standard way of mapping the meaning of a dataset to its structure (. A dataset is messy or tidy depending on how rows, columns and tables are matched up with observations, variables and types. 
+
+In tidy data we need a way to describe the underlying semantics, or meaning, of the values displayed in the table:
+
+- Every column is a variable.
+- Every row is an observation.
+- Every cell is a single value.
+
+## Messy data
+
+Real datasets can, and often do, violate the three precepts of tidy data in almost every way imaginable -- this particulary true of open data, even when it is released by statistical bodies. The most typical errors:
+
+* Column headers are values, not variable names.
+* Multiple variables are stored in one column, for example, the number of item purchased and the price of the item.
+* Variables are stored in both rows and columns, for example, the columns are organized by income level groups. 
+* Multiple types of observational units are stored in the same table. For example, names of musicians and their songs.
+* A single observational unit is stored in multiple tables.
+
+While messy data almost always can be tidied, if you do this in a spreadsheet application manually, it is almost impossible not to make a mistake.  Spreadsheet applications do not check the tidyness of the data, and do not record the logs of your manual tidying efforts.  Unless every single mouseclick, drag and drop is recorded, the work is impossible to validate. However, we believe that data should never be manipulated with a mouse.  Computer algorithms should be deployed in a way that our their tidying efforts are reproducible and logged.

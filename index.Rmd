@@ -82,7 +82,7 @@ reviewable and reproducible, which implies open access.
 </tbody>
 </table>
 
-- In the \@ref(open-data). [Open Data](#open-data) chapter we investigate why not even those organizations, like the European Commission, use open data in their own data dissemination practices, who make them at least legally available.
+- In the \@ref(open-data). [Open Data](#open-data) chapter we investigate why not even those organizations, like the European Commission, use open data in their own data dissemination practices, who make them at least legally available. The problem main problem with *open data* is that while it is legally accessible, and often cost-free, it in most cases not findable, and not even accessible directly. While the EU has policies since 2003 about making taxpayer funded data reusable, it did not make much technical steps to make this a reality.  Reusability of governmental data and scientific data is a right, but not a practical possiblity for most users. 
 
 - In the \@ref(FAIR-data). [FAIR Data and the Added Value of Rich Metadata](#FAIR-data) we introduce how we apply the concept of [FAIR](#FAIR) (**f**indable, **a**ccessibe, **i**nteroperable, and **r**eusable of digital assets) in our APIs. Our data comes with metadata that meets the requirements of two metadata standards, the more general [Dublin Core](#Dublin-Core) and the more specific, mandatory and recommended values of [DataCite](#DataCite) for datasets. We add rich processing metadata beyond these requirements. These are not only nice to have: from 2021, if you apply for Horizon Europe funding, your data must meet these criteria. Our solution can automate this process, and besides making you compliant, it adds a lot of value to your own data management.
 
