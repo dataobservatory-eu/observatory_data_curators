@@ -191,7 +191,7 @@ See for further reference [The codebook Class](https://r.dataobservatory.eu/arti
 |Observation Status| SDMX Code list for [Observation Status 2.2](https://sdmx.org/?sdmx_news=new-version-of-code-list-for-observation-status-version-2-2) (CL_OBS_STATUS), such as actual, missing, imputed, etc. values. |
 |Method| If the value is estimated, we provide modelling information.|
 |Unit| We provide the measurement unit of the data (when applicable.)|
-|Frequency| SDMX Code list for Frequency 2.1 (CL_FREQ) frequency values |
+|Frequency| [SDMX Code list for Frequency 2.1 (CL_FREQ)](https://sdmx.org/?page_id=3215/) frequency values |
 |Codelist| Euros-SDMX Codelist entries for the observational units, such as sex, etc. |
 |Imputation| SDMX Code list for Frequency 2.1 (CL_IMPUT_METH) imputation values |
 |Estimation| The estimation methodology of data that we calculated, together with citation information and URI to the actual processing code |
