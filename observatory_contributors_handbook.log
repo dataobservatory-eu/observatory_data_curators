@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.1)  1 JUL 2021 18:01
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.1)  1 JUL 2021 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,12 +1029,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 LaTeX Warning: Reference `open-data' on page 3 undefined on input line 131.
 
-
-LaTeX Warning: Reference `FAIR-data' on page 3 undefined on input line 133.
-
 [3
 
 ]
+
+LaTeX Warning: Reference `FAIR-data' on page 4 undefined on input line 133.
+
 
 LaTeX Warning: Reference `app' on page 4 undefined on input line 135.
 
@@ -1054,35 +1054,36 @@ Chapter 1.
 File: plots/screenshots/observatory_collage_16x9_800.png Graphic file (type bmp
 )
 <plots/screenshots/observatory_collage_16x9_800.png>
+[6
+
+]
 File: C:/_bookdown/observatory_data_curators/plots/slides/open_source_slide.png
  Graphic file (type bmp)
 <C:/_bookdown/observatory_data_curators/plots/slides/open_source_slide.png>
 
-Overfull \hbox (794.1313pt too wide) in paragraph at lines 197--197
+Overfull \hbox (794.1313pt too wide) in paragraph at lines 205--205
  [] 
  []
 
-[6
-
-] [7] [8]
+[7] [8]
 File: C:/_bookdown/observatory_data_curators/plots/slides/gold_panning_slide_no
 title.png Graphic file (type bmp)
 <C:/_bookdown/observatory_data_curators/plots/slides/gold_panning_slide_notitle
 .png>
 
-Overfull \hbox (794.21243pt too wide) in paragraph at lines 204--204
+Overfull \hbox (794.21243pt too wide) in paragraph at lines 212--212
  [] 
  []
 
 [9] [10]
 
-LaTeX Warning: Reference `service' on page 11 undefined on input line 210.
+LaTeX Warning: Reference `service' on page 11 undefined on input line 218.
 
 [11]
 File: plots/business_development/value_chain.png Graphic file (type bmp)
 <plots/business_development/value_chain.png>
 
-Overfull \hbox (556.42241pt too wide) in paragraph at lines 233--233
+Overfull \hbox (556.42241pt too wide) in paragraph at lines 249--249
  [] 
  []
 
@@ -1090,13 +1091,13 @@ Overfull \hbox (556.42241pt too wide) in paragraph at lines 233--233
 Chapter 2.
 [16
 
-] [17] [18] [19]
+] [17] [18] [19] [20] [21] [22]
 Chapter 3.
-[20
+[23
 
-] [21]
+] [24]
 Chapter 4.
-[22
+[25
 
 ]
 File: plots/screenshots/EDO_API_indicator_table.png Graphic file (type bmp)
@@ -1105,25 +1106,25 @@ File: plots/screenshots/EDO_API_description_table.png Graphic file (type bmp)
 <plots/screenshots/EDO_API_description_table.png>
 File: plots/screenshots/EDO_API_metadata_table.png Graphic file (type bmp)
 <plots/screenshots/EDO_API_metadata_table.png>
-[23]
+[26]
 File: plots/screenshots/EDO_API_labelling_table.png Graphic file (type bmp)
 <plots/screenshots/EDO_API_labelling_table.png>
 File: plots/bookdown.jpg Graphic file (type bmp)
 <plots/bookdown.jpg>
-[24]
+[27]
 File: plots/screenshots/dmo_opening_screen.png Graphic file (type bmp)
 <plots/screenshots/dmo_opening_screen.png>
 
-Overfull \hbox (896.04428pt too wide) in paragraph at lines 510--510
+Overfull \hbox (896.04428pt too wide) in paragraph at lines 608--608
  [] 
  []
 
-[25] [26]
+[28] [29]
 File: plots/green_deal_hugo.png Graphic file (type bmp)
 <plots/green_deal_hugo.png>
-[27] [28]
+[30] [31]
 Chapter 5.
-[29
+[32
 
 ]
 File: C:/_bookdown/observatory_data_curators/plots/screenshots/dmo_contributors
@@ -1131,230 +1132,230 @@ File: C:/_bookdown/observatory_data_curators/plots/screenshots/dmo_contributors
 <C:/_bookdown/observatory_data_curators/plots/screenshots/dmo_contributors.png>
 
 
-Overfull \hbox (416.3517pt too wide) in paragraph at lines 570--571
+Overfull \hbox (416.3517pt too wide) in paragraph at lines 668--669
  [][] 
  []
 
-[30] [31]
+[33] [34]
 
-LaTeX Warning: Reference `keybase' on page 32 undefined on input line 637.
+LaTeX Warning: Reference `keybase' on page 35 undefined on input line 735.
 
 
-LaTeX Warning: Reference `data-curators' on page 32 undefined on input line 640
+LaTeX Warning: Reference `data-curators' on page 35 undefined on input line 738
 .
 
-[32] [33]
+[35] [36]
 Chapter 6.
 
-LaTeX Warning: Reference `keybase' on page 34 undefined on input line 733.
+LaTeX Warning: Reference `keybase' on page 37 undefined on input line 831.
 
-[34
+[37
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 769.
+(Font)              scaled to size 7.0pt on input line 867.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 769.
+(Font)              scaled to size 5.0pt on input line 867.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 769.
+(Font)              scaled to size 10.00092pt on input line 867.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 769.
+(Font)              scaled to size 7.00064pt on input line 867.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 769.
+(Font)              scaled to size 5.00046pt on input line 867.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 769.
+(Font)              scaled to size 9.99893pt on input line 867.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 769.
+(Font)              scaled to size 6.99925pt on input line 867.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 769.
+(Font)              scaled to size 4.99947pt on input line 867.
 
-Underfull \hbox (badness 1297) in paragraph at lines 769--771
+Underfull \hbox (badness 1297) in paragraph at lines 867--869
 []\TU/lmr/m/n/10 Cathy O’Neil: [][]Weapons of math destruction[][], which O’Nei
 l are mathematical models or
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 769--771
+Underfull \hbox (badness 1342) in paragraph at lines 867--869
 \TU/lmr/m/n/10 itworthiness but have harmful outcomes and often reinforce inequ
 ality, keeping the poor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 769--771
+Underfull \hbox (badness 10000) in paragraph at lines 867--869
 [][]$[][][][][] [] [] [] [][][][][] [] [][][][][][][][][][][][][][][][][][] [] 
 [][][] [] [][][][][] [][] [][] [][] [][][][][] [] [][][][][][] [][] [][][][][][
 ][] [][] [][] [][] [][][][] [][] [][][][][][][][][][][][]$[][]\TU/lmr/m/n/10 ](
 [][]$[][][][][] []
  []
 
-[35]
+[38]
 
-LaTeX Warning: Reference `markdown' on page 36 undefined on input line 792.
+LaTeX Warning: Reference `markdown' on page 39 undefined on input line 890.
 
-[36]
-
-Package natbib Warning: Citation `eurostat_harmonised_indicators_2014' on page 
-37 undefined on input line 835.
-
-
-Package natbib Warning: Citation `kotzeva_harmonised_indicators_2017' on page 3
-7 undefined on input line 835.
-
+[39]
 
 Package natbib Warning: Citation `eurostat_harmonised_indicators_2014' on page 
-37 undefined on input line 835.
+40 undefined on input line 933.
 
 
-Package natbib Warning: Citation `pwc_valuing_2008' on page 37 undefined on inp
-ut line 857.
+Package natbib Warning: Citation `kotzeva_harmonised_indicators_2017' on page 4
+0 undefined on input line 933.
 
 
-Package natbib Warning: Citation `cjeu_osa_2014' on page 37 undefined on input 
-line 857.
+Package natbib Warning: Citation `eurostat_harmonised_indicators_2014' on page 
+40 undefined on input line 933.
 
 
-Package natbib Warning: Citation `cjeu_akka_2017' on page 37 undefined on input
- line 857.
+Package natbib Warning: Citation `pwc_valuing_2008' on page 40 undefined on inp
+ut line 955.
 
 
-Package natbib Warning: Citation `antal_pcr_croatia_2019' on page 37 undefined 
-on input line 859.
+Package natbib Warning: Citation `cjeu_osa_2014' on page 40 undefined on input 
+line 955.
 
 
-Package natbib Warning: Citation `antal_szabad_2019_en' on page 37 undefined on
- input line 859.
+Package natbib Warning: Citation `cjeu_akka_2017' on page 40 undefined on input
+ line 955.
 
 
-Package natbib Warning: Citation `antal_javaslatok_2015' on page 37 undefined o
-n input line 861.
+Package natbib Warning: Citation `antal_pcr_croatia_2019' on page 40 undefined 
+on input line 957.
 
 
-Package natbib Warning: Citation `antal_slovenskom_hudobnom_2019' on page 37 un
-defined on input line 863.
+Package natbib Warning: Citation `antal_szabad_2019_en' on page 40 undefined on
+ input line 957.
 
-[37]
+
+Package natbib Warning: Citation `antal_javaslatok_2015' on page 40 undefined o
+n input line 959.
+
+
+Package natbib Warning: Citation `antal_slovenskom_hudobnom_2019' on page 40 un
+defined on input line 961.
+
+[40]
 File: plots/screenshots/zenodo_deposition_example.png Graphic file (type bmp)
 <plots/screenshots/zenodo_deposition_example.png>
 
-Overfull \hbox (654.1561pt too wide) in paragraph at lines 896--897
+Overfull \hbox (654.1561pt too wide) in paragraph at lines 994--995
  [][] 
  []
 
-[38] [39]
+[41] [42]
 File: plots/screenshots/zenodo_how_to_add.png Graphic file (type bmp)
 <plots/screenshots/zenodo_how_to_add.png>
 File: plots/screenshots/dmo_and_zenodo.png Graphic file (type bmp)
 <plots/screenshots/dmo_and_zenodo.png>
 File: plots/screenshots/greendeal_and_zenodo.png Graphic file (type bmp)
 <plots/screenshots/greendeal_and_zenodo.png>
-[40] [41]
+[43] [44]
 Chapter 7.
 File: plots/screenshots/greendeal_and_zenodo.png Graphic file (type bmp)
 <plots/screenshots/greendeal_and_zenodo.png>
-[42
+[45
 
 ]
 
-LaTeX Warning: Reference `curators' on page 43 undefined on input line 987.
+LaTeX Warning: Reference `curators' on page 46 undefined on input line 1085.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 992--993
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
 \TU/lmtt/m/n/10 We need to improve conservation by improving wildlife monitorin
 g. Counting plants and
  []
 
 File: plots/greendeal/wedgetailedshearwater.jpg Graphic file (type bmp)
 <plots/greendeal/wedgetailedshearwater.jpg>
-[43]
+[46]
 File: plots/eurobarometer_climate_attitude_tutorial.png Graphic file (type bmp)
 
 <plots/eurobarometer_climate_attitude_tutorial.png>
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 1067--1069
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1167
 
  []
 
-[45]
+[48]
 Chapter 8.
 File: plots/screenshots/dmo_and_zenodo.png Graphic file (type bmp)
 <plots/screenshots/dmo_and_zenodo.png>
-[46
+[49
 
 ]
 
-LaTeX Warning: Reference `curators' on page 47 undefined on input line 1100.
+LaTeX Warning: Reference `curators' on page 50 undefined on input line 1198.
 
-[47] [48]
+[50] [51]
 Chapter 9.
 File: plots/screenshots/edo_opening_page.jpg Graphic file (type bmp)
 <plots/screenshots/edo_opening_page.jpg>
 
-Overfull \hbox (1136.03882pt too wide) in paragraph at lines 1181--1181
+Overfull \hbox (1136.03882pt too wide) in paragraph at lines 1279--1279
  [] 
  []
 
-[49
+[52
 
-] [50]
+] [53]
 File: plots/screenshots/Economy_Data_Observatory_timeline.jpg Graphic file (typ
 e bmp)
 <plots/screenshots/Economy_Data_Observatory_timeline.jpg>
 
-Overfull \hbox (656.73593pt too wide) in paragraph at lines 1189--1189
+Overfull \hbox (656.73593pt too wide) in paragraph at lines 1287--1287
  [] 
  []
 
-[51] [52]
+[54] [55]
 
-LaTeX Warning: Reference `curators' on page 53 undefined on input line 1196.
+LaTeX Warning: Reference `curators' on page 56 undefined on input line 1294.
 
 File: plots/eurobarometer_climate_attitude_tutorial.png Graphic file (type bmp)
 
 <plots/eurobarometer_climate_attitude_tutorial.png>
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 1253--1255
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 1351--1353
 
  []
 
-[54]
+[57]
 Chapter 10.
 File: C:/_bookdown/observatory_data_curators/plots/screenshots/cdo_opening_page
 .png Graphic file (type bmp)
 <C:/_bookdown/observatory_data_curators/plots/screenshots/cdo_opening_page.png>
 
 
-Overfull \hbox (701.17311pt too wide) in paragraph at lines 1270--1270
+Overfull \hbox (701.17311pt too wide) in paragraph at lines 1368--1368
  [] 
  []
 
-[55
+[58
 
-] [56]
+] [59]
 
-LaTeX Warning: Reference `curators' on page 57 undefined on input line 1277.
+LaTeX Warning: Reference `curators' on page 60 undefined on input line 1375.
 
 File: plots/screenshots/ec_competition_merger_screenshot.png Graphic file (type
  bmp)
 <plots/screenshots/ec_competition_merger_screenshot.png>
-[57]
+[60]
 Chapter 11.
 
 LaTeX Warning: File `https://greendeal.dataobservatory.eu/media/img/observatory
-_screenshots/dmo_contributors.png' not found on input line 1333.
+_screenshots/dmo_contributors.png' not found on input line 1431.
 
 ! Unable to load picture or PDF file 'https://greendeal.dataobservatory.eu/medi
 a/img/observatory_screenshots/dmo_contributors.png'.
 <to be read again> 
                    }
-l.1333 ...vatory_screenshots/dmo_contributors.png}
+l.1431 ...vatory_screenshots/dmo_contributors.png}
                                                    
 Here is how much of TeX's memory you used:
- 19070 strings out of 478426
- 360255 string characters out of 5855312
- 846705 words of memory out of 5000000
- 39085 multiletter control sequences out of 15000+600000
+ 19072 strings out of 478426
+ 360267 string characters out of 5855312
+ 847705 words of memory out of 5000000
+ 39087 multiletter control sequences out of 15000+600000
  409889 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 87i,6n,120p,1133b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,6n,120p,1430b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on observatory_contributors_handbook.pdf (58 pages).
+Output written on observatory_contributors_handbook.pdf (61 pages).

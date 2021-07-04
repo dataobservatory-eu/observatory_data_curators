@@ -118,6 +118,8 @@ div.csl-indent {
 <li class="chapter" data-level="2.3.1" data-path="FAIR-data.html"><a href="FAIR-data.html#recommended"><i class="fa fa-check"></i><b>2.3.1</b> Recommended</a></li>
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="FAIR-data.html"><a href="FAIR-data.html#processing-metadata"><i class="fa fa-check"></i><b>2.4</b> Processing Metadata</a></li>
+<li class="chapter" data-level="2.5" data-path="FAIR-data.html"><a href="FAIR-data.html#tidy-data"><i class="fa fa-check"></i><b>2.5</b> Tidy Data</a></li>
+<li class="chapter" data-level="2.6" data-path="FAIR-data.html"><a href="FAIR-data.html#messy-data"><i class="fa fa-check"></i><b>2.6</b> Messy data</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="trustworhty-ai.html"><a href="trustworhty-ai.html"><i class="fa fa-check"></i><b>3</b> Trustworthy AI</a></li>
 <li class="chapter" data-level="4" data-path="app.html"><a href="app.html"><i class="fa fa-check"></i><b>4</b> Application: Automated Data Observatories</a>
@@ -253,8 +255,50 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="FAIR-data" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> FAIR Data and the Added Value of Rich Metadata</h1>
-<p>FAIR data is far more valuable than non-fair data.</p>
-<p>We are making our API service FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties">mandatory requirements</a>, and most of the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties">recommended requirements</a> of DataCite.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 50%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="even">
+<td style="text-align: center;  vertical-align: top;">
+</td>
+<td style="text-align: center;  vertical-align: top;">
+<img src="plots/gems/Diamond_Polisher.jpg" /><a href="https://contributors.dataobservatory.eu/FAIR-data.html">Adding metadata exponentially increases the value of data</a></br>Did your region added a new town to its boundaries – how do you adjust old data? Can I practically combine satellite sensory data with my organization records? And do I have the right? Metadata logs the history of the data, gives instructions who to reuse it in indicators, sets the terms of use. We automate this boring and labor-intensive process applying the <a href="https://contributors.dataobservatory.eu/FAIR-data.html#FAIR">FAIR</a> data concept. We provide you with polished data, or we process your uncut dataset diamonds to shape.</br>
+</td>
+<td style="text-align: center;  vertical-align: top;">
+</td>
+</tr>
+</tbody>
+</table>
+<p>We are providing a comprehensive, automated solution to problems that are not so much related to the data itself, but the information, documentation of the data, i.e. the metadata, and the structure how the data is stored. These problems create countless non-billable hours in professional services, or daunting extra work in research institutions that do not result in credited publications and other research output. These problems should be eliminated or handled by computers. We believe that the most value in our research automation comes from the documentation automation, which adds automatically rich descriptive, administrative and processing metadata to your data assets.</p>
+<p><strong>Lack of clarity with respect to:</strong>
+- The legal consequences of reusing a dataset. Do licensing restriction apply? What are the correct attributions to creators, contributors, publishers?
+- Who checked the reliability of the dataset? Did it change?
+- It is unclear what is the content of a data file. Who used it, who controlled it, does it need further work? The description is missing or difficult to use. There are no systematic keywords applied to the files, data, and it is impossible to run a search on your computer that will deliver the right asset.
+- Is this the latest verion of the dataset? Is there a new version available somewhere? Did somebody recast the data, did corrections take place? This can be particularly labor intensive to check if you use external data sources.</p>
+<p><strong>The lack of reusability:</strong>
+- If you open a dataset, you need to make several moves with your mouse or apply several keystrokes (all error-prone and generate new supervisory, control taks) before you can start analyzing or visualizting the data. Generally, as soon as you need to use a mouse, plenty of new work and cost is generated.
+- What are the units or currency rates used? Is the data expressed in euros, milions of euros? Do you need to translate dollars to euros on the average rate, the spot rate? What is the functional currency of the problem?
+- The data cannot be easily imported, further processing is needed before you can add it a relational database. Tidy data can be imported without further work.
+- The data has many versions in your organization.
+- Corrections were not logged, and before using it or handing it over to a client, all verification processes must be repeated, even though they may have been done several times in the past.</p>
+<p><strong>Potential mistakes during use</strong>:
+- Wrong currency translations, or wrong type of financial data merged.
+- Annual, year end data divided by annual, middle of the year data.
+- Accidentally units recorded in thousands of euros and euros are mixed up.
+- During tidying a digit is entered accidentally to the keyboard. Or a field is erased.</p>
+<p>Some of these problems are controled by database schemas, but database schemas are rigid and most workers do not like to work with them. We use different schemas that are not as strict as schemas applied in databases, and we use automation software that applies these schemas to documents and data has been created by your colleagues in the past without reference to schemas. We apply instead the FAIR Data concept stands for <strong>f</strong>indable, <strong>a</strong>ccessibe, <strong>i</strong>nteroperable, and <strong>r</strong>eusable of digital assets, for example, when we re-create a missing codebook to a survey documentation that was carried out years ago.</p>
+<p>The problem with <a href="open-data.html#open-data">Open Data</a> is that while it is legally <em>accessible</em>, and often cost-free, it in most cases <em>not findable</em>, and not even accessible directly. While the EU has policies since 2003 about making taxpayer funded data reusable, it did not make much technical steps to make this a reality. Reusability of governmental data and scientific data is a right, but not a practical possiblity for most users. The data may sit in various historical file formats, without documentation.</p>
+<p>Interoperability means that you can use governmental open data, scientific open data, your own system’s data, your membership organizations shared resources, and data subscriptions together. A special case of lack of interoperability when you do not know if you are facing a legal risk from using a data resource.</p>
+<p>In our experience, in most research-driven organizations, such as consultancies, law firms, university research groups, NGOs and public policy bodies, reusability is mainly limited by poor data documentation, and sometimes by the use of of obsolete proprietary file formats. Documentation in the short run is not always a necessity, and it belongs to the non-billable hours, or among the tasks that do not really count in a researchers’ promotion. The poor documentation however makes it extremely demanding to re-use a data or document a few years from now. From 2021, if you apply for Horizon Europe funding, your research output must meet basic findability and reusability criteria.</p>
+<ul>
+<li><p>Our data comes with metadata that meets the requirements of two metadata standards, the more general <a href="FAIR-data.html#Dublin-Core">Dublin Core</a> and the more specific, mandatory and recommended values of <a href="FAIR-data.html#DataCite">DataCite</a> for datasets. We go even further, we add rich processing metadata beyond these requirements. These are not only nice to have: from 2021, if you apply for Our solution can automate this process, and besides making you compliant, it adds a lot of value to your own data management.</p></li>
+<li><p>We are making our data-as-service APIs FAIR by automatically adding to our data standardized metadata that fulfills the mandatory requirements of the Dublic Core metadata standards and at the same time the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties">mandatory requirements</a>, and most of the <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties">recommended requirements</a> of DataCite.</p></li>
+<li><p>Furthermore, we apply the <a href="FAIR-data.html#tidy-data">tidy data</a> concept to our partners data assets. The tidy data principle applies a certain structure to datasets that facilitates immediate use and reuse.</p></li>
+</ul>
 <div id="FAIR" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> FAIR</h2>
 <p>In 2016, the <strong><a href="http://www.nature.com/articles/sdata201618">FAIR Guiding Principles for scientific data management and stewardship</a></strong> were published in <em>Scientific Data</em>. The authors intended to provide guidelines to improve the <strong>F</strong>indability, <strong>A</strong>ccessibility, <strong>I</strong>nteroperability, and <strong>R</strong>euse of digital assets. The principles emphasize machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data because of the increase in volume, complexity, and creation speed of data.</p>
@@ -492,6 +536,31 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+<div id="tidy-data" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Tidy Data</h2>
+<p>A dataset is a collection of values, usually either numbers (if quantitative) or strings (if qualitative). Values are organised in two ways. Every value belongs to a variable and an observation. A variable contains all values that measure the same underlying attribute (like height, temperature, duration) across units. An observation contains all values measured on the same unit (like a person, or a day, or a race) across attributes.</p>
+<p>It is often said that 80% of data analysis is spent on the cleaning and preparing data. And it’s not just a first step, but it must be repeated many times over the course of analysis as new problems come to light or new data is collected. The tidy data principle applies a certain structure to datasets that facilitates immediate use and reuse.</p>
+<p>The principles of tidy data provide a standard way to organise data values within a dataset. A standard makes initial data cleaning easier because you don’t need to start from scratch and reinvent the wheel every time.</p>
+<p>Tidy data is a standard way of mapping the meaning of a dataset to its structure (. A dataset is messy or tidy depending on how rows, columns and tables are matched up with observations, variables and types.</p>
+<p>In tidy data we need a way to describe the underlying semantics, or meaning, of the values displayed in the table:</p>
+<ul>
+<li>Every column is a variable.</li>
+<li>Every row is an observation.</li>
+<li>Every cell is a single value.</li>
+</ul>
+</div>
+<div id="messy-data" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Messy data</h2>
+<p>Real datasets can, and often do, violate the three precepts of tidy data in almost every way imaginable – this particulary true of open data, even when it is released by statistical bodies. The most typical errors:</p>
+<ul>
+<li>Column headers are values, not variable names.</li>
+<li>Multiple variables are stored in one column, for example, the number of item purchased and the price of the item.</li>
+<li>Variables are stored in both rows and columns, for example, the columns are organized by income level groups.</li>
+<li>Multiple types of observational units are stored in the same table. For example, names of musicians and their songs.</li>
+<li>A single observational unit is stored in multiple tables.</li>
+</ul>
+<p>While messy data almost always can be tidied, if you do this in a spreadsheet application manually, it is almost impossible not to make a mistake. Spreadsheet applications do not check the tidyness of the data, and do not record the logs of your manual tidying efforts. Unless every single mouseclick, drag and drop is recorded, the work is impossible to validate. However, we believe that data should never be manipulated with a mouse. Computer algorithms should be deployed in a way that our their tidying efforts are reproducible and logged.</p>
 
 </div>
 </div>

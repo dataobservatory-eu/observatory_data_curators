@@ -1,5 +1,20 @@
 # Trustworthy AI {#trustworhty-ai}
 
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 50%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="even">
+<td style="text-align: center;  vertical-align: top;"></td>
+<td style="text-align: center;  vertical-align: top;"><img src="plots/gems/samantha-gades-RHAtRIT3-CE-unsplash.jpg" /></br></br><a href="https://curators.dataobservatory.eu/trustworhty-ai.html">Trustworthy AI</a></br>We help deploying reliable AI that is under human supervision, and algorithms that will not turn against your organization, or engage in discriminative, unlawful, or counterproductive behavior. We automate data and metadata management, documentation, verification, because computers are much better than humans in these boring tasks; humans must increasingly focus on oversight of too much data.</td>
+<td style="text-align: center;  vertical-align: top;"></td>
+</tr>
+</tbody>
+</table>
+
 
 |   |   |   
 |:--|:-:|

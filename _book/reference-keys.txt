@@ -16,6 +16,8 @@ Dublin-Core
 DataCite
 recommended
 processing-metadata
+tidy-data
+messy-data
 trustworhty-ai
 app
 data-acquisition-and-processing

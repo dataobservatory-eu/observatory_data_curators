@@ -5,6 +5,24 @@ In the EU, open data is governed by the [Directive on open data and the re-use o
 * [Open Data - The New Gold Without the Rush](https://dataandlyrics.com/post/2021-06-18-gold-without-rush/)
 * [Open Data is Like Gold in the Mud Below the Chilly Waves of Mountain Rivers](https://greendeal.dataobservatory.eu/post/2021-06-10-founder-daniel-antal/)
 
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="even">
+<td style="text-align: center;  vertical-align: top;"><img src="plots/gems/edgar-soto-gb0BZGae1Nk-unsplash.jpg" /><a href="#information">Poor quality, needs reprocessing</a></br>Open data quality is usually poor. You even need to reprocess datasets of statistical organizations or official data observatories.</td>
+<td style="text-align: center;  vertical-align: top;"><img src="plots/gems/Diamond_Polisher.jpg" /><a href="https://contributors.dataobservatory.eu/FAIR-data.html">Undocumented, no reuse information</a></br>The most open data is impossible to find or reuse because of the lacking administrative, descriptive and processing metadata.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;  vertical-align: top;"><img src="plots/gems/Uncut-diamond_Edit.jpg" /><a href="https://contributors.dataobservatory.eu/open-data.html#research-automation">Data is only potential information, raw and unprocessed</a></br>.Open data is always messy. If you make the many hundred, thousand, or ten thousand little steps to clear it manually, than your work will be error-prone, and very difficult for internal or external auditors to check.</td>
+<td style="text-align: center;  vertical-align: top;"><img src="plots/gems/Udachnaya_pipe.jpg" /><a href="https://curators.dataobservatory.eu/data-curation.html">Data curation</a></b></br>Data sits in every government data warehouse (you can only legally reuse it), scientific repositories, libraries, your sales records, in sensors. Our automated data observatories help them bringing up to the sunlight. </br></td>
+</tr>
+</tbody>
+</table>
+
+
 The EU has an 18-year-old open data regime, and it makes public taxpayer-funded data in the values of tens of billions of euros per year; the Eurostat program alone handles 20,000 international data products, including at least 5,000 pan-European environmental indicators.
 
 As open science principles gain increased acceptance, scientific researchers are making hundreds of thousands of valuable datasets public and available for replication every year.
@@ -35,7 +53,7 @@ knitr::include_graphics(
 
 While the EU announces every year that again billions and billions of worth data became "open" again, this is not gold. At least not in the form of nicely minted gold coins, but in gold dust and nuggets found in the muddy banks of chilly rivers. There is no rush for it, because panning out its value requires plenty of hard work. We are trying to automate this work to make open data useable at scale, even in trustworthy AI solutions.
 
-```{r}
+```{r, fig.out="85%", fig.align="center", echo=FALSE}
 knitr::include_graphics(
   here::here("plots", "slides", "gold_panning_slide_notitle.png")
 )
