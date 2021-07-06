@@ -24,7 +24,7 @@
 <meta name="author" content="Daniel Antal, CFA" />
 
 
-<meta name="date" content="2021-07-01" />
+<meta name="date" content="2021-07-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -115,11 +115,13 @@ div.csl-indent {
 <li class="chapter" data-level="2.2" data-path="FAIR-data.html"><a href="FAIR-data.html#Dublin-Core"><i class="fa fa-check"></i><b>2.2</b> The Dublin Core</a></li>
 <li class="chapter" data-level="2.3" data-path="FAIR-data.html"><a href="FAIR-data.html#DataCite"><i class="fa fa-check"></i><b>2.3</b> DataCite</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="FAIR-data.html"><a href="FAIR-data.html#recommended"><i class="fa fa-check"></i><b>2.3.1</b> Recommended</a></li>
+<li class="chapter" data-level="2.3.1" data-path="FAIR-data.html"><a href="FAIR-data.html#recommended-for-discovery"><i class="fa fa-check"></i><b>2.3.1</b> Recommended for discovery</a></li>
+<li class="chapter" data-level="2.3.2" data-path="FAIR-data.html"><a href="FAIR-data.html#optional"><i class="fa fa-check"></i><b>2.3.2</b> Optional</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="FAIR-data.html"><a href="FAIR-data.html#processing-metadata"><i class="fa fa-check"></i><b>2.4</b> Processing Metadata</a></li>
-<li class="chapter" data-level="2.5" data-path="FAIR-data.html"><a href="FAIR-data.html#tidy-data"><i class="fa fa-check"></i><b>2.5</b> Tidy Data</a></li>
-<li class="chapter" data-level="2.6" data-path="FAIR-data.html"><a href="FAIR-data.html#messy-data"><i class="fa fa-check"></i><b>2.6</b> Messy data</a></li>
+<li class="chapter" data-level="2.4" data-path="FAIR-data.html"><a href="FAIR-data.html#administrative-metadata"><i class="fa fa-check"></i><b>2.4</b> Administrative Metadata</a></li>
+<li class="chapter" data-level="2.5" data-path="FAIR-data.html"><a href="FAIR-data.html#an-example"><i class="fa fa-check"></i><b>2.5</b> An Example</a></li>
+<li class="chapter" data-level="2.6" data-path="FAIR-data.html"><a href="FAIR-data.html#tidy-data"><i class="fa fa-check"></i><b>2.6</b> Tidy Data</a></li>
+<li class="chapter" data-level="2.7" data-path="FAIR-data.html"><a href="FAIR-data.html#messy-data"><i class="fa fa-check"></i><b>2.7</b> Messy data</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="trustworhty-ai.html"><a href="trustworhty-ai.html"><i class="fa fa-check"></i><b>3</b> Trustworthy AI</a></li>
 <li class="chapter" data-level="4" data-path="app.html"><a href="app.html"><i class="fa fa-check"></i><b>4</b> Application: Automated Data Observatories</a>
@@ -275,21 +277,27 @@ div.csl-indent {
 </table>
 <p>We are providing a comprehensive, automated solution to problems that are not so much related to the data itself, but the information, documentation of the data, i.e. the metadata, and the structure how the data is stored. These problems create countless non-billable hours in professional services, or daunting extra work in research institutions that do not result in credited publications and other research output. These problems should be eliminated or handled by computers. We believe that the most value in our research automation comes from the documentation automation, which adds automatically rich descriptive, administrative and processing metadata to your data assets.</p>
 <p><strong>Lack of clarity with respect to:</strong>
-- The legal consequences of reusing a dataset. Do licensing restriction apply? What are the correct attributions to creators, contributors, publishers?
-- Who checked the reliability of the dataset? Did it change?
-- It is unclear what is the content of a data file. Who used it, who controlled it, does it need further work? The description is missing or difficult to use. There are no systematic keywords applied to the files, data, and it is impossible to run a search on your computer that will deliver the right asset.
-- Is this the latest verion of the dataset? Is there a new version available somewhere? Did somebody recast the data, did corrections take place? This can be particularly labor intensive to check if you use external data sources.</p>
+- The legal consequences of reusing a dataset. Do licensing restriction apply? What are the correct attributions to creators, contributors, publishers?</p>
+<ul>
+<li><p>Who checked the reliability of the dataset? Did it change?</p></li>
+<li><p>It is unclear what is the content of a data file. Who used it, who controlled it, does it need further work? The description is missing or difficult to use. There are no systematic keywords applied to the files, data, and it is impossible to run a search on your computer that will deliver the right asset.</p></li>
+<li><p>Is this the latest verion of the dataset? Is there a new version available somewhere? Did somebody recast the data, did corrections take place? This can be particularly labor intensive to check if you use external data sources.</p></li>
+</ul>
 <p><strong>The lack of reusability:</strong>
-- If you open a dataset, you need to make several moves with your mouse or apply several keystrokes (all error-prone and generate new supervisory, control taks) before you can start analyzing or visualizting the data. Generally, as soon as you need to use a mouse, plenty of new work and cost is generated.
-- What are the units or currency rates used? Is the data expressed in euros, milions of euros? Do you need to translate dollars to euros on the average rate, the spot rate? What is the functional currency of the problem?
-- The data cannot be easily imported, further processing is needed before you can add it a relational database. Tidy data can be imported without further work.
-- The data has many versions in your organization.
-- Corrections were not logged, and before using it or handing it over to a client, all verification processes must be repeated, even though they may have been done several times in the past.</p>
+- If you open a dataset, you need to make several moves with your mouse or apply several keystrokes (all error-prone and generate new supervisory, control taks) before you can start analyzing or visualizting the data. Generally, as soon as you need to use a mouse, plenty of new work and cost is generated.</p>
+<ul>
+<li><p>What are the units or currency rates used? Is the data expressed in euros, milions of euros? Do you need to translate dollars to euros on the average rate, the spot rate? What is the functional currency of the problem?</p></li>
+<li><p>The data cannot be easily imported, further processing is needed before you can add it a relational database. Tidy data can be imported without further work.</p></li>
+<li><p>The data has many versions in your organization.</p></li>
+<li><p>Corrections were not logged, and before using it or handing it over to a client, all verification processes must be repeated, even though they may have been done several times in the past.</p></li>
+</ul>
 <p><strong>Potential mistakes during use</strong>:
-- Wrong currency translations, or wrong type of financial data merged.
-- Annual, year end data divided by annual, middle of the year data.
-- Accidentally units recorded in thousands of euros and euros are mixed up.
-- During tidying a digit is entered accidentally to the keyboard. Or a field is erased.</p>
+- Wrong currency translations, or wrong type of financial data merged.</p>
+<ul>
+<li><p>Annual, year end data divided by annual, middle of the year data.</p></li>
+<li><p>Accidentally units recorded in thousands of euros and euros are mixed up.</p></li>
+<li><p>During tidying a digit is entered accidentally to the keyboard. Or a field is erased.</p></li>
+</ul>
 <p>Some of these problems are controled by database schemas, but database schemas are rigid and most workers do not like to work with them. We use different schemas that are not as strict as schemas applied in databases, and we use automation software that applies these schemas to documents and data has been created by your colleagues in the past without reference to schemas. We apply instead the FAIR Data concept stands for <strong>f</strong>indable, <strong>a</strong>ccessibe, <strong>i</strong>nteroperable, and <strong>r</strong>eusable of digital assets, for example, when we re-create a missing codebook to a survey documentation that was carried out years ago.</p>
 <p>The problem with <a href="open-data.html#open-data">Open Data</a> is that while it is legally <em>accessible</em>, and often cost-free, it in most cases <em>not findable</em>, and not even accessible directly. While the EU has policies since 2003 about making taxpayer funded data reusable, it did not make much technical steps to make this a reality. Reusability of governmental data and scientific data is a right, but not a practical possiblity for most users. The data may sit in various historical file formats, without documentation.</p>
 <p>Interoperability means that you can use governmental open data, scientific open data, your own system’s data, your membership organizations shared resources, and data subscriptions together. A special case of lack of interoperability when you do not know if you are facing a legal risk from using a data resource.</p>
@@ -330,6 +338,7 @@ div.csl-indent {
 </div>
 <div id="Dublin-Core" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> The Dublin Core</h2>
+<p>See: <a href="https://www.dublincore.org/specifications/dublin-core/cross-domain-attribute/">Dublin Core Cross-Domain Attribute Set</a></p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -398,10 +407,158 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+<p>We record all metadata that is described in the Dublin Core, but we use the DataCite property names. We will provide a simple converter to convert the metadata between Dublin Core and DataCite.</p>
 </div>
 <div id="DataCite" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> DataCite</h2>
 <p>We use all <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties">mandatory</a> DataCite metadata fields, and many of <a href="https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties">the recommended and optional</a> ones.</p>
+<pre><code>## Registered S3 method overwritten by &#39;quantmod&#39;:
+##   method            from
+##   as.zoo.data.frame zoo</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;tune&#39;:
+##   method                   from   
+##   required_pkgs.model_spec parsnip</code></pre>
+<table>
+<colgroup>
+<col width="1%" />
+<col width="11%" />
+<col width="79%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">ID</th>
+<th align="left">Property</th>
+<th align="left">Structure</th>
+<th align="left">Obligation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Identifier</td>
+<td align="left">With mandatory type sub-property</td>
+<td align="left">M</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">Creator</td>
+<td align="left">With optional name identifier and affiliation sub-properties</td>
+<td align="left">M</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">Title</td>
+<td align="left">With optional type sub-properties</td>
+<td align="left">M</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">Publisher</td>
+<td align="left"></td>
+<td align="left">M</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">PublicationYear</td>
+<td align="left"></td>
+<td align="left">M</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">ResourceType</td>
+<td align="left">With mandatory general type description sub-property</td>
+<td align="left">M</td>
+</tr>
+<tr class="odd">
+<td align="right">6</td>
+<td align="left">Subject</td>
+<td align="left">With scheme sub-property</td>
+<td align="left">R</td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">Contributor</td>
+<td align="left">With type, name identifier, and affiliation sub-properties</td>
+<td align="left">R</td>
+</tr>
+<tr class="odd">
+<td align="right">8</td>
+<td align="left">Date</td>
+<td align="left">With type sub-property</td>
+<td align="left">R</td>
+</tr>
+<tr class="even">
+<td align="right">9</td>
+<td align="left">Language</td>
+<td align="left"></td>
+<td align="left">O</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">AlternateIdentifier</td>
+<td align="left">With type sub-property</td>
+<td align="left">O</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="left">RelatedIdentifier</td>
+<td align="left">With type and relation type sub-properties</td>
+<td align="left">R</td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="left">Size</td>
+<td align="left"></td>
+<td align="left">O</td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="left">Format</td>
+<td align="left"></td>
+<td align="left">O</td>
+</tr>
+<tr class="odd">
+<td align="right">15</td>
+<td align="left">Version</td>
+<td align="left"></td>
+<td align="left">O</td>
+</tr>
+<tr class="even">
+<td align="right">16</td>
+<td align="left">Rights</td>
+<td align="left"></td>
+<td align="left">O</td>
+</tr>
+<tr class="odd">
+<td align="right">17</td>
+<td align="left">Description</td>
+<td align="left">With type sub-property</td>
+<td align="left">R</td>
+</tr>
+<tr class="even">
+<td align="right">18</td>
+<td align="left">GeoLocation</td>
+<td align="left">With point, box and polygon sub-properties</td>
+<td align="left">R</td>
+</tr>
+<tr class="odd">
+<td align="right">19</td>
+<td align="left">FundingReference</td>
+<td align="left">With name, identifier, and award related sub-properties</td>
+<td align="left">O</td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="left">RelatedItem</td>
+<td align="left">With identifier, creator, title, publication year, volume, issue, number</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p>,
+page, publisher, edition, and contributor sub-properties |O |</p>
+<p>See for further reference <a href="https://r.dataobservatory.eu/articles/datacite.html">DataCite Descriptive Metadata</a>.</p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -418,28 +575,25 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td align="left">Title</td>
-<td align="center">A name given to the resource. Extends Dublin Core with alternative title</td>
+<td align="center">A name given to the resource. Extends Dublin Core with alternative title, subtitle, translated Title, and other title(s).</td>
 </tr>
 <tr class="even">
-<td align="left">subtitle, translated Title, and other title(s)</td>
-<td align="center"></td>
-</tr>
-<tr class="odd">
 <td align="left">Publisher</td>
 <td align="center">The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role. For software, use Publisher for the code repository. (Dublin Core item.)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Publication Year</td>
 <td align="center">The year when the data was or will be made publicly available.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">Resource Type</td>
 <td align="center">We publish Datasets, Images, Report, and Data Papers. (Dublin Core item with controlled vocabulary.)</td>
 </tr>
 </tbody>
 </table>
-<div id="recommended" class="section level3" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Recommended</h3>
+<div id="recommended-for-discovery" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Recommended for discovery</h3>
+<p>The <strong>Recommended</strong> (R) properties are optional, but strongly recommended for interoperability.</p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -459,15 +613,62 @@ div.csl-indent {
 <td align="center">A point or period of time associated with an event in the lifecycle of the resource, besides the Dublin Core minimum we add Collected, Created, Issued, Updated, and if necessary, Withdrawn dates to our datasets.</td>
 </tr>
 <tr class="even">
+<td align="left">Related Identifier</td>
+<td align="center">An identifier or identifiers other than the primary Identifier applied to the resource being registered.</td>
+</tr>
+<tr class="odd">
+<td align="left">Rights</td>
+<td align="center">We give <a href="https://spdx.org/licenses/">SPDX License List</a> standards rights description with URLs to the actual license. (Dublin Core item: Rights Management)</td>
+</tr>
+<tr class="even">
+<td align="left">Description</td>
+<td align="center">Recommended for discovery.(Dublin Core item.)</td>
+</tr>
+<tr class="odd">
+<td align="left">GeoLocation</td>
+<td align="center">Similar to Dublin Core item Coverage</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The <code>Subject</code> property: we need to set standard coding schemas for each observatory.</li>
+<li><code>Contributor</code> property:
+<ul>
+<li><code>DataCurator</code> the curator of the dataset, who sets the mandatory properties.</li>
+<li><code>DataManager</code> the person who keeps the dataset up-to-date.</li>
+<li><code>ContactPerson</code> the person who can be contacted for reuse requests or bug reports.</li>
+</ul></li>
+<li>The <code>Date</code> property contains the following dates, which are set automatically by the <a href="https://r.dataobservatory.eu/">dataobservatory R package</a>:
+<ul>
+<li><code>Updated</code> when the dataset was updated;</li>
+<li><code>EarliestObservation</code>, which the earliest, not backcasted, estimated or imputed observation.</li>
+<li><code>LatestObservation</code>, which the earliest, not backcasted, estimated or imputed observation.</li>
+<li><code>UpdatedatSource</code>, when the raw data source was last updated.</li>
+</ul></li>
+<li>The <code>GeoLocation</code> is automatically created by the <a href="https://r.dataobservatory.eu/">dataobservatory R package</a>.</li>
+<li>The <code>Description</code> property optional elements, and we adopted them as follows for the observatories:
+<ul>
+<li>The <code>Abstract</code> is a short, textual description; we try to automate its creation as much as a possible, but some curatorial input is necessary.</li>
+<li>In the <code>TechnicalInfo</code> sub-field, we record automatically the <code>utils::sessionInfo()</code> for computational reproducability. This is automatically created by the <a href="https://r.dataobservatory.eu/">dataobservatory R package</a>.</li>
+<li>In the <code>Other</code> sub-field, we record the keywords for structuring the observatory.</li>
+</ul></li>
+</ul>
+</div>
+<div id="optional" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Optional</h3>
+<p>The <strong>Optional</strong> (O) properties are optional and provide richer description. For findability they are not so important, but to create a web service, they are essential. In the mandatory and recommended fields, we are following other metadata standards and codelists, but in the optional fields we have to build up our own system for the observatories.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
 <td align="left">Language</td>
 <td align="center">A language of the resource. (Dublin Core item.)</td>
 </tr>
-<tr class="odd">
-<td align="left">Alternative Identifier</td>
-<td align="center">An identifier or identifiers other than the primary Identifier applied to the resource being registered.</td>
-</tr>
 <tr class="even">
-<td align="left">Related Identifier</td>
+<td align="left">Alternative Identifier</td>
 <td align="center">An identifier or identifiers other than the primary Identifier applied to the resource being registered.</td>
 </tr>
 <tr class="odd">
@@ -484,15 +685,7 @@ div.csl-indent {
 </tr>
 <tr class="even">
 <td align="left">Rights</td>
-<td align="center">We give standards rights description with URLs to the actual license. (Dublin Core item.)</td>
-</tr>
-<tr class="odd">
-<td align="left">Description</td>
-<td align="center">Recommended for discovery.(Dublin Core item.)</td>
-</tr>
-<tr class="even">
-<td align="left">GeoLocation</td>
-<td align="center">Similar to Dublin Core item Coverage</td>
+<td align="center">We give <a href="https://spdx.org/licenses/">SPDX License List</a> standards rights description with URLs to the actual license. (Dublin Core item: Rights Management)</td>
 </tr>
 <tr class="odd">
 <td align="left">Funding Reference</td>
@@ -504,10 +697,26 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+<ul>
+<li>In the <code>Language</code> we only use English (eng) at the moment.</li>
+<li>By default We do not use the <code>Alternative Identifier</code> property. We will do this when the same dataset will be used in several observatories.</li>
+<li>The <code>Size</code> property is measured in bytes for the CSV representation of the dataset. During creations, the software creates a temporary CSV file to check if the dataset has no writing problems, and measures the dataset size.</li>
+<li>The <code>Version</code> property needs further work. For a daily re-freshing API we need to find an applicable versioning system.</li>
+<li>The <code>Funding reference</code> will contain information for donors, sponsors, and co-financing partners.</li>
+<li>Our default setting for <code>Rights</code> is the <a href="https://spdx.org/licenses/CC-BY-NC-SA-4.0.html">CC-BY-NC-SA-4.0</a> license and we provide an URI for the license document.</li>
+<li>In the <code>RelatedItem</code> we give information about:
+<ul>
+<li>The original (raw) data source.</li>
+<li>Methodological bibilography reference, when needed.</li>
+<li>The open-source statistical software code that processed the data.</li>
+</ul></li>
+</ul>
 </div>
 </div>
-<div id="processing-metadata" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Processing Metadata</h2>
+<div id="administrative-metadata" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Administrative Metadata</h2>
+<p>Like with diamonds, it is better to know the history of a dataset, too. Our administrative metadata contains codelists that follow the SXDX statistical metadata standards, and similarly strucutred information about the processing history of the dataset.</p>
+<p>See for further reference <a href="https://r.dataobservatory.eu/articles/codebook.html">The codebook Class</a>.</p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -515,8 +724,8 @@ div.csl-indent {
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left">Value Type</td>
-<td align="center">We observe actual, missing, imputed, estimated values.</td>
+<td align="left">Observation Status</td>
+<td align="center">SDMX Code list for <a href="https://sdmx.org/?sdmx_news=new-version-of-code-list-for-observation-status-version-2-2">Observation Status 2.2</a> (CL_OBS_STATUS), such as actual, missing, imputed, etc. values.</td>
 </tr>
 <tr class="even">
 <td align="left">Method</td>
@@ -528,17 +737,68 @@ div.csl-indent {
 </tr>
 <tr class="even">
 <td align="left">Frequency</td>
-<td align="center">We provide the measurement frequency of the data in a more practical format than the Dublin Core and DataCite descriptive dates.</td>
+<td align="center"><a href="https://sdmx.org/?page_id=3215/">SDMX Code list for Frequency 2.1 (CL_FREQ)</a> frequency values</td>
 </tr>
 <tr class="odd">
+<td align="left">Codelist</td>
+<td align="center">Euros-SDMX Codelist entries for the observational units, such as sex, etc.</td>
+</tr>
+<tr class="even">
+<td align="left">Imputation</td>
+<td align="center">SDMX Code list for Frequency 2.1 (CL_IMPUT_METH) imputation values</td>
+</tr>
+<tr class="odd">
+<td align="left">Estimation</td>
+<td align="center">The estimation methodology of data that we calculated, together with citation information and URI to the actual processing code</td>
+</tr>
+<tr class="even">
 <td align="left">Related Item</td>
 <td align="center">We give information about the software code that processed the data (both Dublin Core and DataCite compliant.)</td>
 </tr>
 </tbody>
 </table>
+<p>See an example in the <a href="https://r.dataobservatory.eu/articles/codebook.html">The codebook Class</a> article of the <a href="https://r.dataobservatory.eu/">dataobservatory R package</a>.</p>
 </div>
-<div id="tidy-data" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Tidy Data</h2>
+<div id="an-example" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> An Example</h2>
+<pre><code>## DataCite information for Population of Small European Countries 
+## # A tibble: 21 x 2
+##    Property       Value                                                         
+##    &lt;chr&gt;          &lt;chr&gt;                                                         
+##  1 dataset_code   &quot;small_population_total&quot;                                      
+##  2 Identifier     &quot;small_population_total&quot;                                      
+##  3 Creator        &quot;Joe, Doe&quot;                                                    
+##  4 Title          &quot;Population of Small European Countries&quot;                      
+##  5 Publisher      &quot;Reprex&quot;                                                      
+##  6 PublicationYe~ &quot;2021&quot;                                                        
+##  7 ResourceType   &quot;Dataset&quot;                                                     
+##  8 Subject        &quot;Demography&quot;                                                  
+##  9 Contributor     &lt;NA&gt;                                                         
+## 10 Date           &quot;{\&quot;Updated\&quot;:[\&quot;2021-07-06\&quot;],\&quot;EarliestObservation\&quot;:[\&quot;200~
+## # ... with 11 more rows</code></pre>
+<p>The <code>Description</code> property has three mandatory elements:</p>
+<ul>
+<li>The <code>Abstract</code> is a short, textual description.</li>
+<li>In the <code>TechnicalInfo</code> sub-field, we record automatically the <code>utils::sessionInfo()</code> for computational reproducability.</li>
+<li>In the <code>Other</code> sub-field, we record the keywords for structuring the observatory.</li>
+</ul>
+<pre><code>## $Abstract
+## [1] &quot;Example dataset with three small countries&quot;
+## 
+## $TechnicalInfo
+## [1] &quot;{\&quot;platform\&quot;:[\&quot;x86_64-w64-mingw32/x64 (64-bit)\&quot;],\&quot;locale\&quot;:[\&quot;LC_COLLATE=English_United States.1252;LC_CTYPE=English_United States.1252;LC_MONETARY=English_United States.1252;LC_NUMERIC=C;LC_TIME=English_United States.1252\&quot;],\&quot;running\&quot;:[\&quot;Windows 10 x64 (build 17763)\&quot;],\&quot;RNGkind\&quot;:[\&quot;Mersenne-Twister\&quot;,\&quot;Inversion\&quot;,\&quot;Rejection\&quot;],\&quot;basePkgs\&quot;:[\&quot;stats\&quot;,\&quot;graphics\&quot;,\&quot;grDevices\&quot;,\&quot;utils\&quot;,\&quot;datasets\&quot;,\&quot;methods\&quot;,\&quot;base\&quot;],\&quot;matprod\&quot;:[\&quot;default\&quot;],\&quot;BLAS\&quot;:[\&quot;\&quot;],\&quot;LAPACK\&quot;:[\&quot;\&quot;],\&quot;system.codepage\&quot;:[\&quot;1250\&quot;],\&quot;codepage\&quot;:[\&quot;1252\&quot;]}&quot;
+## 
+## $Other
+## [1] &quot;{\&quot;id\&quot;:[\&quot;keyword1\&quot;,\&quot;keyword2\&quot;,\&quot;keyword3\&quot;,\&quot;keyword4\&quot;],\&quot;name\&quot;:[\&quot;greendeal\&quot;,\&quot;Demography\&quot;,\&quot;Population\&quot;,\&quot;Testing\&quot;]}&quot;</code></pre>
+<p>The <code>Geolocation Property</code>:</p>
+<pre><code>## $geoLocationPlace
+## [1] NA
+## 
+## $geoCodes
+## [1] &quot;LI|AD|SM&quot;</code></pre>
+</div>
+<div id="tidy-data" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Tidy Data</h2>
 <p>A dataset is a collection of values, usually either numbers (if quantitative) or strings (if qualitative). Values are organised in two ways. Every value belongs to a variable and an observation. A variable contains all values that measure the same underlying attribute (like height, temperature, duration) across units. An observation contains all values measured on the same unit (like a person, or a day, or a race) across attributes.</p>
 <p>It is often said that 80% of data analysis is spent on the cleaning and preparing data. And it’s not just a first step, but it must be repeated many times over the course of analysis as new problems come to light or new data is collected. The tidy data principle applies a certain structure to datasets that facilitates immediate use and reuse.</p>
 <p>The principles of tidy data provide a standard way to organise data values within a dataset. A standard makes initial data cleaning easier because you don’t need to start from scratch and reinvent the wheel every time.</p>
@@ -550,8 +810,8 @@ div.csl-indent {
 <li>Every cell is a single value.</li>
 </ul>
 </div>
-<div id="messy-data" class="section level2" number="2.6">
-<h2><span class="header-section-number">2.6</span> Messy data</h2>
+<div id="messy-data" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> Messy data</h2>
 <p>Real datasets can, and often do, violate the three precepts of tidy data in almost every way imaginable – this particulary true of open data, even when it is released by statistical bodies. The most typical errors:</p>
 <ul>
 <li>Column headers are values, not variable names.</li>

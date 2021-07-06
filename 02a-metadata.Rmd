@@ -137,9 +137,18 @@ See: [Dublin Core Cross-Domain Attribute Set](https://www.dublincore.org/specifi
 |Title |A name given to the resource.|
 |Type |The nature or genre of the resource.|
 
+We record all metadata that is described in the Dublin Core, but we use the DataCite property names.  We will provide a simple converter to convert the metadata between Dublin Core and DataCite.
+
 ## DataCite  {#DataCite}
 
 We use all [mandatory](https://support.datacite.org/docs/datacite-metadata-schema-v44-mandatory-properties) DataCite metadata fields, and many of [the recommended and optional](https://support.datacite.org/docs/datacite-metadata-schema-v44-recommended-and-optional-properties) ones. 
+
+```{r datacite-properties, echo=FALSE, result='asis'}
+library(dataobservatory)
+data("datacite_properties")
+knitr::kable(datacite_properties)
+```
+
 
 See for further reference [DataCite Descriptive Metadata](https://r.dataobservatory.eu/articles/datacite.html).
 
@@ -154,6 +163,8 @@ See for further reference [DataCite Descriptive Metadata](https://r.dataobservat
 
 ### Recommended for discovery
 
+The **Recommended** (R) properties are optional, but strongly recommended for interoperability.
+
 |   |   |   
 |:--|:-:|
 |Subject| The topic of the resource. (Dublin Core item.)|
@@ -163,10 +174,26 @@ See for further reference [DataCite Descriptive Metadata](https://r.dataobservat
 |Rights | We give [SPDX License List](https://spdx.org/licenses/) standards rights description with URLs to the actual license. (Dublin Core item: Rights Management)|
 |Description | Recommended for discovery.(Dublin Core item.) |
 |GeoLocation | Similar to Dublin Core item Coverage |
-|Related Item |We give information about our observatory partners' related research products, awards, grants (also Dublin Core item as Relation.) We particularly include source information when the dataset is derived from another resource (which is a Dublin Core item.)|
 
+- The `Subject` property: we need to set standard coding schemas for each observatory. 
+- `Contributor` property:
+     - `DataCurator` the curator of the dataset, who sets the mandatory properties.
+     - `DataManager` the person who keeps the dataset up-to-date.
+     - `ContactPerson` the person who can be contacted for reuse requests or bug reports.
+- The `Date` property contains the following dates, which are set automatically by the [dataobservatory R package](https://r.dataobservatory.eu/):
+     - `Updated` when the dataset was updated;
+     - `EarliestObservation`, which the earliest, not backcasted, estimated or imputed observation. 
+     - `LatestObservation`, which the earliest, not backcasted, estimated or imputed observation. 
+     - `UpdatedatSource`, when the raw data source was last updated.
+- The `GeoLocation` is automatically created by the [dataobservatory R package](https://r.dataobservatory.eu/).
+- The `Description` property optional elements, and we adopted them as follows for the observatories:
+    - The `Abstract` is a short, textual description; we try to automate its creation as much as a possible, but some curatorial input is necessary.
+    - In the `TechnicalInfo` sub-field, we record automatically the `utils::sessionInfo()` for computational reproducability. This is automatically created by the [dataobservatory R package](https://r.dataobservatory.eu/).
+    - In the `Other` sub-field, we record the keywords for structuring the observatory.
 
 ### Optional
+
+The **Optional** (O) properties are optional and provide richer description. For findability they are not so important, but to create a web service, they are essential. In the mandatory and recommended fields, we are following other metadata standards and codelists, but in the optional fields we have to build up our own system for the observatories.
 
 |   |   |   
 |:--|:-:|
@@ -174,11 +201,21 @@ See for further reference [DataCite Descriptive Metadata](https://r.dataobservat
 |Alternative Identifier |An identifier or identifiers other than the primary Identifier applied to the resource being registered. |
 |Size |We give the CSV, downloadable dataset size in bytes. |
 |Format |We give file format information. We mainly use CSV and JSON, and occasionally rds and SPSS types. (Dublin Core item.) |
-|Version | The version number of the resource.  |
+|Version | The version number of the resource.|
 |Rights | We give [SPDX License List](https://spdx.org/licenses/) standards rights description with URLs to the actual license. (Dublin Core item: Rights Management)|
 |Funding Reference |We provide the funding reference information when applicable. This is usually mandatory with public funds. |
 |Related Item |We give information about our observatory partners' related research products, awards, grants (also Dublin Core item as Relation.) We particularly include source information when the dataset is derived from another resource (which is a Dublin Core item.)|
 
+- In the `Language` we only use English (eng) at the moment.
+- By default We do not use the `Alternative Identifier` property. We will do this when the same dataset will be used in several observatories.
+- The `Size` property is measured in bytes for the CSV representation of the dataset. During creations, the software creates a temporary CSV file to check if the dataset has no writing problems, and measures the dataset size.
+- The `Version` property needs further work. For a daily re-freshing API we need to find an applicable versioning system.
+- The `Funding reference` will contain information for donors, sponsors, and co-financing partners.
+- Our default setting for `Rights` is the [CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html) license and we provide an URI for the license document.
+- In the `RelatedItem` we give information about:
+     - The original (raw) data source.
+     - Methodological bibilography reference, when needed.
+     - The open-source statistical software code that processed the data.
 
 ## Administrative Metadata
 
@@ -197,6 +234,50 @@ See for further reference [The codebook Class](https://r.dataobservatory.eu/arti
 |Estimation| The estimation methodology of data that we calculated, together with citation information and URI to the actual processing code |
 |Related Item |We give information about the software code that processed the data (both Dublin Core and DataCite compliant.)|
 
+See an example in the [The codebook Class](https://r.dataobservatory.eu/articles/codebook.html) article of the [dataobservatory R package](https://r.dataobservatory.eu/).
+
+## An Example
+
+```{r small-population-example, include=FALSE}
+data("small_population")
+small_population_dataset <- dataset (
+  x= small_population,
+  dataset_code = "small_population_total",
+  dataset_title = "Population of Small European Countries",
+  freq = "A",
+  unit = "NR",
+  unit_name = "number")
+
+print(small_population_dataset)
+```
+```{r}
+small_population_datacite <- datacite_dataset(
+  dataset = small_population_dataset,
+  description = "Example dataset with three small countries",
+  keywords = c("greendeal", "Demography", "Population", "Testing"),
+  Subject = "Demography",
+  Creator = "Joe, Doe")
+```
+
+```{r}
+small_population_datacite
+```
+
+The `Description` property has three mandatory elements:
+
+- The `Abstract` is a short, textual description.
+- In the `TechnicalInfo` sub-field, we record automatically the `utils::sessionInfo()` for computational reproducability.
+- In the `Other` sub-field, we record the keywords for structuring the observatory.
+
+```{r print-datacite-description, echo=FALSE}
+small_population_description <- small_population_datacite$Description
+jsonlite::fromJSON(small_population_description)
+```
+The `Geolocation Property`:
+
+```{r print-datacite-geolocation, echo=FALSE}
+jsonlite::fromJSON(small_population_datacite$GeoLocation)
+```
 
 ## Tidy Data {#tidy-data}
 

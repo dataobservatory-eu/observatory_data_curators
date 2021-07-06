@@ -1,4 +1,4 @@
-fig:unnamed-chunk-2
+fig:unnamed-chunk-4
 fig:zenodo-example
 fig:how-to-add-zenodo
 fig:dmo-zenodo
@@ -14,8 +14,10 @@ FAIR-data
 FAIR
 Dublin-Core
 DataCite
-recommended
-processing-metadata
+recommended-for-discovery
+optional
+administrative-metadata
+an-example
 tidy-data
 messy-data
 trustworhty-ai
